@@ -27,6 +27,32 @@
 		CEC70F02180EAE94001DB5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70F01180EAE94001DB5B0 /* main.m */; };
 		CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F03180EAEC3001DB5B0 /* Images.xcassets */; };
 		CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F0B180EAEE2001DB5B0 /* InfoPlist.strings */; };
+		CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
+		CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
+		CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156331812DAA300BBD889 /* UIFont+GCKit.m */; };
+		CEE156351812DAA300BBD889 /* UIFont+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156331812DAA300BBD889 /* UIFont+GCKit.m */; };
+		CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156371812DADE00BBD889 /* UIButton+GCKit.m */; };
+		CEE156391812DADE00BBD889 /* UIButton+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156371812DADE00BBD889 /* UIButton+GCKit.m */; };
+		CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */; };
+		CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */; };
+		CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */; };
+		CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */; };
+		CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156431812DC1100BBD889 /* UIImageView+GCKit.m */; };
+		CEE156451812DC1100BBD889 /* UIImageView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156431812DC1100BBD889 /* UIImageView+GCKit.m */; };
+		CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */; };
+		CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */; };
+		CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */; };
+		CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */; };
+		CEE156501812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */; };
+		CEE156511812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */; };
+		CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */; };
+		CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */; };
+		CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */; };
+		CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */; };
+		CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */; };
+		CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */; };
+		CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156631812DF0500BBD889 /* UIImage+GCKit.m */; };
+		CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156631812DF0500BBD889 /* UIImage+GCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +91,32 @@
 		CEC70F0C180EAEE2001DB5B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Project/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		CEC70F0E180EAEEE001DB5B0 /* GCKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GCKit-Info.plist"; path = "Project/GCKit-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEC70F0F180EAEEE001DB5B0 /* GCKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GCKit-Prefix.pch"; path = "Project/GCKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		CEE1562E1812D9D400BBD889 /* NSObject+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCKit.h"; sourceTree = "<group>"; };
+		CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCKit.m"; sourceTree = "<group>"; };
+		CEE156321812DAA300BBD889 /* UIFont+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+GCKit.h"; sourceTree = "<group>"; };
+		CEE156331812DAA300BBD889 /* UIFont+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+GCKit.m"; sourceTree = "<group>"; };
+		CEE156361812DADE00BBD889 /* UIButton+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GCKit.h"; sourceTree = "<group>"; };
+		CEE156371812DADE00BBD889 /* UIButton+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GCKit.m"; sourceTree = "<group>"; };
+		CEE1563A1812DB2300BBD889 /* NSTimer+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+GCKit.h"; sourceTree = "<group>"; };
+		CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+GCKit.m"; sourceTree = "<group>"; };
+		CEE1563E1812DBB300BBD889 /* NSNumberFormatter+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+GCKit.h"; sourceTree = "<group>"; };
+		CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+GCKit.m"; sourceTree = "<group>"; };
+		CEE156421812DC1100BBD889 /* UIImageView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GCKit.h"; sourceTree = "<group>"; };
+		CEE156431812DC1100BBD889 /* UIImageView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GCKit.m"; sourceTree = "<group>"; };
+		CEE156461812DC4D00BBD889 /* UIScreen+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+GCKit.h"; sourceTree = "<group>"; };
+		CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+GCKit.m"; sourceTree = "<group>"; };
+		CEE1564A1812DCAE00BBD889 /* UITableView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GCKit.h"; sourceTree = "<group>"; };
+		CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GCKit.m"; sourceTree = "<group>"; };
+		CEE1564E1812DD1E00BBD889 /* UIWindow+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+GCKit.h"; sourceTree = "<group>"; };
+		CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+GCKit.m"; sourceTree = "<group>"; };
+		CEE156561812DDD800BBD889 /* UIWebView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+GCKit.h"; sourceTree = "<group>"; };
+		CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+GCKit.m"; sourceTree = "<group>"; };
+		CEE1565A1812DE4600BBD889 /* UIToolbar+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+GCKit.h"; sourceTree = "<group>"; };
+		CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+GCKit.m"; sourceTree = "<group>"; };
+		CEE1565E1812DEA100BBD889 /* CLPlacemark+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLPlacemark+GCKit.h"; sourceTree = "<group>"; };
+		CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+GCKit.m"; sourceTree = "<group>"; };
+		CEE156621812DF0500BBD889 /* UIImage+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GCKit.h"; sourceTree = "<group>"; };
+		CEE156631812DF0500BBD889 /* UIImage+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +154,34 @@
 		CE946CE1180FF889002E2225 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				CEE1565E1812DEA100BBD889 /* CLPlacemark+GCKit.h */,
+				CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */,
+				CEE1563E1812DBB300BBD889 /* NSNumberFormatter+GCKit.h */,
+				CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */,
+				CEE156361812DADE00BBD889 /* UIButton+GCKit.h */,
+				CEE156371812DADE00BBD889 /* UIButton+GCKit.m */,
+				CEE156321812DAA300BBD889 /* UIFont+GCKit.h */,
+				CEE156331812DAA300BBD889 /* UIFont+GCKit.m */,
+				CEE156621812DF0500BBD889 /* UIImage+GCKit.h */,
+				CEE156631812DF0500BBD889 /* UIImage+GCKit.m */,
+				CEE1562E1812D9D400BBD889 /* NSObject+GCKit.h */,
+				CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */,
 				CE946CE2180FF889002E2225 /* NSString+GCKit.h */,
 				CE946CE3180FF889002E2225 /* NSString+GCKit.m */,
+				CEE1563A1812DB2300BBD889 /* NSTimer+GCKit.h */,
+				CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */,
+				CEE156421812DC1100BBD889 /* UIImageView+GCKit.h */,
+				CEE156431812DC1100BBD889 /* UIImageView+GCKit.m */,
+				CEE156461812DC4D00BBD889 /* UIScreen+GCKit.h */,
+				CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */,
+				CEE1564A1812DCAE00BBD889 /* UITableView+GCKit.h */,
+				CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */,
+				CEE1565A1812DE4600BBD889 /* UIToolbar+GCKit.h */,
+				CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */,
+				CEE156561812DDD800BBD889 /* UIWebView+GCKit.h */,
+				CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */,
+				CEE1564E1812DD1E00BBD889 /* UIWindow+GCKit.h */,
+				CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */,
 			);
 			path = GCAdditions;
 			sourceTree = "<group>";
@@ -241,7 +319,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Gustavo Cassab";
+				ORGANIZATIONNAME = "GCCore Digital Technologies";
 				TargetAttributes = {
 					CEC70EE3180EAE04001DB5B0 = {
 						TestTargetID = CEC70EBF180EAE04001DB5B0;
@@ -295,10 +373,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
+				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
+				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
+				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
+				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
+				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
+				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE946CE8180FF889002E2225 /* GCKit.m in Sources */,
+				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
+				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CEC70F02180EAE94001DB5B0 /* main.m in Sources */,
+				CEE156501812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
+				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
+				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +397,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
+				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
+				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
+				CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
+				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
+				CEE156451812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
+				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
+				CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
+				CEE156351812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
+				CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
+				CEE156511812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
+				CEE156391812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

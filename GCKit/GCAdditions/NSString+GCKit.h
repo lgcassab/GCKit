@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (GCKit)
+@interface NSString (GCKit) {
+	
+}
 
 #pragma mark - Class Methods
 

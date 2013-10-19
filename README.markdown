@@ -1,8 +1,8 @@
-GCKit.framework
-============================================================================================================================================
+GCKit
+=====
 
-Frameworks Necessárias
---------------------------------------------------------------------------------------------------------------------------------------------
+Frameworks
+----------
 - Accounts.framework
 - CFNetwork.framework
 - CoreGraphics.framework
@@ -21,6 +21,4 @@ Frameworks Necessárias
 - Security.framework
 - Social.framework
 - UIKit.framework
-
-// Em BuildSetting, adicionar "/usr/include/libxml2" em "Header Search Paths"
 
