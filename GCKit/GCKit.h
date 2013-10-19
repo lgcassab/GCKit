@@ -98,8 +98,8 @@
 // GCFileManager
 //#import "GCFileManager.h"
 
-// PopController
-//#import "GCPopController.h"
+// GCPopController
+#import "GCPopController.h"
 
 // GCParserCSV
 //#import "GCCSV.h"

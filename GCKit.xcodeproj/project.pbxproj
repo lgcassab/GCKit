@@ -60,6 +60,8 @@
 		CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
 		CEE156711812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
 		CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156731812E67900BBD889 /* NSArrayTests.m */; };
+		CEE156781812EB2000BBD889 /* GCPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156771812EB2000BBD889 /* GCPopController.m */; };
+		CEE156791812EB2000BBD889 /* GCPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156771812EB2000BBD889 /* GCPopController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GCKit.h"; sourceTree = "<group>"; };
 		CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GCKit.m"; sourceTree = "<group>"; };
 		CEE156731812E67900BBD889 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
+		CEE156761812EB2000BBD889 /* GCPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPopController.h; sourceTree = "<group>"; };
+		CEE156771812EB2000BBD889 /* GCPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPopController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,8 +295,18 @@
 				CE946CE4180FF889002E2225 /* GCKit.h */,
 				CE946CE5180FF889002E2225 /* GCKit.m */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
+				CEE156751812EB2000BBD889 /* GCPopController */,
 			);
 			path = GCKit;
+			sourceTree = "<group>";
+		};
+		CEE156751812EB2000BBD889 /* GCPopController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE156761812EB2000BBD889 /* GCPopController.h */,
+				CEE156771812EB2000BBD889 /* GCPopController.m */,
+			);
+			path = GCPopController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +410,7 @@
 				CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CEE156781812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
@@ -424,6 +439,7 @@
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
 				CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
+				CEE156791812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,

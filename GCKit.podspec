@@ -40,4 +40,10 @@ Pod::Spec.new do |s|
     ss.ios.public_header_files = 'GCKit/GCAdditions/*.h'
     ss.ios.source_files = 'GCKit/GCAdditions/*.{h,m}'
   end
+  
+  s.subspec 'GCPopController' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCPopController/*.h'
+    ss.ios.source_files = 'GCKit/GCPopController/*.{h,m}'
+  end
+
 end
