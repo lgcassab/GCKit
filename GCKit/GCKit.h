@@ -42,7 +42,7 @@
 #import "NSString+GCKit.h"
 //#import "UIView+GCKit.h"
 #import "UIWindow+GCKit.h"
-//#import "UIColor+GCKit.h"
+#import "UIColor+GCKit.h"
 #import "UIFont+GCKit.h"
 #import "UITableView+GCKit.h"
 #import "UIImage+GCKit.h"

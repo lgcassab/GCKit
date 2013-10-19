@@ -53,6 +53,8 @@
 		CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */; };
 		CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156631812DF0500BBD889 /* UIImage+GCKit.m */; };
 		CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156631812DF0500BBD889 /* UIImage+GCKit.m */; };
+		CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */; };
+		CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+GCKit.m"; sourceTree = "<group>"; };
 		CEE156621812DF0500BBD889 /* UIImage+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GCKit.h"; sourceTree = "<group>"; };
 		CEE156631812DF0500BBD889 /* UIImage+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GCKit.m"; sourceTree = "<group>"; };
+		CEE156661812E1BD00BBD889 /* UIColor+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GCKit.h"; sourceTree = "<group>"; };
+		CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 				CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */,
 				CEE156361812DADE00BBD889 /* UIButton+GCKit.h */,
 				CEE156371812DADE00BBD889 /* UIButton+GCKit.m */,
+				CEE156661812E1BD00BBD889 /* UIColor+GCKit.h */,
+				CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */,
 				CEE156321812DAA300BBD889 /* UIFont+GCKit.h */,
 				CEE156331812DAA300BBD889 /* UIFont+GCKit.m */,
 				CEE156621812DF0500BBD889 /* UIImage+GCKit.h */,
@@ -374,6 +380,7 @@
 			files = (
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
@@ -399,6 +406,7 @@
 			files = (
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
 				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
+				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
