@@ -56,7 +56,7 @@
 #import "UIImageView+GCKit.h"
 #import "NSObject+GCKit.h"
 //#import "UITextField+GCKit.h"
-//#import "UITextView+GCKit.h"
+#import "UITextView+GCKit.h"
 #import "CLPlacemark+GCKit.h"
 #import "NSTimer+GCKit.h"
 

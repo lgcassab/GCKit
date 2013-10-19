@@ -55,6 +55,8 @@
 		CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156631812DF0500BBD889 /* UIImage+GCKit.m */; };
 		CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */; };
 		CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */; };
+		CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */; };
+		CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		CEE156631812DF0500BBD889 /* UIImage+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GCKit.m"; sourceTree = "<group>"; };
 		CEE156661812E1BD00BBD889 /* UIColor+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GCKit.h"; sourceTree = "<group>"; };
 		CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GCKit.m"; sourceTree = "<group>"; };
+		CEE1566A1812E25100BBD889 /* UITextView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+GCKit.h"; sourceTree = "<group>"; };
+		CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+GCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 				CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */,
 				CEE1564A1812DCAE00BBD889 /* UITableView+GCKit.h */,
 				CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */,
+				CEE1566A1812E25100BBD889 /* UITextView+GCKit.h */,
+				CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */,
 				CEE1565A1812DE4600BBD889 /* UIToolbar+GCKit.h */,
 				CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */,
 				CEE156561812DDD800BBD889 /* UIWebView+GCKit.h */,
@@ -378,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
 				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
@@ -405,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
