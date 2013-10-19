@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE39467918100E96009D10A6 /* GCKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F0E180EAEEE001DB5B0 /* GCKit-Info.plist */; };
+		CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
+		CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
 		CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
 		CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
@@ -25,8 +26,6 @@
 		CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70EFF180EAE7E001DB5B0 /* ViewController.m */; };
 		CEC70F02180EAE94001DB5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70F01180EAE94001DB5B0 /* main.m */; };
 		CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F03180EAEC3001DB5B0 /* Images.xcassets */; };
-		CEC70F09180EAED6001DB5B0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
-		CEC70F0A180EAED6001DB5B0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
 		CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F0B180EAEE2001DB5B0 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -273,10 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE39467918100E96009D10A6 /* GCKit-Info.plist in Resources */,
-				CEC70F0A180EAED6001DB5B0 /* Main_iPhone.storyboard in Resources */,
+				CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */,
+				CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */,
 				CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */,
-				CEC70F09180EAED6001DB5B0 /* Main_iPad.storyboard in Resources */,
 				CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
