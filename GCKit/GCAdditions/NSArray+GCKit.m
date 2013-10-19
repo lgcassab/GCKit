@@ -10,7 +10,7 @@
 
 @implementation NSArray (GCKit)
 
-- (NSArray *)arrayWithBrazilianStates {
++ (NSArray *)arrayWithBrazilianStates {
     return @[@"AC",
 			 @"AL",
 			 @"AM",

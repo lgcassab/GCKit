@@ -12,6 +12,6 @@
 	
 }
 
-- (NSArray *)arrayWithBrazilianStates;
++ (NSArray *)arrayWithBrazilianStates;
 
 @end

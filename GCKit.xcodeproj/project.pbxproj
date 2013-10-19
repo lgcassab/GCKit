@@ -59,6 +59,7 @@
 		CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */; };
 		CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
 		CEE156711812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
+		CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156731812E67900BBD889 /* NSArrayTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+GCKit.m"; sourceTree = "<group>"; };
 		CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GCKit.h"; sourceTree = "<group>"; };
 		CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GCKit.m"; sourceTree = "<group>"; };
+		CEE156731812E67900BBD889 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CE39467C18101657009D10A6 /* NSStringTests.m */,
+				CEE156731812E67900BBD889 /* NSArrayTests.m */,
 			);
 			name = GCAdditions;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
 				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
+				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
 				CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
