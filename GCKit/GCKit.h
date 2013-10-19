@@ -30,11 +30,11 @@
 
 #define iPadDevice (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-//#import <GCKit/GCActionManager.h>
-//#import <GCKit/GCAction.h>
-//#import <GCKit/GCEffect.h>
-//#import <GCKit/GCEffectGlobal.h>
-//#import <GCKit/GCAnimationGlobal.h>
+//#import "GCActionManager.h"
+//#import "GCAction.h"
+//#import "GCEffect.h"
+//#import "GCEffectGlobal.h"
+//#import "GCAnimationGlobal.h"
 
 // Additions
 //#import "UIAlertView+GCKit.h"
@@ -58,68 +58,69 @@
 //#import "UITextField+GCKit.h"
 #import "UITextView+GCKit.h"
 #import "CLPlacemark+GCKit.h"
+#import "NSArray+GCKit.h"
 #import "NSTimer+GCKit.h"
 
 // Pickers
-//#import <GCKit/GCPicker.h>
-//#import <GCKit/GCPickerDate.h>
-//#import <GCKit/GCPickerDateTime.h>
+//#import "GCPicker.h"
+//#import "GCPickerDate.h"
+//#import "GCPickerDateTime.h"
 
 // Controllers
-//#import <GCKit/GCTableController.h>
-//#import <GCKit/GCVerticalTabController.h>
-//#import <GCKit/GCTabBarController.h>
+//#import "GCTableController.h"
+//#import "GCVerticalTabController.h"
+//#import "GCTabBarController.h"
 
 // GCDatabase
-//#import <GCKit/GCDatabase.h>
+//#import "GCDatabase.h"
 
 // Visual
-//#import <GCKit/GCTableCellBadgeView.h>
-//#import <GCKit/GCBadgeView.h>
-//#import <GCKit/GCCustomColoredAccessory.h>
-//#import <GCKit/GCSplashVideo.h>
+//#import "GCTableCellBadgeView.h"
+//#import "GCBadgeView.h"
+//#import "GCCustomColoredAccessory.h"
+//#import "GCSplashVideo.h"
 
 // Diversos
-//#import <GCKit/GCBarButtonImageItem.h>
-//#import <GCKit/GCImageView.h>
-//#import <GCKit/GCReachability.h>
-//#import <GCKit/GCAlertView.h>
-//#import <GCKit/GCAlertTableView.h>
-//#import <GCKit/GCTextFieldDelegate.h>
+//#import "GCBarButtonImageItem.h"
+//#import "GCImageView.h"
+//#import "GCReachability.h"
+//#import "GCAlertView.h"
+//#import "GCAlertTableView.h"
+//#import "GCTextFieldDelegate.h"
 
 // GCProgressHud
-//#import <GCKit/GCProgressHud.h>
+//#import "GCProgressHud.h"
 
 // Criptografia
 //#import "NSData+Base64.h"
 //#import "GCEncrypt.h"
 
 // GCFileManager
-//#import <GCKit/GCFileManager.h>
+//#import "GCFileManager.h"
 
 // PopController
-//#import <GCKit/GCPopController.h>
+//#import "GCPopController.h"
 
 // GCParserCSV
-//#import <GCKit/GCCSV.h>
+//#import "GCCSV.h"
 
 // GCHTTPRequest
-//#import <GCKit/GCFormDataRequest.h>
+//#import "GCFormDataRequest.h"
 
 // GCEgoImageView
-//#import <GCKit/GCEgoImageView.h>
+//#import "GCEgoImageView.h"
 
 // GCParserXML
-//#import <GCKit/GCParserXML.h>
+//#import "GCParserXML.h"
 
 // GCKeychain
-//#import <GCKit/GCKeychain.h>
+//#import "GCKeychain.h"
 
 // GCMailComposer
-//#import <GCKit/GCMailcomposer.h>
+//#import "GCMailcomposer.h"
 
 // GCYoutube
-//#import <GCKit/GCYoutube.h>
+//#import "GCYoutube.h"
 
 @interface GCKit : NSObject {
     
@@ -132,8 +133,6 @@
 
 - (NSString *)appVersion;
 - (void)openSiteInSafariWithUrlString:(NSString *)urlString;
-
-//-(CGSize)screenSize;
 
 //-(BOOL)internetConnectionIsAvailable;
 //-(void)showAlertFuncionalidadeNaoImplementada;
@@ -148,8 +147,6 @@
 //              buttonReviewTitle:(NSString *)buttonReviewTitle
 //             buttonDisableTitle:(NSString *)buttonDisableTitle
 //                         cicles:(int)cicles;
-
-//- (NSArray *)arrayWithEstadosBrasileiros;
 
 //- (BOOL)validateBirthDate:(NSString *)birthDate;
 //- (BOOL)validateEmail:(NSString *)emailString;

@@ -11,8 +11,7 @@
 @implementation UIScreen (GCKit)
 
 + (CGRect)screenSize {
-	CGRect r = [[self mainScreen] bounds];
-	return r;
+	return [[self mainScreen] bounds];
 }
 
 + (BOOL)isRetinaDisplay {

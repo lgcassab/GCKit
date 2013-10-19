@@ -57,6 +57,8 @@
 		CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */; };
 		CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */; };
 		CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */; };
+		CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
+		CEE156711812E5DA00BBD889 /* NSArray+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		CEE156671812E1BD00BBD889 /* UIColor+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GCKit.m"; sourceTree = "<group>"; };
 		CEE1566A1812E25100BBD889 /* UITextView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+GCKit.h"; sourceTree = "<group>"; };
 		CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+GCKit.m"; sourceTree = "<group>"; };
+		CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GCKit.h"; sourceTree = "<group>"; };
+		CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 				CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */,
 				CEE1564E1812DD1E00BBD889 /* UIWindow+GCKit.h */,
 				CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */,
+				CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */,
+				CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */,
 			);
 			path = GCAdditions;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
+				CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +433,7 @@
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
 				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
+				CEE156711812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
 				CEE156351812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEE156511812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,

@@ -50,10 +50,6 @@ static GCKit *sharedKit = nil;
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
-//-(CGSize)screenSize {
-//    return [UIScreen mainScreen].bounds.size;
-//}
-
 //-(void)showAlertFuncionalidadeNaoImplementada {
 //    [UIAlertView alertViewWithTitle:@"Atenção" message:@"Funcionalidade ainda não implementada"];
 //}
@@ -123,39 +119,6 @@ static GCKit *sharedKit = nil;
 //	}
 //	
 //	[[NSUserDefaults standardUserDefaults] synchronize];
-//}
-
-//-(NSArray *)arrayWithEstadosBrasileiros {
-//    NSArray *array = [NSArray arrayWithObjects:
-//                      @"AC",
-//                      @"AL",
-//                      @"AM",
-//                      @"AP",
-//                      @"BA",
-//                      @"CE",
-//                      @"DF",
-//                      @"ES",
-//                      @"GO",
-//                      @"MA",
-//                      @"MG",
-//                      @"MS",
-//                      @"MT",
-//                      @"PA",
-//                      @"PB",
-//                      @"PE",
-//                      @"PI",
-//                      @"PR",
-//                      @"RJ",
-//                      @"RN",
-//                      @"RO",
-//                      @"RR",
-//                      @"RS",
-//                      @"SC",
-//                      @"SE",
-//                      @"SP",
-//                      @"TO",
-//                      nil];
-//    return array;
 //}
 
 #pragma mark - Validators
