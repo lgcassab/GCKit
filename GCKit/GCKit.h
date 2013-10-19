@@ -78,7 +78,7 @@
 //#import "GCTableCellBadgeView.h"
 //#import "GCBadgeView.h"
 //#import "GCCustomColoredAccessory.h"
-//#import "GCSplashVideo.h"
+#import "GCSplashVideo.h"
 
 // Diversos
 //#import "GCBarButtonImageItem.h"
@@ -117,7 +117,7 @@
 //#import "GCKeychain.h"
 
 // GCMailComposer
-//#import "GCMailcomposer.h"
+#import "GCMailcomposer.h"
 
 // GCYoutube
 //#import "GCYoutube.h"
@@ -125,7 +125,7 @@
 @interface GCKit : NSObject {
     
 }
-//@property(nonatomic, retain) GCMailComposer *gcMailComposer;
+@property(nonatomic, strong) GCMailComposer *gcMailComposer;
 
 + (GCKit *)sharedKit;
 

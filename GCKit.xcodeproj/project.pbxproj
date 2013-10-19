@@ -62,6 +62,10 @@
 		CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156731812E67900BBD889 /* NSArrayTests.m */; };
 		CEE156781812EB2000BBD889 /* GCPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156771812EB2000BBD889 /* GCPopController.m */; };
 		CEE156791812EB2000BBD889 /* GCPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156771812EB2000BBD889 /* GCPopController.m */; };
+		CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */; };
+		CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */; };
+		CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
+		CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,10 @@
 		CEE156731812E67900BBD889 /* NSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTests.m; sourceTree = "<group>"; };
 		CEE156761812EB2000BBD889 /* GCPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPopController.h; sourceTree = "<group>"; };
 		CEE156771812EB2000BBD889 /* GCPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPopController.m; sourceTree = "<group>"; };
+		CEE1567B1812EE1D00BBD889 /* GCMailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMailComposer.h; sourceTree = "<group>"; };
+		CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMailComposer.m; sourceTree = "<group>"; };
+		CEE156851812F1C800BBD889 /* GCSplashVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCSplashVideo.h; sourceTree = "<group>"; };
+		CEE156861812F1C800BBD889 /* GCSplashVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCSplashVideo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +303,9 @@
 				CE946CE4180FF889002E2225 /* GCKit.h */,
 				CE946CE5180FF889002E2225 /* GCKit.m */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
+				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
+				CEE156841812F1C800BBD889 /* GCSplashVideo */,
 			);
 			path = GCKit;
 			sourceTree = "<group>";
@@ -307,6 +317,24 @@
 				CEE156771812EB2000BBD889 /* GCPopController.m */,
 			);
 			path = GCPopController;
+			sourceTree = "<group>";
+		};
+		CEE1567A1812EE1D00BBD889 /* GCMailComposer */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1567B1812EE1D00BBD889 /* GCMailComposer.h */,
+				CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */,
+			);
+			path = GCMailComposer;
+			sourceTree = "<group>";
+		};
+		CEE156841812F1C800BBD889 /* GCSplashVideo */ = {
+			isa = PBXGroup;
+			children = (
+				CEE156851812F1C800BBD889 /* GCSplashVideo.h */,
+				CEE156861812F1C800BBD889 /* GCSplashVideo.m */,
+			);
+			path = GCSplashVideo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,9 +445,11 @@
 				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
+				CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */,
 				CE946CE8180FF889002E2225 /* GCKit.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
@@ -446,9 +476,11 @@
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
 				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
+				CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
+				CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */,
 				CEE156451812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
 				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,

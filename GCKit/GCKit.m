@@ -30,12 +30,12 @@ static GCKit *sharedKit = nil;
 //	[GCActionManager sharedManager];
 	NSLog(@"GCKit %@" , GCKitVersion);
     
-//    if (iPadDevice)
-//        [GCPopController sharedController];
+    if (iPadDevice)
+        [GCPopController sharedController];
     
 //    [GCTextFieldDelegate sharedDelegate];
     
-//    _gcMailComposer = nil;
+    _gcMailComposer = nil;
     
 	return self;
 }

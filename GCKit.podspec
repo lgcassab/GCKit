@@ -41,9 +41,19 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCAdditions/*.{h,m}'
   end
   
+  s.subspec 'GCMailComposer' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCMailComposer/*.h'
+    ss.ios.source_files = 'GCKit/GCMailComposer/*.{h,m}'
+  end
+  
   s.subspec 'GCPopController' do |ss|
     ss.ios.public_header_files = 'GCKit/GCPopController/*.h'
     ss.ios.source_files = 'GCKit/GCPopController/*.{h,m}'
   end
-
+  
+  s.subspec 'GCSplashVideo' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCSplashVideo/*.h'
+    ss.ios.source_files = 'GCKit/GCSplashVideo/*.{h,m}'
+  end
+  
 end
