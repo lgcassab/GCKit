@@ -5,6 +5,9 @@
       location = "group:GCKit.podspec">
    </FileRef>
    <FileRef
+      location = "group:Rakefile">
+   </FileRef>
+   <FileRef
       location = "group:README.markdown">
    </FileRef>
    <FileRef
