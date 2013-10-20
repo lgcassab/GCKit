@@ -97,6 +97,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCSplashVideo/*.{h,m}'
   end
   
+  s.subspec 'GCTextFieldDelegate' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCTextFieldDelegate/*.h'
+    ss.ios.source_files = 'GCKit/GCTextFieldDelegate/*.{h,m}'
+  end
+  
   s.subspec 'GCYoutube' do |ss|
     ss.ios.public_header_files = 'GCKit/GCYoutube/*.h'
     ss.ios.source_files = 'GCKit/GCYoutube/*.{h,m}'

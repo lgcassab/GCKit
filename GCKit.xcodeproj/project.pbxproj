@@ -10,6 +10,10 @@
 		CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
 		CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
 		CE299E14181420C200D51AF8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6AFC6518141E2200909668 /* libxml2.dylib */; };
+		CE299E291814266A00D51AF8 /* UITextField+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E281814266A00D51AF8 /* UITextField+GCKit.m */; };
+		CE299E2A1814266A00D51AF8 /* UITextField+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E281814266A00D51AF8 /* UITextField+GCKit.m */; };
+		CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */; };
+		CE299E2F181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
@@ -143,6 +147,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE299E271814266A00D51AF8 /* UITextField+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+GCKit.h"; sourceTree = "<group>"; };
+		CE299E281814266A00D51AF8 /* UITextField+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+GCKit.m"; sourceTree = "<group>"; };
+		CE299E2C181426EB00D51AF8 /* GCTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTextFieldDelegate.h; sourceTree = "<group>"; };
+		CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTextFieldDelegate.m; sourceTree = "<group>"; };
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		CE6AFC271814133000909668 /* GCEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffect.h; sourceTree = "<group>"; };
 		CE6AFC281814133000909668 /* GCEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffect.m; sourceTree = "<group>"; };
@@ -300,6 +308,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE299E2B181426EB00D51AF8 /* GCTextFieldDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE299E2C181426EB00D51AF8 /* GCTextFieldDelegate.h */,
+				CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */,
+			);
+			path = GCTextFieldDelegate;
+			sourceTree = "<group>";
+		};
 		CE39467A1810162B009D10A6 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +472,8 @@
 				CEE156471812DC4D00BBD889 /* UIScreen+GCKit.m */,
 				CEE1564A1812DCAE00BBD889 /* UITableView+GCKit.h */,
 				CEE1564B1812DCAE00BBD889 /* UITableView+GCKit.m */,
+				CE299E271814266A00D51AF8 /* UITextField+GCKit.h */,
+				CE299E281814266A00D51AF8 /* UITextField+GCKit.m */,
 				CEE1566A1812E25100BBD889 /* UITextView+GCKit.h */,
 				CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */,
 				CEE1565A1812DE4600BBD889 /* UIToolbar+GCKit.h */,
@@ -565,6 +584,7 @@
 				CE6AFC6018141D7E00909668 /* GCParserXML */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
+				CE299E2B181426EB00D51AF8 /* GCTextFieldDelegate */,
 				CE6AFC5B18141CD700909668 /* GCYoutube */,
 			);
 			path = GCKit;
@@ -732,12 +752,14 @@
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
 				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
+				CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
 				CE6AFC3C1814133000909668 /* GCEffectShadow.m in Sources */,
 				CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
+				CE299E291814266A00D51AF8 /* UITextField+GCKit.m in Sources */,
 				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE93D96F1813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CE6AFC4C1814195400909668 /* GCAnimationTransition.m in Sources */,
@@ -794,12 +816,14 @@
 				CE6AFC371814133000909668 /* GCEffect.m in Sources */,
 				CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CE93D96A1813F6C60000B5C8 /* GCAction.m in Sources */,
+				CE299E2F181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE93D96C1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE93D9801813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
 				CE6AFC3D1814133000909668 /* GCEffectShadow.m in Sources */,
 				CE93D9741813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
+				CE299E2A1814266A00D51AF8 /* UITextField+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CE93D9701813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CE6AFC4D1814195400909668 /* GCAnimationTransition.m in Sources */,

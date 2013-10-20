@@ -52,7 +52,7 @@
 #import "UIButton+GCKit.h"
 #import "UIImageView+GCKit.h"
 #import "NSObject+GCKit.h"
-//#import "UITextField+GCKit.h"
+#import "UITextField+GCKit.h"
 #import "UITextView+GCKit.h"
 #import "CLPlacemark+GCKit.h"
 #import "NSArray+GCKit.h"
@@ -82,7 +82,7 @@
 //#import "GCReachability.h"
 //#import "GCAlertView.h"
 //#import "GCAlertTableView.h"
-//#import "GCTextFieldDelegate.h"
+#import "GCTextFieldDelegate.h"
 
 // GCProgressHud
 //#import "GCProgressHud.h"
