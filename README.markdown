@@ -1,6 +1,10 @@
 GCKit
 =====
 
+WARNING
+=======
+This framework is under development. Do not use it for now.
+
 Frameworks
 ----------
 - Accounts.framework

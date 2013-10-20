@@ -30,8 +30,8 @@
 
 #import "GCActionManager.h"
 #import "GCAction.h"
-//#import "GCEffect.h"
-//#import "GCEffectGlobal.h"
+#import "GCEffect.h"
+#import "GCEffectGlobal.h"
 //#import "GCAnimationGlobal.h"
 
 // Additions

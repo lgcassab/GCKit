@@ -8,6 +8,7 @@
 
 #import "UIView+GCKit.h"
 #import "GCBadgeView.h"
+#import "GCEffect.h"
 
 @implementation UIView (GCKit)
 
@@ -287,13 +288,13 @@
 
 #pragma mark - GCEffects
 
-//- (void)addEffect:(GCEffect *)effect {
-//	[effect runEffectInView:self];
-//}
+- (void)addEffect:(GCEffect *)effect {
+	[effect runEffectInView:self];
+}
 
-//- (void)removeEffect:(GCEffect *)effect {
-//	[effect removeEffectFromView:self];
-//}
+- (void)removeEffect:(GCEffect *)effect {
+	[effect removeEffectFromView:self];
+}
 
 #pragma mark - GCAnimation
 

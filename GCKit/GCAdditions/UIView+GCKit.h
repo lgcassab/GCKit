@@ -8,6 +8,9 @@
 
 #import "GCBadgeView.h"
 #import "GCActionManager.h"
+#import "GCEffectGlobal.h"
+
+@class GCEffect;
 
 @class GCBadgeView;
 
@@ -15,8 +18,8 @@
 
 - (GCAction *)runAction:(GCAction *)action;
 
-//- (void)addEffect:(GCEffect *)effect;
-//- (void)removeEffect:(GCEffect *)effect;
+- (void)addEffect:(GCEffect *)effect;
+- (void)removeEffect:(GCEffect *)effect;
 
 //- (void)addAnimation:(GCAnimation *)animation;
 
