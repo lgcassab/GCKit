@@ -116,7 +116,7 @@
 #import "GCMailcomposer.h"
 
 // GCYoutube
-//#import "GCYoutube.h"
+#import "GCYoutube.h"
 
 @interface GCKit : NSObject {
     

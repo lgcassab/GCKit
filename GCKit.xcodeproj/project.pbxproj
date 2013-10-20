@@ -34,6 +34,8 @@
 		CE6AFC5818141B9500909668 /* GCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5418141B9500909668 /* GCEncrypt.m */; };
 		CE6AFC5918141B9500909668 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5618141B9500909668 /* NSData+Base64.m */; };
 		CE6AFC5A18141B9500909668 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5618141B9500909668 /* NSData+Base64.m */; };
+		CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5D18141CD700909668 /* GCYoutube.m */; };
+		CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5D18141CD700909668 /* GCYoutube.m */; };
 		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
@@ -164,6 +166,8 @@
 		CE6AFC5418141B9500909668 /* GCEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEncrypt.m; sourceTree = "<group>"; };
 		CE6AFC5518141B9500909668 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		CE6AFC5618141B9500909668 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		CE6AFC5C18141CD700909668 /* GCYoutube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCYoutube.h; sourceTree = "<group>"; };
+		CE6AFC5D18141CD700909668 /* GCYoutube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCYoutube.m; sourceTree = "<group>"; };
 		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
 		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
 		CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBadgeView.h; sourceTree = "<group>"; };
@@ -340,6 +344,16 @@
 			);
 			path = GCEncrypt;
 			sourceTree = "<group>";
+		};
+		CE6AFC5B18141CD700909668 /* GCYoutube */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AFC5C18141CD700909668 /* GCYoutube.h */,
+				CE6AFC5D18141CD700909668 /* GCYoutube.m */,
+			);
+			name = GCYoutube;
+			path = GCKit/GCYoutube;
+			sourceTree = SOURCE_ROOT;
 		};
 		CE93D9491813F62F0000B5C8 /* GCBadgeView */ = {
 			isa = PBXGroup;
@@ -531,6 +545,7 @@
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
+				CE6AFC5B18141CD700909668 /* GCYoutube */,
 			);
 			path = GCKit;
 			sourceTree = "<group>";
@@ -690,6 +705,7 @@
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */,
 				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC421814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
@@ -750,6 +766,7 @@
 				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CE6AFC391814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
+				CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */,
 				CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC431814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
 				CE6AFC371814133000909668 /* GCEffect.m in Sources */,
