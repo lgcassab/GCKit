@@ -35,10 +35,20 @@ Pod::Spec.new do |s|
 					 'Security', 
 					 'Social', 
 					 'UIKit'
+					 
+  s.subspec 'GCActions' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCActions/*.h'
+    ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
+  end
   
   s.subspec 'GCAdditions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCAdditions/*.h'
     ss.ios.source_files = 'GCKit/GCAdditions/*.{h,m}'
+  end
+  
+  s.subspec 'GCBadgeView' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCBadgeView/*.h'
+    ss.ios.source_files = 'GCKit/GCBadgeView/*.{h,m}'
   end
   
   s.subspec 'GCMailComposer' do |ss|

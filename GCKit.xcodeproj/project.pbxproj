@@ -10,6 +10,36 @@
 		CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
 		CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
+		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
+		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
+		CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
+		CE93D94D1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
+		CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9501813F6C60000B5C8 /* GCAction.m */; };
+		CE93D96A1813F6C60000B5C8 /* GCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9501813F6C60000B5C8 /* GCAction.m */; };
+		CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9521813F6C60000B5C8 /* GCActionCallFunc.m */; };
+		CE93D96C1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9521813F6C60000B5C8 /* GCActionCallFunc.m */; };
+		CE93D96D1813F6C60000B5C8 /* GCActionDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9541813F6C60000B5C8 /* GCActionDelay.m */; };
+		CE93D96E1813F6C60000B5C8 /* GCActionDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9541813F6C60000B5C8 /* GCActionDelay.m */; };
+		CE93D96F1813F6C60000B5C8 /* GCActionFadeIn.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9561813F6C60000B5C8 /* GCActionFadeIn.m */; };
+		CE93D9701813F6C60000B5C8 /* GCActionFadeIn.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9561813F6C60000B5C8 /* GCActionFadeIn.m */; };
+		CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9581813F6C60000B5C8 /* GCActionFadeOut.m */; };
+		CE93D9721813F6C60000B5C8 /* GCActionFadeOut.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9581813F6C60000B5C8 /* GCActionFadeOut.m */; };
+		CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95A1813F6C60000B5C8 /* GCActionManager.m */; };
+		CE93D9741813F6C60000B5C8 /* GCActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95A1813F6C60000B5C8 /* GCActionManager.m */; };
+		CE93D9751813F6C60000B5C8 /* GCActionMoveBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95C1813F6C60000B5C8 /* GCActionMoveBy.m */; };
+		CE93D9761813F6C60000B5C8 /* GCActionMoveBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95C1813F6C60000B5C8 /* GCActionMoveBy.m */; };
+		CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95E1813F6C60000B5C8 /* GCActionMoveTo.m */; };
+		CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D95E1813F6C60000B5C8 /* GCActionMoveTo.m */; };
+		CE93D9791813F6C60000B5C8 /* GCActionRotateBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9601813F6C60000B5C8 /* GCActionRotateBy.m */; };
+		CE93D97A1813F6C60000B5C8 /* GCActionRotateBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9601813F6C60000B5C8 /* GCActionRotateBy.m */; };
+		CE93D97B1813F6C60000B5C8 /* GCActionRotateTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9621813F6C60000B5C8 /* GCActionRotateTo.m */; };
+		CE93D97C1813F6C60000B5C8 /* GCActionRotateTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9621813F6C60000B5C8 /* GCActionRotateTo.m */; };
+		CE93D97D1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9641813F6C60000B5C8 /* GCActionScaleBy.m */; };
+		CE93D97E1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9641813F6C60000B5C8 /* GCActionScaleBy.m */; };
+		CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */; };
+		CE93D9801813F6C60000B5C8 /* GCActionScaleTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */; };
+		CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9681813F6C60000B5C8 /* GCActionSequence.m */; };
+		CE93D9821813F6C60000B5C8 /* GCActionSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9681813F6C60000B5C8 /* GCActionSequence.m */; };
 		CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
 		CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
 		CE946CE8180FF889002E2225 /* GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE5180FF889002E2225 /* GCKit.m */; };
@@ -80,6 +110,36 @@
 
 /* Begin PBXFileReference section */
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
+		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
+		CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBadgeView.h; sourceTree = "<group>"; };
+		CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBadgeView.m; sourceTree = "<group>"; };
+		CE93D94F1813F6C60000B5C8 /* GCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAction.h; sourceTree = "<group>"; };
+		CE93D9501813F6C60000B5C8 /* GCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAction.m; sourceTree = "<group>"; };
+		CE93D9511813F6C60000B5C8 /* GCActionCallFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionCallFunc.h; sourceTree = "<group>"; };
+		CE93D9521813F6C60000B5C8 /* GCActionCallFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionCallFunc.m; sourceTree = "<group>"; };
+		CE93D9531813F6C60000B5C8 /* GCActionDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionDelay.h; sourceTree = "<group>"; };
+		CE93D9541813F6C60000B5C8 /* GCActionDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionDelay.m; sourceTree = "<group>"; };
+		CE93D9551813F6C60000B5C8 /* GCActionFadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionFadeIn.h; sourceTree = "<group>"; };
+		CE93D9561813F6C60000B5C8 /* GCActionFadeIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionFadeIn.m; sourceTree = "<group>"; };
+		CE93D9571813F6C60000B5C8 /* GCActionFadeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionFadeOut.h; sourceTree = "<group>"; };
+		CE93D9581813F6C60000B5C8 /* GCActionFadeOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionFadeOut.m; sourceTree = "<group>"; };
+		CE93D9591813F6C60000B5C8 /* GCActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionManager.h; sourceTree = "<group>"; };
+		CE93D95A1813F6C60000B5C8 /* GCActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionManager.m; sourceTree = "<group>"; };
+		CE93D95B1813F6C60000B5C8 /* GCActionMoveBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionMoveBy.h; sourceTree = "<group>"; };
+		CE93D95C1813F6C60000B5C8 /* GCActionMoveBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionMoveBy.m; sourceTree = "<group>"; };
+		CE93D95D1813F6C60000B5C8 /* GCActionMoveTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionMoveTo.h; sourceTree = "<group>"; };
+		CE93D95E1813F6C60000B5C8 /* GCActionMoveTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionMoveTo.m; sourceTree = "<group>"; };
+		CE93D95F1813F6C60000B5C8 /* GCActionRotateBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionRotateBy.h; sourceTree = "<group>"; };
+		CE93D9601813F6C60000B5C8 /* GCActionRotateBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionRotateBy.m; sourceTree = "<group>"; };
+		CE93D9611813F6C60000B5C8 /* GCActionRotateTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionRotateTo.h; sourceTree = "<group>"; };
+		CE93D9621813F6C60000B5C8 /* GCActionRotateTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionRotateTo.m; sourceTree = "<group>"; };
+		CE93D9631813F6C60000B5C8 /* GCActionScaleBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionScaleBy.h; sourceTree = "<group>"; };
+		CE93D9641813F6C60000B5C8 /* GCActionScaleBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionScaleBy.m; sourceTree = "<group>"; };
+		CE93D9651813F6C60000B5C8 /* GCActionScaleTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionScaleTo.h; sourceTree = "<group>"; };
+		CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionScaleTo.m; sourceTree = "<group>"; };
+		CE93D9671813F6C60000B5C8 /* GCActionSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionSequence.h; sourceTree = "<group>"; };
+		CE93D9681813F6C60000B5C8 /* GCActionSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionSequence.m; sourceTree = "<group>"; };
 		CE946CE2180FF889002E2225 /* NSString+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GCKit.h"; sourceTree = "<group>"; };
 		CE946CE3180FF889002E2225 /* NSString+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GCKit.m"; sourceTree = "<group>"; };
 		CE946CE4180FF889002E2225 /* GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKit.h; sourceTree = "<group>"; };
@@ -178,6 +238,48 @@
 			name = GCAdditions;
 			sourceTree = "<group>";
 		};
+		CE93D9491813F62F0000B5C8 /* GCBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */,
+				CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */,
+			);
+			path = GCBadgeView;
+			sourceTree = "<group>";
+		};
+		CE93D94E1813F6C60000B5C8 /* GCActions */ = {
+			isa = PBXGroup;
+			children = (
+				CE93D94F1813F6C60000B5C8 /* GCAction.h */,
+				CE93D9501813F6C60000B5C8 /* GCAction.m */,
+				CE93D9511813F6C60000B5C8 /* GCActionCallFunc.h */,
+				CE93D9521813F6C60000B5C8 /* GCActionCallFunc.m */,
+				CE93D9531813F6C60000B5C8 /* GCActionDelay.h */,
+				CE93D9541813F6C60000B5C8 /* GCActionDelay.m */,
+				CE93D9551813F6C60000B5C8 /* GCActionFadeIn.h */,
+				CE93D9561813F6C60000B5C8 /* GCActionFadeIn.m */,
+				CE93D9571813F6C60000B5C8 /* GCActionFadeOut.h */,
+				CE93D9581813F6C60000B5C8 /* GCActionFadeOut.m */,
+				CE93D9591813F6C60000B5C8 /* GCActionManager.h */,
+				CE93D95A1813F6C60000B5C8 /* GCActionManager.m */,
+				CE93D95B1813F6C60000B5C8 /* GCActionMoveBy.h */,
+				CE93D95C1813F6C60000B5C8 /* GCActionMoveBy.m */,
+				CE93D95D1813F6C60000B5C8 /* GCActionMoveTo.h */,
+				CE93D95E1813F6C60000B5C8 /* GCActionMoveTo.m */,
+				CE93D95F1813F6C60000B5C8 /* GCActionRotateBy.h */,
+				CE93D9601813F6C60000B5C8 /* GCActionRotateBy.m */,
+				CE93D9611813F6C60000B5C8 /* GCActionRotateTo.h */,
+				CE93D9621813F6C60000B5C8 /* GCActionRotateTo.m */,
+				CE93D9631813F6C60000B5C8 /* GCActionScaleBy.h */,
+				CE93D9641813F6C60000B5C8 /* GCActionScaleBy.m */,
+				CE93D9651813F6C60000B5C8 /* GCActionScaleTo.h */,
+				CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */,
+				CE93D9671813F6C60000B5C8 /* GCActionSequence.h */,
+				CE93D9681813F6C60000B5C8 /* GCActionSequence.m */,
+			);
+			path = GCActions;
+			sourceTree = "<group>";
+		};
 		CE946CE1180FF889002E2225 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +313,8 @@
 				CEE1566B1812E25100BBD889 /* UITextView+GCKit.m */,
 				CEE1565A1812DE4600BBD889 /* UIToolbar+GCKit.h */,
 				CEE1565B1812DE4600BBD889 /* UIToolbar+GCKit.m */,
+				CE93D9451813F5100000B5C8 /* UIView+GCKit.h */,
+				CE93D9461813F5100000B5C8 /* UIView+GCKit.m */,
 				CEE156561812DDD800BBD889 /* UIWebView+GCKit.h */,
 				CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */,
 				CEE1564E1812DD1E00BBD889 /* UIWindow+GCKit.h */,
@@ -302,7 +406,9 @@
 			children = (
 				CE946CE4180FF889002E2225 /* GCKit.h */,
 				CE946CE5180FF889002E2225 /* GCKit.m */,
+				CE93D94E1813F6C60000B5C8 /* GCActions */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
+				CE93D9491813F62F0000B5C8 /* GCBadgeView */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
@@ -435,25 +541,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE93D9791813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
+				CE93D96D1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */,
 				CEE156781812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
+				CE93D97B1813F6C60000B5C8 /* GCActionRotateTo.m in Sources */,
+				CE93D9751813F6C60000B5C8 /* GCActionMoveBy.m in Sources */,
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
+				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
+				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
+				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
+				CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
+				CE93D96F1813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */,
+				CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */,
 				CE946CE8180FF889002E2225 /* GCKit.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
+				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CEC70F02180EAE94001DB5B0 /* main.m in Sources */,
+				CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */,
+				CE93D97D1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,
 				CEE156501812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
@@ -466,25 +587,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE93D97A1813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CE93D96E1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
+				CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */,
 				CEE156791812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
+				CE93D97C1813F6C60000B5C8 /* GCActionRotateTo.m in Sources */,
+				CE93D9761813F6C60000B5C8 /* GCActionMoveBy.m in Sources */,
 				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
+				CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
+				CE93D96A1813F6C60000B5C8 /* GCAction.m in Sources */,
+				CE93D96C1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
+				CE93D9801813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
+				CE93D9741813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156651812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
+				CE93D9701813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */,
+				CE93D94D1813F62F0000B5C8 /* GCBadgeView.m in Sources */,
 				CEE156451812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
+				CE93D9721813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
+				CE93D9821813F6C60000B5C8 /* GCActionSequence.m in Sources */,
+				CE93D97E1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,
 				CEE156711812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
 				CEE156351812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,

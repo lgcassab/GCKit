@@ -8,8 +8,6 @@
 
 #define GCKitVersion @"1.90.0"
 
-#define kGCBadgeGlobalTab 6154378
-
 #ifndef __OPTIMIZE__
 #	define GCLog( s, ... ) NSLog( @"<%@:%d (%@)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,  NSStringFromSelector(_cmd), [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #else
@@ -30,8 +28,8 @@
 
 #define iPadDevice (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-//#import "GCActionManager.h"
-//#import "GCAction.h"
+#import "GCActionManager.h"
+#import "GCAction.h"
 //#import "GCEffect.h"
 //#import "GCEffectGlobal.h"
 //#import "GCAnimationGlobal.h"
@@ -40,7 +38,7 @@
 //#import "UIAlertView+GCKit.h"
 //#import "UIActionSheet+GCKit.h"
 #import "NSString+GCKit.h"
-//#import "UIView+GCKit.h"
+#import "UIView+GCKit.h"
 #import "UIWindow+GCKit.h"
 #import "UIColor+GCKit.h"
 #import "UIFont+GCKit.h"
@@ -76,7 +74,7 @@
 
 // Visual
 //#import "GCTableCellBadgeView.h"
-//#import "GCBadgeView.h"
+#import "GCBadgeView.h"
 //#import "GCCustomColoredAccessory.h"
 #import "GCSplashVideo.h"
 
