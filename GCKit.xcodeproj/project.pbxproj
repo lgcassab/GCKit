@@ -28,6 +28,8 @@
 		CE6AFC4B1814195400909668 /* GCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC461814195400909668 /* GCAnimation.m */; };
 		CE6AFC4C1814195400909668 /* GCAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC491814195400909668 /* GCAnimationTransition.m */; };
 		CE6AFC4D1814195400909668 /* GCAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC491814195400909668 /* GCAnimationTransition.m */; };
+		CE6AFC5018141AC900909668 /* NSDate+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */; };
+		CE6AFC5118141AC900909668 /* NSDate+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */; };
 		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
@@ -152,6 +154,8 @@
 		CE6AFC471814195400909668 /* GCAnimationGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAnimationGlobal.h; sourceTree = "<group>"; };
 		CE6AFC481814195400909668 /* GCAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAnimationTransition.h; sourceTree = "<group>"; };
 		CE6AFC491814195400909668 /* GCAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationTransition.m; sourceTree = "<group>"; };
+		CE6AFC4E18141AC900909668 /* NSDate+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GCKit.h"; sourceTree = "<group>"; };
+		CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GCKit.m"; sourceTree = "<group>"; };
 		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
 		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
 		CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBadgeView.h; sourceTree = "<group>"; };
@@ -376,6 +380,8 @@
 				CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */,
 				CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */,
 				CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */,
+				CE6AFC4E18141AC900909668 /* NSDate+GCKit.h */,
+				CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */,
 				CEE1563E1812DBB300BBD889 /* NSNumberFormatter+GCKit.h */,
 				CEE1563F1812DBB300BBD889 /* NSNumberFormatter+GCKit.m */,
 				CEE1562E1812D9D400BBD889 /* NSObject+GCKit.h */,
@@ -645,6 +651,7 @@
 			files = (
 				CE93D9791813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
+				CE6AFC5018141AC900909668 /* NSDate+GCKit.m in Sources */,
 				CE93D96D1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
@@ -702,6 +709,7 @@
 			files = (
 				CE93D97A1813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CE6AFC5118141AC900909668 /* NSDate+GCKit.m in Sources */,
 				CE93D96E1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
 				CEE1564D1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
