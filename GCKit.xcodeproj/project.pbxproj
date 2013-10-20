@@ -40,6 +40,8 @@
 		CE93D9801813F6C60000B5C8 /* GCActionScaleTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */; };
 		CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9681813F6C60000B5C8 /* GCActionSequence.m */; };
 		CE93D9821813F6C60000B5C8 /* GCActionSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9681813F6C60000B5C8 /* GCActionSequence.m */; };
+		CE93D9861814033B0000B5C8 /* GCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9851814033B0000B5C8 /* GCFileManager.m */; };
+		CE93D9871814033B0000B5C8 /* GCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9851814033B0000B5C8 /* GCFileManager.m */; };
 		CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
 		CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE3180FF889002E2225 /* NSString+GCKit.m */; };
 		CE946CE8180FF889002E2225 /* GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE946CE5180FF889002E2225 /* GCKit.m */; };
@@ -140,6 +142,8 @@
 		CE93D9661813F6C60000B5C8 /* GCActionScaleTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionScaleTo.m; sourceTree = "<group>"; };
 		CE93D9671813F6C60000B5C8 /* GCActionSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionSequence.h; sourceTree = "<group>"; };
 		CE93D9681813F6C60000B5C8 /* GCActionSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionSequence.m; sourceTree = "<group>"; };
+		CE93D9841814033B0000B5C8 /* GCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFileManager.h; sourceTree = "<group>"; };
+		CE93D9851814033B0000B5C8 /* GCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFileManager.m; sourceTree = "<group>"; };
 		CE946CE2180FF889002E2225 /* NSString+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GCKit.h"; sourceTree = "<group>"; };
 		CE946CE3180FF889002E2225 /* NSString+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GCKit.m"; sourceTree = "<group>"; };
 		CE946CE4180FF889002E2225 /* GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKit.h; sourceTree = "<group>"; };
@@ -280,6 +284,15 @@
 			path = GCActions;
 			sourceTree = "<group>";
 		};
+		CE93D9831814033B0000B5C8 /* GCFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE93D9841814033B0000B5C8 /* GCFileManager.h */,
+				CE93D9851814033B0000B5C8 /* GCFileManager.m */,
+			);
+			path = GCFileManager;
+			sourceTree = "<group>";
+		};
 		CE946CE1180FF889002E2225 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +422,7 @@
 				CE93D94E1813F6C60000B5C8 /* GCActions */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
 				CE93D9491813F62F0000B5C8 /* GCBadgeView */,
+				CE93D9831814033B0000B5C8 /* GCFileManager */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
@@ -572,6 +586,7 @@
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
+				CE93D9861814033B0000B5C8 /* GCFileManager.m in Sources */,
 				CEC70F02180EAE94001DB5B0 /* main.m in Sources */,
 				CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */,
 				CE93D97D1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,
@@ -618,6 +633,7 @@
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
 				CE93D9721813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
+				CE93D9871814033B0000B5C8 /* GCFileManager.m in Sources */,
 				CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9821813F6C60000B5C8 /* GCActionSequence.m in Sources */,
 				CE93D97E1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,

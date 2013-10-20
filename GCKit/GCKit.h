@@ -50,7 +50,6 @@
 #import "UIScreen+GCKit.h"
 #import "NSNumberFormatter+GCKit.h"
 #import "UIButton+GCKit.h"
-//#import "UIViewController+GCKit.h"
 #import "UIImageView+GCKit.h"
 #import "NSObject+GCKit.h"
 //#import "UITextField+GCKit.h"
@@ -66,7 +65,6 @@
 
 // Controllers
 //#import "GCTableController.h"
-//#import "GCVerticalTabController.h"
 //#import "GCTabBarController.h"
 
 // GCDatabase
@@ -94,7 +92,7 @@
 //#import "GCEncrypt.h"
 
 // GCFileManager
-//#import "GCFileManager.h"
+#import "GCFileManager.h"
 
 // GCPopController
 #import "GCPopController.h"
