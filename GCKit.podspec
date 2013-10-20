@@ -56,6 +56,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCFileManager/*.{h,m}'
   end
   
+  s.subspec 'GCKeychain' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCKeychain/*.h'
+    ss.ios.source_files = 'GCKit/GCKeychain/*.{h,m}'
+  end
+  
   s.subspec 'GCMailComposer' do |ss|
     ss.ios.public_header_files = 'GCKit/GCMailComposer/*.h'
     ss.ios.source_files = 'GCKit/GCMailComposer/*.{h,m}'

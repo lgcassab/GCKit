@@ -98,6 +98,8 @@
 		CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */; };
 		CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
 		CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
+		CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
+		CEF8589B181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +209,8 @@
 		CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMailComposer.m; sourceTree = "<group>"; };
 		CEE156851812F1C800BBD889 /* GCSplashVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCSplashVideo.h; sourceTree = "<group>"; };
 		CEE156861812F1C800BBD889 /* GCSplashVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCSplashVideo.m; sourceTree = "<group>"; };
+		CEF85898181412BC004D9360 /* GCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKeychain.h; sourceTree = "<group>"; };
+		CEF85899181412BC004D9360 /* GCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +427,7 @@
 				CE946CE1180FF889002E2225 /* GCAdditions */,
 				CE93D9491813F62F0000B5C8 /* GCBadgeView */,
 				CE93D9831814033B0000B5C8 /* GCFileManager */,
+				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
@@ -455,6 +460,15 @@
 				CEE156861812F1C800BBD889 /* GCSplashVideo.m */,
 			);
 			path = GCSplashVideo;
+			sourceTree = "<group>";
+		};
+		CEF85897181412BC004D9360 /* GCKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				CEF85898181412BC004D9360 /* GCKeychain.h */,
+				CEF85899181412BC004D9360 /* GCKeychain.m */,
+			);
+			path = GCKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +609,7 @@
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
+				CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +657,7 @@
 				CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEE156511812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEE156391812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CEF8589B181412BC004D9360 /* GCKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

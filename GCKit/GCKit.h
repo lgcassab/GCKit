@@ -110,7 +110,7 @@
 //#import "GCParserXML.h"
 
 // GCKeychain
-//#import "GCKeychain.h"
+#import "GCKeychain.h"
 
 // GCMailComposer
 #import "GCMailcomposer.h"
