@@ -26,3 +26,5 @@ Frameworks
 - Social.framework
 - UIKit.framework
 
+Em BuildSetting, adicionar "/usr/include/libxml2" em "Header Search Paths"
+

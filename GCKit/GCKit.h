@@ -107,7 +107,7 @@
 //#import "GCEgoImageView.h"
 
 // GCParserXML
-//#import "GCParserXML.h"
+#import "GCParserXML.h"
 
 // GCKeychain
 #import "GCKeychain.h"

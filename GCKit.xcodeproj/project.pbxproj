@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
 		CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
+		CE299E14181420C200D51AF8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6AFC6518141E2200909668 /* libxml2.dylib */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
@@ -36,6 +37,9 @@
 		CE6AFC5A18141B9500909668 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5618141B9500909668 /* NSData+Base64.m */; };
 		CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5D18141CD700909668 /* GCYoutube.m */; };
 		CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5D18141CD700909668 /* GCYoutube.m */; };
+		CE6AFC6318141D7E00909668 /* GCParserXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC6218141D7E00909668 /* GCParserXML.m */; };
+		CE6AFC6418141D7E00909668 /* GCParserXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC6218141D7E00909668 /* GCParserXML.m */; };
+		CE6AFC6618141E2200909668 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6AFC6518141E2200909668 /* libxml2.dylib */; };
 		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
@@ -168,6 +172,9 @@
 		CE6AFC5618141B9500909668 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		CE6AFC5C18141CD700909668 /* GCYoutube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCYoutube.h; sourceTree = "<group>"; };
 		CE6AFC5D18141CD700909668 /* GCYoutube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCYoutube.m; sourceTree = "<group>"; };
+		CE6AFC6118141D7E00909668 /* GCParserXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCParserXML.h; sourceTree = "<group>"; };
+		CE6AFC6218141D7E00909668 /* GCParserXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCParserXML.m; sourceTree = "<group>"; };
+		CE6AFC6518141E2200909668 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
 		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
 		CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBadgeView.h; sourceTree = "<group>"; };
@@ -272,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6AFC6618141E2200909668 /* libxml2.dylib in Frameworks */,
 				CEC70EC6180EAE04001DB5B0 /* CoreGraphics.framework in Frameworks */,
 				CEC70EC8180EAE04001DB5B0 /* UIKit.framework in Frameworks */,
 				CEC70EC4180EAE04001DB5B0 /* Foundation.framework in Frameworks */,
@@ -282,6 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE299E14181420C200D51AF8 /* libxml2.dylib in Frameworks */,
 				CEC70EE6180EAE04001DB5B0 /* XCTest.framework in Frameworks */,
 				CEC70EE8180EAE04001DB5B0 /* UIKit.framework in Frameworks */,
 				CEC70EE7180EAE04001DB5B0 /* Foundation.framework in Frameworks */,
@@ -354,6 +363,15 @@
 			name = GCYoutube;
 			path = GCKit/GCYoutube;
 			sourceTree = SOURCE_ROOT;
+		};
+		CE6AFC6018141D7E00909668 /* GCParserXML */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AFC6118141D7E00909668 /* GCParserXML.h */,
+				CE6AFC6218141D7E00909668 /* GCParserXML.m */,
+			);
+			path = GCParserXML;
+			sourceTree = "<group>";
 		};
 		CE93D9491813F62F0000B5C8 /* GCBadgeView */ = {
 			isa = PBXGroup;
@@ -474,6 +492,7 @@
 		CEC70EC2180EAE04001DB5B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6AFC6518141E2200909668 /* libxml2.dylib */,
 				CEC70EC3180EAE04001DB5B0 /* Foundation.framework */,
 				CEC70EC5180EAE04001DB5B0 /* CoreGraphics.framework */,
 				CEC70EC7180EAE04001DB5B0 /* UIKit.framework */,
@@ -543,6 +562,7 @@
 				CE93D9831814033B0000B5C8 /* GCFileManager */,
 				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
+				CE6AFC6018141D7E00909668 /* GCParserXML */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
 				CE6AFC5B18141CD700909668 /* GCYoutube */,
@@ -705,6 +725,7 @@
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
+				CE6AFC6318141D7E00909668 /* GCParserXML.m in Sources */,
 				CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */,
 				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC421814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
@@ -766,6 +787,7 @@
 				CEE1565D1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CE6AFC391814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
+				CE6AFC6418141D7E00909668 /* GCParserXML.m in Sources */,
 				CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */,
 				CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC431814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
@@ -929,8 +951,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/GCKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Project/GCKit-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -942,8 +971,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/GCKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Project/GCKit-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -964,6 +1000,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "GCKitTests/GCKitTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -983,6 +1024,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/GCKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "GCKitTests/GCKitTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
