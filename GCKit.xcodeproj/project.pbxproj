@@ -14,6 +14,10 @@
 		CE299E2A1814266A00D51AF8 /* UITextField+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E281814266A00D51AF8 /* UITextField+GCKit.m */; };
 		CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */; };
 		CE299E2F181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */; };
+		CE299E3718142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3618142A5D00D51AF8 /* UIAlertView+GCKit.m */; };
+		CE299E3818142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3618142A5D00D51AF8 /* UIAlertView+GCKit.m */; };
+		CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
+		CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
@@ -151,6 +155,11 @@
 		CE299E281814266A00D51AF8 /* UITextField+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+GCKit.m"; sourceTree = "<group>"; };
 		CE299E2C181426EB00D51AF8 /* GCTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTextFieldDelegate.h; sourceTree = "<group>"; };
 		CE299E2D181426EB00D51AF8 /* GCTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTextFieldDelegate.m; sourceTree = "<group>"; };
+		CE299E3518142A5D00D51AF8 /* UIAlertView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+GCKit.h"; sourceTree = "<group>"; };
+		CE299E3618142A5D00D51AF8 /* UIAlertView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+GCKit.m"; sourceTree = "<group>"; };
+		CE299E3918142B0500D51AF8 /* GCBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBlockAdditions.h; sourceTree = "<group>"; };
+		CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+GCKit.h"; sourceTree = "<group>"; };
+		CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+GCKit.m"; sourceTree = "<group>"; };
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		CE6AFC271814133000909668 /* GCEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffect.h; sourceTree = "<group>"; };
 		CE6AFC281814133000909668 /* GCEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffect.m; sourceTree = "<group>"; };
@@ -444,6 +453,9 @@
 		CE946CE1180FF889002E2225 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */,
+				CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */,
+				CE299E3918142B0500D51AF8 /* GCBlockAdditions.h */,
 				CEE1565E1812DEA100BBD889 /* CLPlacemark+GCKit.h */,
 				CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */,
 				CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */,
@@ -458,6 +470,8 @@
 				CE946CE3180FF889002E2225 /* NSString+GCKit.m */,
 				CEE1563A1812DB2300BBD889 /* NSTimer+GCKit.h */,
 				CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */,
+				CE299E3518142A5D00D51AF8 /* UIAlertView+GCKit.h */,
+				CE299E3618142A5D00D51AF8 /* UIAlertView+GCKit.m */,
 				CEE156361812DADE00BBD889 /* UIButton+GCKit.h */,
 				CEE156371812DADE00BBD889 /* UIButton+GCKit.m */,
 				CEE156661812E1BD00BBD889 /* UIColor+GCKit.h */,
@@ -747,6 +761,7 @@
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
 				CE6AFC6318141D7E00909668 /* GCParserXML.m in Sources */,
 				CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */,
+				CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
 				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC421814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
@@ -778,6 +793,7 @@
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CE6AFC401814133000909668 /* GCEffectShadowPaperCurl.m in Sources */,
+				CE299E3718142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */,
 				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
 				CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */,
@@ -811,6 +827,7 @@
 				CEE156741812E67900BBD889 /* NSArrayTests.m in Sources */,
 				CE6AFC6418141D7E00909668 /* GCParserXML.m in Sources */,
 				CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */,
+				CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
 				CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC431814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
 				CE6AFC371814133000909668 /* GCEffect.m in Sources */,
@@ -842,6 +859,7 @@
 				CEE156351812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156491812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CE6AFC411814133000909668 /* GCEffectShadowPaperCurl.m in Sources */,
+				CE299E3818142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */,
 				CEE156511812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEE156391812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
 				CEF8589B181412BC004D9360 /* GCKeychain.m in Sources */,

@@ -35,8 +35,8 @@
 #import "GCAnimationGlobal.h"
 
 // Additions
-//#import "UIAlertView+GCKit.h"
-//#import "UIActionSheet+GCKit.h"
+#import "UIAlertView+GCKit.h"
+#import "UIActionSheet+GCKit.h"
 #import "NSString+GCKit.h"
 #import "UIView+GCKit.h"
 #import "UIWindow+GCKit.h"
