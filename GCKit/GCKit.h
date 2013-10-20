@@ -88,8 +88,8 @@
 //#import "GCProgressHud.h"
 
 // Criptografia
-//#import "NSData+Base64.h"
-//#import "GCEncrypt.h"
+#import "NSData+Base64.h"
+#import "GCEncrypt.h"
 
 // GCFileManager
 #import "GCFileManager.h"

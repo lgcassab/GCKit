@@ -61,6 +61,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCEffects/*.{h,m}'
   end
   
+  s.subspec 'GCEncrypt' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCEncrypt/*.h'
+    ss.ios.source_files = 'GCKit/GCEncrypt/*.{h,m}'
+  end
+  
   s.subspec 'GCFileManager' do |ss|
     ss.ios.public_header_files = 'GCKit/GCFileManager/*.h'
     ss.ios.source_files = 'GCKit/GCFileManager/*.{h,m}'

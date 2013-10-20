@@ -30,6 +30,10 @@
 		CE6AFC4D1814195400909668 /* GCAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC491814195400909668 /* GCAnimationTransition.m */; };
 		CE6AFC5018141AC900909668 /* NSDate+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */; };
 		CE6AFC5118141AC900909668 /* NSDate+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */; };
+		CE6AFC5718141B9500909668 /* GCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5418141B9500909668 /* GCEncrypt.m */; };
+		CE6AFC5818141B9500909668 /* GCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5418141B9500909668 /* GCEncrypt.m */; };
+		CE6AFC5918141B9500909668 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5618141B9500909668 /* NSData+Base64.m */; };
+		CE6AFC5A18141B9500909668 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC5618141B9500909668 /* NSData+Base64.m */; };
 		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D94B1813F62F0000B5C8 /* GCBadgeView.m */; };
@@ -156,6 +160,10 @@
 		CE6AFC491814195400909668 /* GCAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationTransition.m; sourceTree = "<group>"; };
 		CE6AFC4E18141AC900909668 /* NSDate+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GCKit.h"; sourceTree = "<group>"; };
 		CE6AFC4F18141AC900909668 /* NSDate+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GCKit.m"; sourceTree = "<group>"; };
+		CE6AFC5318141B9500909668 /* GCEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEncrypt.h; sourceTree = "<group>"; };
+		CE6AFC5418141B9500909668 /* GCEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEncrypt.m; sourceTree = "<group>"; };
+		CE6AFC5518141B9500909668 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		CE6AFC5618141B9500909668 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
 		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
 		CE93D94A1813F62F0000B5C8 /* GCBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBadgeView.h; sourceTree = "<group>"; };
@@ -320,6 +328,17 @@
 				CE6AFC491814195400909668 /* GCAnimationTransition.m */,
 			);
 			path = GCAnimation;
+			sourceTree = "<group>";
+		};
+		CE6AFC5218141B9500909668 /* GCEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AFC5318141B9500909668 /* GCEncrypt.h */,
+				CE6AFC5418141B9500909668 /* GCEncrypt.m */,
+				CE6AFC5518141B9500909668 /* NSData+Base64.h */,
+				CE6AFC5618141B9500909668 /* NSData+Base64.m */,
+			);
+			path = GCEncrypt;
 			sourceTree = "<group>";
 		};
 		CE93D9491813F62F0000B5C8 /* GCBadgeView */ = {
@@ -506,6 +525,7 @@
 				CE6AFC441814195400909668 /* GCAnimation */,
 				CE93D9491813F62F0000B5C8 /* GCBadgeView */,
 				CE6AFC261814133000909668 /* GCEffects */,
+				CE6AFC5218141B9500909668 /* GCEncrypt */,
 				CE93D9831814033B0000B5C8 /* GCFileManager */,
 				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
@@ -651,6 +671,7 @@
 			files = (
 				CE93D9791813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE1566C1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
+				CE6AFC5918141B9500909668 /* NSData+Base64.m in Sources */,
 				CE6AFC5018141AC900909668 /* NSDate+GCKit.m in Sources */,
 				CE93D96D1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
@@ -658,6 +679,7 @@
 				CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */,
 				CEE156781812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
+				CE6AFC5718141B9500909668 /* GCEncrypt.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
 				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
@@ -709,6 +731,7 @@
 			files = (
 				CE93D97A1813F6C60000B5C8 /* GCActionRotateBy.m in Sources */,
 				CEE156591812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
+				CE6AFC5A18141B9500909668 /* NSData+Base64.m in Sources */,
 				CE6AFC5118141AC900909668 /* NSDate+GCKit.m in Sources */,
 				CE93D96E1813F6C60000B5C8 /* GCActionDelay.m in Sources */,
 				CEE1566D1812E25100BBD889 /* UITextView+GCKit.m in Sources */,
@@ -716,6 +739,7 @@
 				CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */,
 				CEE156791812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
+				CE6AFC5818141B9500909668 /* GCEncrypt.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CE39467D18101657009D10A6 /* NSStringTests.m in Sources */,
