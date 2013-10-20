@@ -32,7 +32,7 @@
 #import "GCAction.h"
 #import "GCEffect.h"
 #import "GCEffectGlobal.h"
-//#import "GCAnimationGlobal.h"
+#import "GCAnimationGlobal.h"
 
 // Additions
 //#import "UIAlertView+GCKit.h"

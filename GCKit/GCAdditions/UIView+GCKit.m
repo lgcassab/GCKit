@@ -9,6 +9,7 @@
 #import "UIView+GCKit.h"
 #import "GCBadgeView.h"
 #import "GCEffect.h"
+#import "GCAnimation.h"
 
 @implementation UIView (GCKit)
 
@@ -298,9 +299,9 @@
 
 #pragma mark - GCAnimation
 
-//- (void)addAnimation:(GCAnimation *)animation {
-//    [animation startWithTarget:self];
-//}
+- (void)addAnimation:(GCAnimation *)animation {
+    [animation startWithTarget:self];
+}
 
 #pragma mark - Render
 

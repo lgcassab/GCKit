@@ -46,6 +46,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCAdditions/*.{h,m}'
   end
   
+  s.subspec 'GCAnimation' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCAnimation/*.h'
+    ss.ios.source_files = 'GCKit/GCAnimation/*.{h,m}'
+  end
+  
   s.subspec 'GCBadgeView' do |ss|
     ss.ios.public_header_files = 'GCKit/GCBadgeView/*.h'
     ss.ios.source_files = 'GCKit/GCBadgeView/*.{h,m}'

@@ -11,8 +11,8 @@
 #import "GCEffectGlobal.h"
 
 @class GCEffect;
-
 @class GCBadgeView;
+@class GCAnimation;
 
 @interface UIView (GCKit)
 
@@ -21,7 +21,7 @@
 - (void)addEffect:(GCEffect *)effect;
 - (void)removeEffect:(GCEffect *)effect;
 
-//- (void)addAnimation:(GCAnimation *)animation;
+- (void)addAnimation:(GCAnimation *)animation;
 
 - (void)setScale:(CGFloat)scale;
 - (void)setOpacity:(CGFloat)opacity;
