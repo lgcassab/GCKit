@@ -12,6 +12,7 @@ static GCDismissBlock _dismissBlock;
 static GCCancelBlock _cancelBlock;
 static GCPhotoPickedBlock _photoPickedBlock;
 static UIViewController *_presentVC;
+static BOOL useFrontCamera;
 
 @implementation UIActionSheet (GCKit)
 
@@ -118,6 +119,8 @@ static UIViewController *_presentVC;
     _presentVC = presentVC;
     
     int cancelButtonIndex = -1;
+	
+	useFrontCamera = NO;
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:title 
                                                              delegate:(id)[self class]
@@ -149,6 +152,54 @@ static UIViewController *_presentVC;
         [actionSheet showFromTabBar:(UITabBar*) view];
     
     if([view isKindOfClass:[UIBarButtonItem class]])
+        [actionSheet showFromBarButtonItem:(UIBarButtonItem*) view animated:YES];
+    
+}
+
++ (void) photoPickerWithTitle:(NSString *) title
+			   useFrontCamera:(BOOL)frontCamera
+                   showInView:(UIView *)view
+                    presentVC:(UIViewController *)presentVC
+                onPhotoPicked:(GCPhotoPickedBlock) photoPicked
+                     onCancel:(GCCancelBlock) cancelled {
+	
+    _cancelBlock  = [cancelled copy];
+    _photoPickedBlock  = [photoPicked copy];
+    _presentVC = presentVC;
+    
+    int cancelButtonIndex = -1;
+	
+	useFrontCamera = frontCamera;
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:title
+                                                             delegate:(id)[self class]
+													cancelButtonTitle:nil
+											   destructiveButtonTitle:nil
+													otherButtonTitles:nil];
+    
+	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+		[actionSheet addButtonWithTitle:NSLocalizedString(@"Câmera", @"")];
+		cancelButtonIndex ++;
+	}
+    
+	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+		[actionSheet addButtonWithTitle:NSLocalizedString(@"Fotos", @"")];
+		cancelButtonIndex ++;
+	}
+    
+	[actionSheet addButtonWithTitle:NSLocalizedString(@"Cancelar", @"")];
+	cancelButtonIndex ++;
+    
+    actionSheet.tag = kPhotoActionSheetTag;
+	actionSheet.cancelButtonIndex = cancelButtonIndex;
+    
+	if ([view isKindOfClass:[UIView class]])
+        [actionSheet showInView:view];
+    
+    if ([view isKindOfClass:[UITabBar class]])
+        [actionSheet showFromTabBar:(UITabBar*) view];
+    
+    if ([view isKindOfClass:[UIBarButtonItem class]])
         [actionSheet showFromBarButtonItem:(UIBarButtonItem*) view animated:YES];
     
 }
@@ -191,7 +242,13 @@ static UIViewController *_presentVC;
             if(buttonIndex == 1) {                
                 picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
             } else if(buttonIndex == 2) {
-                picker.sourceType = UIImagePickerControllerSourceTypeCamera;;
+                picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+				
+				if (useFrontCamera) {
+					if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront]) {
+						[picker setCameraDevice:UIImagePickerControllerCameraDeviceFront];
+					}
+				}
             }
             
 			[_presentVC presentViewController:picker animated:YES completion:nil];

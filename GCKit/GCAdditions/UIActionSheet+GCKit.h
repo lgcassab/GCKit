@@ -44,4 +44,11 @@
                 onPhotoPicked:(GCPhotoPickedBlock) photoPicked
                      onCancel:(GCCancelBlock) cancelled;
 
++ (void) photoPickerWithTitle:(NSString *) title
+			   useFrontCamera:(BOOL)frontCamera
+                   showInView:(UIView *) view
+                    presentVC:(UIViewController *)presentVC
+                onPhotoPicked:(GCPhotoPickedBlock) photoPicked
+                     onCancel:(GCCancelBlock) cancelled;
+
 @end
