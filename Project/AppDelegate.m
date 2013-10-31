@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "GCKit.h"
+#import "MainMenuVC.h"
+
+@interface AppDelegate ( )
+@property (nonatomic, strong) UINavigationController *navigationController;
+@end
 
 @implementation AppDelegate
 
@@ -15,6 +20,13 @@
 	
 	// Initializing GCKit.
 	[GCKit sharedKit];
+	
+	MainMenuVC *mainMenu = [MainMenuVC new];
+	_navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenu];
+	
+	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[_window setRootViewController:_navigationController];
+	[_window makeKeyAndVisible];
 	
     return YES;
 }

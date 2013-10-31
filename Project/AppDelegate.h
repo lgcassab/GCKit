@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class MainMenuVC;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
 	
 }

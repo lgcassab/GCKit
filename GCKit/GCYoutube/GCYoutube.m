@@ -11,6 +11,8 @@
 #import "NSString+GCKit.h"
 #import "NSObject+GCKit.h"
 
+// https://developers.google.com/youtube/player_parameters?hl=pt-br
+
 @interface GCYoutube ( )
 @property (nonatomic, retain) UIWebView *webView;
 @property (nonatomic, retain) UIActivityIndicatorView *activityIndicator;
@@ -134,7 +136,7 @@
     <meta name = \"viewport\" content = \"initial-scale = 1.0, user-scalable = no, width = \"%f\"/>\
     </head>\
     <body style=\"background:#000000;margin-top:0px;margin-left:0px\">\
-    <iframe width= \"%f\" height=\"%f\" src = \"http://www.youtube.com/embed/%@?showinfo=0\" frameborder=\"0\" allowfullscreen>\
+    <iframe width= \"%f\" height=\"%f\" src = \"http://www.youtube.com/embed/%@?showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen>\
     </iframe></div>\
     </body>\
     </html>";

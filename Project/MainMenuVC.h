@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainMenuVC.h
 //  GCKit
 //
 //  Created by Gustavo Cassab on 16/10/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainMenuVC : UITableViewController {
+	
+}
 
 @end

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */; };
-		CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */; };
+		CE27CBAC18226D2C00BAAEBE /* GCActionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27CBAB18226D2C00BAAEBE /* GCActionsVC.m */; };
+		CE27CBAF18226D3300BAAEBE /* GCAdditionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27CBAE18226D3300BAAEBE /* GCAdditionsVC.m */; };
 		CE299E14181420C200D51AF8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6AFC6518141E2200909668 /* libxml2.dylib */; };
 		CE299E291814266A00D51AF8 /* UITextField+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E281814266A00D51AF8 /* UITextField+GCKit.m */; };
 		CE299E2A1814266A00D51AF8 /* UITextField+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E281814266A00D51AF8 /* UITextField+GCKit.m */; };
@@ -93,7 +93,7 @@
 		CEC70EF0180EAE04001DB5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC70EEE180EAE04001DB5B0 /* InfoPlist.strings */; };
 		CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70EF1180EAE04001DB5B0 /* GCKitTests.m */; };
 		CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70EFC180EAE75001DB5B0 /* AppDelegate.m */; };
-		CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70EFF180EAE7E001DB5B0 /* ViewController.m */; };
+		CEC70F00180EAE7E001DB5B0 /* MainMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70EFF180EAE7E001DB5B0 /* MainMenuVC.m */; };
 		CEC70F02180EAE94001DB5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC70F01180EAE94001DB5B0 /* main.m */; };
 		CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F03180EAEC3001DB5B0 /* Images.xcassets */; };
 		CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC70F0B180EAEE2001DB5B0 /* InfoPlist.strings */; };
@@ -151,6 +151,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE27CBAA18226D2C00BAAEBE /* GCActionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionsVC.h; sourceTree = "<group>"; };
+		CE27CBAB18226D2C00BAAEBE /* GCActionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionsVC.m; sourceTree = "<group>"; };
+		CE27CBAD18226D3300BAAEBE /* GCAdditionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAdditionsVC.h; sourceTree = "<group>"; };
+		CE27CBAE18226D3300BAAEBE /* GCAdditionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAdditionsVC.m; sourceTree = "<group>"; };
 		CE299E271814266A00D51AF8 /* UITextField+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+GCKit.h"; sourceTree = "<group>"; };
 		CE299E281814266A00D51AF8 /* UITextField+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+GCKit.m"; sourceTree = "<group>"; };
 		CE299E2C181426EB00D51AF8 /* GCTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTextFieldDelegate.h; sourceTree = "<group>"; };
@@ -239,12 +243,10 @@
 		CEC70EF1180EAE04001DB5B0 /* GCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCKitTests.m; sourceTree = "<group>"; };
 		CEC70EFB180EAE75001DB5B0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Project/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		CEC70EFC180EAE75001DB5B0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Project/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		CEC70EFE180EAE7E001DB5B0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Project/ViewController.h; sourceTree = SOURCE_ROOT; };
-		CEC70EFF180EAE7E001DB5B0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Project/ViewController.m; sourceTree = SOURCE_ROOT; };
+		CEC70EFE180EAE7E001DB5B0 /* MainMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuVC.h; path = Project/MainMenuVC.h; sourceTree = SOURCE_ROOT; };
+		CEC70EFF180EAE7E001DB5B0 /* MainMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuVC.m; path = Project/MainMenuVC.m; sourceTree = SOURCE_ROOT; };
 		CEC70F01180EAE94001DB5B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Project/main.m; sourceTree = SOURCE_ROOT; };
 		CEC70F03180EAEC3001DB5B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Project/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		CEC70F06180EAED6001DB5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Project/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
-		CEC70F08180EAED6001DB5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Project/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		CEC70F0C180EAEE2001DB5B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Project/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		CEC70F0E180EAEEE001DB5B0 /* GCKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GCKit-Info.plist"; path = "Project/GCKit-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEC70F0F180EAEEE001DB5B0 /* GCKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GCKit-Prefix.pch"; path = "Project/GCKit-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -317,6 +319,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE27CB9C1822687B00BAAEBE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEC70EFB180EAE75001DB5B0 /* AppDelegate.h */,
+				CEC70EFC180EAE75001DB5B0 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CE27CB9D1822687D00BAAEBE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE27CB9F18226C7800BAAEBE /* MainMenuVC */,
+				CE27CBA918226CA000BAAEBE /* GCActionsVC */,
+				CE27CBA818226C9E00BAAEBE /* GCAdditionsVC */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE27CB9E1822689600BAAEBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC70F03180EAEC3001DB5B0 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CE27CB9F18226C7800BAAEBE /* MainMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEC70EFE180EAE7E001DB5B0 /* MainMenuVC.h */,
+				CEC70EFF180EAE7E001DB5B0 /* MainMenuVC.m */,
+			);
+			name = MainMenuVC;
+			sourceTree = "<group>";
+		};
+		CE27CBA818226C9E00BAAEBE /* GCAdditionsVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE27CBAD18226D3300BAAEBE /* GCAdditionsVC.h */,
+				CE27CBAE18226D3300BAAEBE /* GCAdditionsVC.m */,
+			);
+			name = GCAdditionsVC;
+			sourceTree = "<group>";
+		};
+		CE27CBA918226CA000BAAEBE /* GCActionsVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE27CBAA18226D2C00BAAEBE /* GCActionsVC.h */,
+				CE27CBAB18226D2C00BAAEBE /* GCActionsVC.m */,
+			);
+			name = GCActionsVC;
+			sourceTree = "<group>";
+		};
 		CE299E2B181426EB00D51AF8 /* GCTextFieldDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,11 +509,9 @@
 		CE946CE1180FF889002E2225 /* GCAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */,
-				CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */,
-				CE299E3918142B0500D51AF8 /* GCBlockAdditions.h */,
 				CEE1565E1812DEA100BBD889 /* CLPlacemark+GCKit.h */,
 				CEE1565F1812DEA100BBD889 /* CLPlacemark+GCKit.m */,
+				CE299E3918142B0500D51AF8 /* GCBlockAdditions.h */,
 				CEE1566E1812E5DA00BBD889 /* NSArray+GCKit.h */,
 				CEE1566F1812E5DA00BBD889 /* NSArray+GCKit.m */,
 				CE6AFC4E18141AC900909668 /* NSDate+GCKit.h */,
@@ -470,6 +524,8 @@
 				CE946CE3180FF889002E2225 /* NSString+GCKit.m */,
 				CEE1563A1812DB2300BBD889 /* NSTimer+GCKit.h */,
 				CEE1563B1812DB2300BBD889 /* NSTimer+GCKit.m */,
+				CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */,
+				CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */,
 				CE299E3518142A5D00D51AF8 /* UIAlertView+GCKit.h */,
 				CE299E3618142A5D00D51AF8 /* UIAlertView+GCKit.m */,
 				CEE156361812DADE00BBD889 /* UIButton+GCKit.h */,
@@ -537,13 +593,9 @@
 		CEC70EC9180EAE04001DB5B0 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				CEC70EFB180EAE75001DB5B0 /* AppDelegate.h */,
-				CEC70EFC180EAE75001DB5B0 /* AppDelegate.m */,
-				CEC70EFE180EAE7E001DB5B0 /* ViewController.h */,
-				CEC70EFF180EAE7E001DB5B0 /* ViewController.m */,
-				CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */,
-				CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */,
-				CEC70F03180EAEC3001DB5B0 /* Images.xcassets */,
+				CE27CB9D1822687D00BAAEBE /* ViewControllers */,
+				CE27CB9C1822687B00BAAEBE /* AppDelegate */,
+				CE27CB9E1822689600BAAEBE /* Resources */,
 				CEC70ECA180EAE04001DB5B0 /* Supporting Files */,
 			);
 			name = Project;
@@ -716,8 +768,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE14A44518107C8100453872 /* Main_iPad.storyboard in Resources */,
-				CE14A44618107C8100453872 /* Main_iPhone.storyboard in Resources */,
 				CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */,
 				CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */,
 			);
@@ -751,7 +801,7 @@
 				CE6AFC5718141B9500909668 /* GCEncrypt.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
-				CEC70F00180EAE7E001DB5B0 /* ViewController.m in Sources */,
+				CEC70F00180EAE7E001DB5B0 /* MainMenuVC.m in Sources */,
 				CE6AFC4A1814195400909668 /* GCAnimation.m in Sources */,
 				CE93D97B1813F6C60000B5C8 /* GCActionRotateTo.m in Sources */,
 				CE93D9751813F6C60000B5C8 /* GCActionMoveBy.m in Sources */,
@@ -764,12 +814,14 @@
 				CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
 				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CE6AFC421814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
+				CE27CBAF18226D3300BAAEBE /* GCAdditionsVC.m in Sources */,
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
 				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
 				CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
+				CE27CBAC18226D2C00BAAEBE /* GCActionsVC.m in Sources */,
 				CE6AFC3C1814133000909668 /* GCEffectShadow.m in Sources */,
 				CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
@@ -883,22 +935,6 @@
 				CEC70EEF180EAE04001DB5B0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CEC70F05180EAED6001DB5B0 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEC70F06180EAED6001DB5B0 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		CEC70F07180EAED6001DB5B0 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEC70F08180EAED6001DB5B0 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		CEC70F0B180EAEE2001DB5B0 /* InfoPlist.strings */ = {
