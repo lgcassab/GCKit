@@ -95,7 +95,7 @@
     \
     function onYouTubePlayerAPIReady() {\
     ytPlayer = new YT.Player('media_area', {height: '%f', width: '%f', videoId: '%@',\
-    playerVars: {'showinfo': 0},\
+    playerVars: {'showinfo': 0, 'rel': 0},\
     events: {'onReady': onPlayerReady}\
     });\
     }\
