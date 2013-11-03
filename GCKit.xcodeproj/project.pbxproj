@@ -217,6 +217,10 @@
 		CEF228D1182676C800A37887 /* GCAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */; };
 		CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
 		CEF8589B181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
+		CEFDB21B1826B05E0090D341 /* GCParserCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB2141826B05E0090D341 /* GCParserCSV.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEFDB21C1826B05E0090D341 /* GCWriterCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB2161826B05E0090D341 /* GCWriterCSV.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEFDB21D1826B05E0090D341 /* NSArray+GCCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB2181826B05E0090D341 /* NSArray+GCCSVAdditions.m */; };
+		CEFDB21E1826B05E0090D341 /* NSString+GCCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB21A1826B05E0090D341 /* NSString+GCCSVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -500,6 +504,15 @@
 		CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertTableViewCell.m; sourceTree = "<group>"; };
 		CEF85898181412BC004D9360 /* GCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKeychain.h; sourceTree = "<group>"; };
 		CEF85899181412BC004D9360 /* GCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKeychain.m; sourceTree = "<group>"; };
+		CEFDB2121826B05E0090D341 /* GCCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCSV.h; sourceTree = "<group>"; };
+		CEFDB2131826B05E0090D341 /* GCParserCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCParserCSV.h; sourceTree = "<group>"; };
+		CEFDB2141826B05E0090D341 /* GCParserCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCParserCSV.m; sourceTree = "<group>"; };
+		CEFDB2151826B05E0090D341 /* GCWriterCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWriterCSV.h; sourceTree = "<group>"; };
+		CEFDB2161826B05E0090D341 /* GCWriterCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWriterCSV.m; sourceTree = "<group>"; };
+		CEFDB2171826B05E0090D341 /* NSArray+GCCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GCCSVAdditions.h"; sourceTree = "<group>"; };
+		CEFDB2181826B05E0090D341 /* NSArray+GCCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GCCSVAdditions.m"; sourceTree = "<group>"; };
+		CEFDB2191826B05E0090D341 /* NSString+GCCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GCCSVAdditions.h"; sourceTree = "<group>"; };
+		CEFDB21A1826B05E0090D341 /* NSString+GCCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GCCSVAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1077,6 +1090,7 @@
 				CE4F8626182688A7003A2703 /* GCImageView */,
 				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
+				CEFDB2111826B05E0090D341 /* GCParserCSV */,
 				CE6AFC6018141D7E00909668 /* GCParserXML */,
 				CE4F86D3182699F9003A2703 /* GCPickers */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
@@ -1155,6 +1169,22 @@
 				CEF85899181412BC004D9360 /* GCKeychain.m */,
 			);
 			path = GCKeychain;
+			sourceTree = "<group>";
+		};
+		CEFDB2111826B05E0090D341 /* GCParserCSV */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDB2121826B05E0090D341 /* GCCSV.h */,
+				CEFDB2131826B05E0090D341 /* GCParserCSV.h */,
+				CEFDB2141826B05E0090D341 /* GCParserCSV.m */,
+				CEFDB2151826B05E0090D341 /* GCWriterCSV.h */,
+				CEFDB2161826B05E0090D341 /* GCWriterCSV.m */,
+				CEFDB2171826B05E0090D341 /* NSArray+GCCSVAdditions.h */,
+				CEFDB2181826B05E0090D341 /* NSArray+GCCSVAdditions.m */,
+				CEFDB2191826B05E0090D341 /* NSString+GCCSVAdditions.h */,
+				CEFDB21A1826B05E0090D341 /* NSString+GCCSVAdditions.m */,
+			);
+			path = GCParserCSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1300,6 +1330,7 @@
 				CE6AFC3E1814133000909668 /* GCEffectShadowElliptical.m in Sources */,
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CE4F86B018269028003A2703 /* GCTableCell.m in Sources */,
+				CEFDB21E1826B05E0090D341 /* NSString+GCCSVAdditions.m in Sources */,
 				CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
 				CE6AFC6318141D7E00909668 /* GCParserXML.m in Sources */,
@@ -1346,6 +1377,7 @@
 				CE946CE8180FF889002E2225 /* GCKit.m in Sources */,
 				CE6AFC3A1814133000909668 /* GCEffectGradient.m in Sources */,
 				CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */,
+				CEFDB21C1826B05E0090D341 /* GCWriterCSV.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
@@ -1369,9 +1401,11 @@
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
 				CE001CA318269D3D0008AC62 /* GCEgoImageButton.m in Sources */,
 				CE81036218267E71000410EB /* GCActionsVC.m in Sources */,
+				CEFDB21D1826B05E0090D341 /* NSArray+GCCSVAdditions.m in Sources */,
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,
 				CE6AFC401814133000909668 /* GCEffectShadowPaperCurl.m in Sources */,
 				CE299E3718142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */,
+				CEFDB21B1826B05E0090D341 /* GCParserCSV.m in Sources */,
 				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
 				CE4F864218268A73003A2703 /* GCDownloadCache.m in Sources */,

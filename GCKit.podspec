@@ -96,9 +96,10 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCFileManager/*.{h,m}'
   end
   
-	s.subspec 'GCHTTPRequest' do |ss|
+  s.subspec 'GCHTTPRequest' do |ss|
     ss.ios.public_header_files = 'GCKit/GCHTTPRequest/*.h'
     ss.ios.source_files = 'GCKit/GCHTTPRequest/*.{h,m}'
+	ss.requires_arc = no
   end
 
   s.subspec 'GCImageView' do |ss|
@@ -116,13 +117,19 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCMailComposer/*.{h,m}'
   end
   
-  s.subspec 'GCParserXML' do |ss|
-    ss.ios.public_header_files = 'GCKit/GCParserXML/*.h'
-    ss.ios.source_files = 'GCKit/GCParserXML/*.{h,m}'
-	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2' }
+  s.subspec 'GCParserCSV' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCParserCSV/*.h'
+    ss.ios.source_files = 'GCKit/GCParserCSV/*.{h,m}'
+	ss.requires_arc = no
   end
   
   s.subspec 'GCParserXML' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCParserXML/*.h'
+    ss.ios.source_files = 'GCKit/GCParserXML/*.{h,m}'
+	ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2' }
+  end
+  
+  s.subspec 'GCPickers' do |ss|
     ss.ios.public_header_files = 'GCKit/GCPickers/*.h'
     ss.ios.source_files = 'GCKit/GCPickers/*.{h,m}'
   end

@@ -97,6 +97,9 @@
 // GCPopController
 #import "GCPopController.h"
 
+// GCParserCSV
+#import "GCCSV.h"
+
 // GCHTTPRequest
 #import "GCFormDataRequest.h"
 
