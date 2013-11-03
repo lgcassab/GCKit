@@ -58,10 +58,10 @@
                  labelWidth:w 
        labelBackgroundColor:[UIColor clearColor] 
              labelTextColor:[UIColor blackColor]
-               textAligment:UITextAlignmentLeft];
+               textAligment:NSTextAlignmentLeft];
 }
 
--(void)addColumnWithText:(NSString *)text labelWidth:(NSUInteger)w labelBackgroundColor:(UIColor *)backColor labelTextColor:(UIColor *)tColor textAligment:(UITextAlignment)tAligment {
+-(void)addColumnWithText:(NSString *)text labelWidth:(NSUInteger)w labelBackgroundColor:(UIColor *)backColor labelTextColor:(UIColor *)tColor textAligment:(NSTextAlignment)tAligment {
 
     CGSize contentViewSize = self.contentView.bounds.size;
     CGFloat h = contentViewSize.height;

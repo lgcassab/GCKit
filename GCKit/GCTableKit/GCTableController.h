@@ -92,7 +92,7 @@ typedef enum {
 
 -(void)textFieldWillBecomeFirstResponder:(UITextField *)textField cell:(GCTableCell *)cell indexPath:(NSIndexPath *)indexPath;
 -(void)textFieldWillResignFirstResponder:(UITextField *)textField cell:(GCTableCell *)cell indexPath:(NSIndexPath *)indexPath;
--(void)textField:(UITextField *)textField cell:(GCTableCell *)cell indexPath:(NSIndexPath *)indexPath;
+//-(void)textField:(UITextField *)textField cell:(GCTableCell *)cell indexPath:(NSIndexPath *)indexPath;
 -(BOOL)textField:(UITextField *)textField
             cell:(GCTableCell *)cell
        indexPath:(NSIndexPath *)indexPath

@@ -28,11 +28,14 @@
 - (void)startWithTarget:(id)aTarget {
 	[super startWithTarget:aTarget];
 	
+	#pragma clang diagnostic push
+	#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 	if (funcTarget) {
 		if ([funcTarget respondsToSelector:funcSelector]) {
 			[funcTarget performSelector:funcSelector];
 		}
 	}
+	#pragma clang diagnostic pop
 }
 
 @end

@@ -15,6 +15,7 @@
 
 - (void)startWithTarget:(id)target;
 - (void)stop;
+- (void)actionFinished;
 
 @end
 

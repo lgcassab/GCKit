@@ -18,7 +18,7 @@
 +(id)cell;
 
 -(void)addColumnWithText:(NSString *)text labelWidth:(NSUInteger)w;
--(void)addColumnWithText:(NSString *)text labelWidth:(NSUInteger)w labelBackgroundColor:(UIColor *)backColor labelTextColor:(UIColor *)tColor textAligment:(UITextAlignment)tAligment;
+-(void)addColumnWithText:(NSString *)text labelWidth:(NSUInteger)w labelBackgroundColor:(UIColor *)backColor labelTextColor:(UIColor *)tColor textAligment:(NSTextAlignment)tAligment;
 -(UILabel *)labelInColumn:(NSUInteger)column;
 
 -(NSArray *)labels;

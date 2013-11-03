@@ -20,3 +20,8 @@
 + (GCTextFieldDelegate *)sharedDelegate;
 
 @end
+
+@protocol GCTextFieldDelegate <NSObject>
+@optional
+- (void)textFieldDidChange:(UITextField *)textField;
+@end

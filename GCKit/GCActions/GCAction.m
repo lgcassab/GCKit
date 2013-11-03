@@ -28,7 +28,7 @@
 	_sequenceDelegate = nil;
 }
 
--(void)actionFinished {
+- (void)actionFinished {
 	if (_sequenceDelegate != nil) {
 		if ([_sequenceDelegate respondsToSelector:@selector(lastActionFinished)]) {
 			[_sequenceDelegate performSelector:@selector(lastActionFinished)];
