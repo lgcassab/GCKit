@@ -104,7 +104,7 @@
 #import "GCFormDataRequest.h"
 
 // GCEgoImageView
-//#import "GCEgoImageView.h"
+#import "GCEgoImageView.h"
 
 // GCParserXML
 #import "GCParserXML.h"
