@@ -112,6 +112,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCPopController/*.{h,m}'
   end
   
+  s.subspec 'GCProgressHud' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCProgressHud/*.h'
+    ss.ios.source_files = 'GCKit/GCProgressHud/*.{h,m}'
+  end
+  
   s.subspec 'GCReachability' do |ss|
     ss.ios.public_header_files = 'GCKit/GCReachability/*.h'
     ss.ios.source_files = 'GCKit/GCReachability/*.{h,m}'

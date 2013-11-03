@@ -85,7 +85,7 @@
 #import "GCTextFieldDelegate.h"
 
 // GCProgressHud
-//#import "GCProgressHud.h"
+#import "GCProgressHud.h"
 
 // Criptografia
 #import "NSData+Base64.h"
