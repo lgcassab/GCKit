@@ -68,7 +68,7 @@
 //#import "GCTabBarController.h"
 
 // GCDatabase
-//#import "GCDatabase.h"
+#import "GCDatabase.h"
 
 // Visual
 //#import "GCTableCellBadgeView.h"

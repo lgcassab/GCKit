@@ -61,6 +61,11 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'GCKit/GCBadgeView/*.{h,m}'
   end
   
+  s.subspec 'GCDatabase' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCDatabase/*.h'
+    ss.ios.source_files = 'GCKit/GCDatabase/*.{h,m}'
+  end
+  
   s.subspec 'GCEffects' do |ss|
     ss.ios.public_header_files = 'GCKit/GCEffects/*.h'
     ss.ios.source_files = 'GCKit/GCEffects/*.{h,m}'
