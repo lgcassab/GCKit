@@ -237,8 +237,6 @@ static NSCache *_imageCache = nil;
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     
-	GCLog(@"Failed to load image at %@, %@", _url, [error localizedDescription]);
-	
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10.0];
 	[[NSURLCache sharedURLCache] removeCachedResponseForRequest:request];
 	

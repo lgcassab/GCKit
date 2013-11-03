@@ -64,7 +64,7 @@
 //#import "GCPickerDateTime.h"
 
 // Controllers
-//#import "GCTableController.h"
+#import "GCTableController.h"
 //#import "GCTabBarController.h"
 
 // GCDatabase
