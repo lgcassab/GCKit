@@ -17,6 +17,7 @@
 		CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
+		CE4F8629182688A7003A2703 /* GCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F8628182688A7003A2703 /* GCImageView.m */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC2A1814133000909668 /* GCEffectBorder.m */; };
@@ -174,6 +175,8 @@
 		CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+GCKit.h"; sourceTree = "<group>"; };
 		CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+GCKit.m"; sourceTree = "<group>"; };
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		CE4F8627182688A7003A2703 /* GCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageView.h; sourceTree = "<group>"; };
+		CE4F8628182688A7003A2703 /* GCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageView.m; sourceTree = "<group>"; };
 		CE6AFC271814133000909668 /* GCEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffect.h; sourceTree = "<group>"; };
 		CE6AFC281814133000909668 /* GCEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffect.m; sourceTree = "<group>"; };
 		CE6AFC291814133000909668 /* GCEffectBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffectBorder.h; sourceTree = "<group>"; };
@@ -420,6 +423,15 @@
 				CE39467C18101657009D10A6 /* NSStringTests.m */,
 			);
 			name = GCAdditions;
+			sourceTree = "<group>";
+		};
+		CE4F8626182688A7003A2703 /* GCImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F8627182688A7003A2703 /* GCImageView.h */,
+				CE4F8628182688A7003A2703 /* GCImageView.m */,
+			);
+			path = GCImageView;
 			sourceTree = "<group>";
 		};
 		CE6AFC261814133000909668 /* GCEffects */ = {
@@ -679,6 +691,7 @@
 				CE6AFC261814133000909668 /* GCEffects */,
 				CE6AFC5218141B9500909668 /* GCEncrypt */,
 				CE93D9831814033B0000B5C8 /* GCFileManager */,
+				CE4F8626182688A7003A2703 /* GCImageView */,
 				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CE6AFC6018141D7E00909668 /* GCParserXML */,
@@ -893,6 +906,7 @@
 				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
 				CEC8863F1826795C00FA8FDA /* GCDatabaseRow.m in Sources */,
 				CE6AFC3C1814133000909668 /* GCEffectShadow.m in Sources */,
+				CE4F8629182688A7003A2703 /* GCImageView.m in Sources */,
 				CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,

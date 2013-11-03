@@ -80,7 +80,12 @@ Pod::Spec.new do |s|
     ss.ios.public_header_files = 'GCKit/GCFileManager/*.h'
     ss.ios.source_files = 'GCKit/GCFileManager/*.{h,m}'
   end
-  
+
+  s.subspec 'GCImageView' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCImageView/*.h'
+    ss.ios.source_files = 'GCKit/GCImageView/*.{h,m}'
+  end
+
   s.subspec 'GCKeychain' do |ss|
     ss.ios.public_header_files = 'GCKit/GCKeychain/*.h'
     ss.ios.source_files = 'GCKit/GCKeychain/*.{h,m}'

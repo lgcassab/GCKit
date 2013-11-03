@@ -78,7 +78,7 @@
 
 // Diversos
 //#import "GCBarButtonImageItem.h"
-//#import "GCImageView.h"
+#import "GCImageView.h"
 //#import "GCReachability.h"
 //#import "GCAlertView.h"
 #import "GCAlertTableView.h"
