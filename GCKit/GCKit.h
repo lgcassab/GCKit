@@ -65,7 +65,7 @@
 
 // Controllers
 #import "GCTableController.h"
-//#import "GCTabBarController.h"
+#import "GCTabBarController.h"
 
 // GCDatabase
 #import "GCDatabase.h"

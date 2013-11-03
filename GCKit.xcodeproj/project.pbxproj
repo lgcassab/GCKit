@@ -71,6 +71,7 @@
 		CE4F86BE18269028003A2703 /* GCTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F86AA18269028003A2703 /* GCTableController.m */; };
 		CE4F86BF18269028003A2703 /* GCTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F86AC18269028003A2703 /* GCTableSection.m */; };
 		CE4F86C018269028003A2703 /* GCTableSectionExpandable.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F86AE18269028003A2703 /* GCTableSectionExpandable.m */; };
+		CE4F86C4182697A0003A2703 /* GCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F86C3182697A0003A2703 /* GCTabBarController.m */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC2A1814133000909668 /* GCEffectBorder.m */; };
@@ -313,6 +314,8 @@
 		CE4F86AC18269028003A2703 /* GCTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTableSection.m; sourceTree = "<group>"; };
 		CE4F86AD18269028003A2703 /* GCTableSectionExpandable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTableSectionExpandable.h; sourceTree = "<group>"; };
 		CE4F86AE18269028003A2703 /* GCTableSectionExpandable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTableSectionExpandable.m; sourceTree = "<group>"; };
+		CE4F86C2182697A0003A2703 /* GCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTabBarController.h; sourceTree = "<group>"; };
+		CE4F86C3182697A0003A2703 /* GCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTabBarController.m; sourceTree = "<group>"; };
 		CE6AFC271814133000909668 /* GCEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffect.h; sourceTree = "<group>"; };
 		CE6AFC281814133000909668 /* GCEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffect.m; sourceTree = "<group>"; };
 		CE6AFC291814133000909668 /* GCEffectBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffectBorder.h; sourceTree = "<group>"; };
@@ -688,6 +691,15 @@
 			path = GCTableKit;
 			sourceTree = "<group>";
 		};
+		CE4F86C1182697A0003A2703 /* GCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F86C2182697A0003A2703 /* GCTabBarController.h */,
+				CE4F86C3182697A0003A2703 /* GCTabBarController.m */,
+			);
+			path = GCTabBarController;
+			sourceTree = "<group>";
+		};
 		CE6AFC261814133000909668 /* GCEffects */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +961,7 @@
 			children = (
 				CE946CE4180FF889002E2225 /* GCKit.h */,
 				CE946CE5180FF889002E2225 /* GCKit.m */,
+				CE4F86C1182697A0003A2703 /* GCTabBarController */,
 				CE93D94E1813F6C60000B5C8 /* GCActions */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
 				CEF228C5182676C800A37887 /* GCAlertTableView */,
@@ -1184,6 +1197,7 @@
 				CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */,
 				CE4F86B318269028003A2703 /* GCTableCellLabelHorizontal3Columns.m in Sources */,
 				CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
+				CE4F86C4182697A0003A2703 /* GCTabBarController.m in Sources */,
 				CE93D9771813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
 				CEC8863D1826795C00FA8FDA /* GCDatabaseRequest.m in Sources */,
 				CE6AFC421814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
