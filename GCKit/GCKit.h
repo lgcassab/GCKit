@@ -73,7 +73,7 @@
 // Visual
 #import "GCTableCellBadgeView.h"
 #import "GCBadgeView.h"
-//#import "GCCustomColoredAccessory.h"
+#import "GCCustomColoredAccessory.h"
 #import "GCSplashVideo.h"
 
 // Diversos
