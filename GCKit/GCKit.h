@@ -59,9 +59,9 @@
 #import "NSTimer+GCKit.h"
 
 // Pickers
-//#import "GCPicker.h"
-//#import "GCPickerDate.h"
-//#import "GCPickerDateTime.h"
+#import "GCPicker.h"
+#import "GCPickerDate.h"
+#import "GCPickerDateTime.h"
 
 // Controllers
 #import "GCTableController.h"
@@ -71,7 +71,7 @@
 #import "GCDatabase.h"
 
 // Visual
-//#import "GCTableCellBadgeView.h"
+#import "GCTableCellBadgeView.h"
 #import "GCBadgeView.h"
 //#import "GCCustomColoredAccessory.h"
 #import "GCSplashVideo.h"

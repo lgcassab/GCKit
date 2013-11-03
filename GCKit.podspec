@@ -107,6 +107,11 @@ Pod::Spec.new do |s|
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2' }
   end
   
+  s.subspec 'GCParserXML' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCPickers/*.h'
+    ss.ios.source_files = 'GCKit/GCPickers/*.{h,m}'
+  end
+  
   s.subspec 'GCPopController' do |ss|
     ss.ios.public_header_files = 'GCKit/GCPopController/*.h'
     ss.ios.source_files = 'GCKit/GCPopController/*.{h,m}'
