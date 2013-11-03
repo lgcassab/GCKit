@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GCBlockAdditions.h"
-//#import "GCAlertView.h"
+#import "GCAlertView.h"
 
 @interface UIAlertView (GCKit) <UIAlertViewDelegate>
 
@@ -30,7 +30,17 @@
 
 #pragma mark - GCAlertView
 
-//+ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration;
-//+ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration completion:(Completion)completion;
++ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration;
++ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration completion:(GCCompletion)completion;
+
+#pragma mark - Alerta de avaliação na AppStore
+
++(void)alertUserReviewWithAppID:(NSString *)appID
+                          title:(NSString *)title
+                        message:(NSString *)message
+               buttonLaterTitle:(NSString *)buttonLaterTitle
+              buttonReviewTitle:(NSString *)buttonReviewTitle
+             buttonDisableTitle:(NSString *)buttonDisableTitle
+                         cicles:(int)cicles;
 
 @end

@@ -66,14 +66,68 @@ static GCCancelBlock _cancelBlock;
 
 #pragma mark - GCAlertView
 
-//+ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration {
-//    GCAlertView *alertView = [GCAlertView alertWithImage:image duration:duration];
-//    return alertView;
-//}
++ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration {
+    GCAlertView *alertView = [GCAlertView alertWithImage:image duration:duration];
+    return alertView;
+}
 
-//+ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration completion:(Completion)completion {
-//    GCAlertView *alertView = [GCAlertView alertWithImage:image duration:duration completion:completion];
-//    return alertView;
-//}
++ (GCAlertView *)alertWithImage:(UIImage *)image duration:(CGFloat )duration completion:(GCCompletion)completion {
+    GCAlertView *alertView = [GCAlertView alertWithImage:image duration:duration completion:completion];
+    return alertView;
+}
+
+#pragma mark - Alerta de avaliação na AppStore
+
++(void)alertUserReviewWithAppID:(NSString *)appID
+                          title:(NSString *)title
+                        message:(NSString *)message
+               buttonLaterTitle:(NSString *)buttonLaterTitle
+              buttonReviewTitle:(NSString *)buttonReviewTitle
+             buttonDisableTitle:(NSString *)buttonDisableTitle
+                         cicles:(int)cicles {
+    
+    BOOL desabilitado = [[NSUserDefaults standardUserDefaults] boolForKey:@"gcUserReviewDisabled"];
+	int count = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
+	count++;
+    
+    if (count == cicles && !desabilitado) {
+        
+        [UIAlertView alertViewWithTitle:title
+                                message:message
+                      cancelButtonTitle:buttonLaterTitle
+                      otherButtonTitles:[NSArray arrayWithObjects:buttonReviewTitle, buttonDisableTitle, nil]
+                              onDismiss:^(int buttonIndex) {
+                                  
+                                  switch (buttonIndex) {
+                                      case 0: {
+                                          
+                                          NSString *url = [NSString stringWithFormat:@"http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&type=Purple+Software",appID];
+                                          
+										  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+                                          
+                                          [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"gcUserReviewDisabled"];
+                                          [[NSUserDefaults standardUserDefaults] synchronize];
+                                          break;
+                                      }
+                                          
+                                      case 1: {
+                                          [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"gcUserReviewDisabled"];
+                                          [[NSUserDefaults standardUserDefaults] synchronize];
+                                          break;
+                                      }
+                                  }
+                                  
+                              }
+                               onCancel:^{}
+         ];
+        
+		[[NSUserDefaults standardUserDefaults] setInteger:0 forKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
+	} else {
+		[[NSUserDefaults standardUserDefaults] setInteger:count forKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
+	}
+	
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 
 @end

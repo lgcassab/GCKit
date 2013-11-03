@@ -50,75 +50,27 @@ static GCKit *sharedKit = nil;
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
-//-(void)showAlertFuncionalidadeNaoImplementada {
-//    [UIAlertView alertViewWithTitle:@"Atenção" message:@"Funcionalidade ainda não implementada"];
-//}
+#pragma mark - Alerts
 
-//-(void)showAlertInternetNotAvailable {
-//    [UIAlertView alertViewWithTitle:@"Atenção" message:@"Acesso a Internet não está disponível"];
-//}
+-(void)showAlertFuncionalidadeNaoImplementada {
+    [UIAlertView alertViewWithTitle:@"Atenção" message:@"Funcionalidade ainda não implementada"];
+}
 
-//-(BOOL)internetConnectionIsAvailable {
-//	
-//	BOOL retorno = YES;
-//	
-//	if ([[GCReachability reachabilityForInternetConnection] currentReachabilityStatus] == GCNotReachable) {
-//		retorno = NO;
-//	}
-//	
-//	return retorno;
-//}
+-(void)showAlertInternetNotAvailable {
+    [UIAlertView alertViewWithTitle:@"Atenção" message:@"Acesso a Internet não está disponível"];
+}
 
+#pragma mark - Reachability
 
-//-(void)alertUserReviewWithAppID:(NSString *)appID
-//                          title:(NSString *)title
-//                        message:(NSString *)message
-//               buttonLaterTitle:(NSString *)buttonLaterTitle
-//              buttonReviewTitle:(NSString *)buttonReviewTitle
-//             buttonDisableTitle:(NSString *)buttonDisableTitle
-//                         cicles:(int)cicles {
-//    
-//    BOOL desabilitado = [[NSUserDefaults standardUserDefaults] boolForKey:@"gcUserReviewDisabled"];
-//	int count = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
-//	count++;
-//    
-//    if (count == cicles && !desabilitado) {
-//        
-//        [UIAlertView alertViewWithTitle:title
-//                                message:message
-//                      cancelButtonTitle:buttonLaterTitle
-//                      otherButtonTitles:[NSArray arrayWithObjects:buttonReviewTitle, buttonDisableTitle, nil]
-//                              onDismiss:^(int buttonIndex) {
-//                                  
-//                                  switch (buttonIndex) {
-//                                      case 0: {
-//                                          
-//                                          NSString *url = [NSString stringWithFormat:@"http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&type=Purple+Software",appID];
-//                                          
-//                                          [self openSiteInSafariWithUrlString:url];
-//                                          
-//                                          [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"gcUserReviewDisabled"];
-//                                          [[NSUserDefaults standardUserDefaults] synchronize];
-//                                          break;
-//                                      }
-//                                          
-//                                      case 1: {
-//                                          [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"gcUserReviewDisabled"];
-//                                          [[NSUserDefaults standardUserDefaults] synchronize];
-//                                          break;
-//                                      }
-//                                  }
-//                                  
-//                              }
-//                               onCancel:^{}
-//         ];
-//        
-//		[[NSUserDefaults standardUserDefaults] setInteger:0 forKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
-//	} else {
-//		[[NSUserDefaults standardUserDefaults] setInteger:count forKey:[NSString stringWithFormat:@"gcUserReviewAppID-%@" , appID]];
-//	}
-//	
-//	[[NSUserDefaults standardUserDefaults] synchronize];
-//}
+-(BOOL)internetConnectionIsAvailable {
+	
+	BOOL retorno = YES;
+	
+	if ([[GCReachability reachabilityForInternetConnection] currentReachabilityStatus] == GCNotReachable) {
+		retorno = NO;
+	}
+	
+	return retorno;
+}
 
 @end

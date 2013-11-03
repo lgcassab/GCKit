@@ -130,16 +130,9 @@
 - (NSString *)appVersion;
 - (void)openSiteInSafariWithUrlString:(NSString *)urlString;
 
-//-(BOOL)internetConnectionIsAvailable;
-//-(void)showAlertFuncionalidadeNaoImplementada;
-//-(void)showAlertInternetNotAvailable;
+-(void)showAlertFuncionalidadeNaoImplementada;
+-(void)showAlertInternetNotAvailable;
 
-//-(void)alertUserReviewWithAppID:(NSString *)appID
-//                          title:(NSString *)title
-//                        message:(NSString *)message
-//               buttonLaterTitle:(NSString *)buttonLaterTitle
-//              buttonReviewTitle:(NSString *)buttonReviewTitle
-//             buttonDisableTitle:(NSString *)buttonDisableTitle
-//                         cicles:(int)cicles;
+-(BOOL)internetConnectionIsAvailable;
 
 @end
