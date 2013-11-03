@@ -50,6 +50,11 @@ Pod::Spec.new do |s|
     ss.ios.public_header_files = 'GCKit/GCAlertTableView/*.h'
     ss.ios.source_files = 'GCKit/GCAlertTableView/*.{h,m}'
   end
+  
+  s.subspec 'GCAlertView' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCAlertView/*.h'
+    ss.ios.source_files = 'GCKit/GCAlertView/*.{h,m}'
+  end
 
   s.subspec 'GCAnimation' do |ss|
     ss.ios.public_header_files = 'GCKit/GCAnimation/*.h'
@@ -59,6 +64,11 @@ Pod::Spec.new do |s|
   s.subspec 'GCBadgeView' do |ss|
     ss.ios.public_header_files = 'GCKit/GCBadgeView/*.h'
     ss.ios.source_files = 'GCKit/GCBadgeView/*.{h,m}'
+  end
+  
+  s.subspec 'GCBarButtonImageItem' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCBarButtonImageItem/*.h'
+    ss.ios.source_files = 'GCKit/GCBarButtonImageItem/*.{h,m}'
   end
   
   s.subspec 'GCDatabase' do |ss|
@@ -150,6 +160,11 @@ Pod::Spec.new do |s|
   s.subspec 'GCTextFieldDelegate' do |ss|
     ss.ios.public_header_files = 'GCKit/GCTextFieldDelegate/*.h'
     ss.ios.source_files = 'GCKit/GCTextFieldDelegate/*.{h,m}'
+  end
+  
+  s.subspec 'GCValidator' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCValidator/*.h'
+    ss.ios.source_files = 'GCKit/GCValidator/*.{h,m}'
   end
   
   s.subspec 'GCYoutube' do |ss|

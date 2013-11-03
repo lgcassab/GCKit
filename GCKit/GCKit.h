@@ -77,10 +77,10 @@
 #import "GCSplashVideo.h"
 
 // Diversos
-//#import "GCBarButtonImageItem.h"
+#import "GCBarButtonImageItem.h"
 #import "GCImageView.h"
 #import "GCReachability.h"
-//#import "GCAlertView.h"
+#import "GCAlertView.h"
 #import "GCAlertTableView.h"
 #import "GCTextFieldDelegate.h"
 
@@ -97,9 +97,6 @@
 // GCPopController
 #import "GCPopController.h"
 
-// GCParserCSV
-//#import "GCCSV.h"
-
 // GCHTTPRequest
 #import "GCFormDataRequest.h"
 
@@ -114,6 +111,9 @@
 
 // GCMailComposer
 #import "GCMailcomposer.h"
+
+// GCValidator
+#import "GCValidator.h"
 
 // GCYoutube
 #import "GCYoutube.h"
@@ -134,8 +134,6 @@
 //-(void)showAlertFuncionalidadeNaoImplementada;
 //-(void)showAlertInternetNotAvailable;
 
-
-
 //-(void)alertUserReviewWithAppID:(NSString *)appID
 //                          title:(NSString *)title
 //                        message:(NSString *)message
@@ -144,12 +142,4 @@
 //             buttonDisableTitle:(NSString *)buttonDisableTitle
 //                         cicles:(int)cicles;
 
-//- (BOOL)validateBirthDate:(NSString *)birthDate;
-//- (BOOL)validateEmail:(NSString *)emailString;
-//- (BOOL)validateCPF:(NSString *)cpf;
-//- (BOOL)validateUrl:(NSString *)url;
-//- (BOOL)validatePhone:(NSString *)phone;
-
 @end
-
-//#define MemoryWarning() [[UIApplication sharedApplication] _performMemoryWarning]
