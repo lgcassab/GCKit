@@ -80,6 +80,11 @@ Pod::Spec.new do |s|
     ss.ios.public_header_files = 'GCKit/GCFileManager/*.h'
     ss.ios.source_files = 'GCKit/GCFileManager/*.{h,m}'
   end
+  
+	s.subspec 'GCHTTPRequest' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCHTTPRequest/*.h'
+    ss.ios.source_files = 'GCKit/GCHTTPRequest/*.{h,m}'
+  end
 
   s.subspec 'GCImageView' do |ss|
     ss.ios.public_header_files = 'GCKit/GCImageView/*.h'
@@ -105,6 +110,11 @@ Pod::Spec.new do |s|
   s.subspec 'GCPopController' do |ss|
     ss.ios.public_header_files = 'GCKit/GCPopController/*.h'
     ss.ios.source_files = 'GCKit/GCPopController/*.{h,m}'
+  end
+  
+  s.subspec 'GCReachability' do |ss|
+    ss.ios.public_header_files = 'GCKit/GCReachability/*.h'
+    ss.ios.source_files = 'GCKit/GCReachability/*.{h,m}'
   end
   
   s.subspec 'GCSplashVideo' do |ss|

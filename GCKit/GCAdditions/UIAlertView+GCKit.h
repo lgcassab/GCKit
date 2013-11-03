@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GCBlockAdditions.h"
-//#import <GCKit/GCAlertView.h>
+//#import "GCAlertView.h"
 
 @interface UIAlertView (GCKit) <UIAlertViewDelegate>
 

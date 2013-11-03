@@ -79,7 +79,7 @@
 // Diversos
 //#import "GCBarButtonImageItem.h"
 #import "GCImageView.h"
-//#import "GCReachability.h"
+#import "GCReachability.h"
 //#import "GCAlertView.h"
 #import "GCAlertTableView.h"
 #import "GCTextFieldDelegate.h"
@@ -101,7 +101,7 @@
 //#import "GCCSV.h"
 
 // GCHTTPRequest
-//#import "GCFormDataRequest.h"
+#import "GCFormDataRequest.h"
 
 // GCEgoImageView
 //#import "GCEgoImageView.h"

@@ -18,6 +18,28 @@
 		CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
 		CE4F8629182688A7003A2703 /* GCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F8628182688A7003A2703 /* GCImageView.m */; };
+		CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864018268A73003A2703 /* GCDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862F18268A73003A2703 /* GCDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864118268A73003A2703 /* GCDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863118268A73003A2703 /* GCDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864218268A73003A2703 /* GCDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863318268A73003A2703 /* GCDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864318268A73003A2703 /* GCFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863518268A73003A2703 /* GCFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864418268A73003A2703 /* GCHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863718268A73003A2703 /* GCHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864518268A73003A2703 /* GCInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863B18268A73003A2703 /* GCInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864618268A73003A2703 /* GCNetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F863D18268A73003A2703 /* GCNetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4F864A18268C46003A2703 /* GCReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F864918268C46003A2703 /* GCReachability.m */; };
+		CE4F864C18268CEF003A2703 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F864B18268CEF003A2703 /* Accounts.framework */; };
+		CE4F864E18268CF4003A2703 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F864D18268CF4003A2703 /* CFNetwork.framework */; };
+		CE4F865018268CFF003A2703 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F864F18268CFF003A2703 /* CoreLocation.framework */; };
+		CE4F865218268D0D003A2703 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865118268D0D003A2703 /* ImageIO.framework */; };
+		CE4F865418268D18003A2703 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865318268D18003A2703 /* libz.dylib */; };
+		CE4F865618268D1E003A2703 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865518268D1E003A2703 /* MediaPlayer.framework */; };
+		CE4F865818268D2A003A2703 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865718268D2A003A2703 /* MessageUI.framework */; };
+		CE4F865A18268D30003A2703 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865918268D30003A2703 /* MobileCoreServices.framework */; };
+		CE4F865C18268D36003A2703 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865B18268D36003A2703 /* OpenGLES.framework */; };
+		CE4F865E18268D3B003A2703 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865D18268D3B003A2703 /* QuartzCore.framework */; };
+		CE4F866018268D41003A2703 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F865F18268D41003A2703 /* SystemConfiguration.framework */; };
+		CE4F866218268D44003A2703 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F866118268D44003A2703 /* Security.framework */; };
+		CE4F866418268D49003A2703 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F866318268D49003A2703 /* Social.framework */; };
 		CE6AFC361814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC371814133000909668 /* GCEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC281814133000909668 /* GCEffect.m */; };
 		CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC2A1814133000909668 /* GCEffectBorder.m */; };
@@ -177,6 +199,41 @@
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
 		CE4F8627182688A7003A2703 /* GCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageView.h; sourceTree = "<group>"; };
 		CE4F8628182688A7003A2703 /* GCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageView.m; sourceTree = "<group>"; };
+		CE4F862B18268A73003A2703 /* GCAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAuthenticationDialog.h; sourceTree = "<group>"; };
+		CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAuthenticationDialog.m; sourceTree = "<group>"; };
+		CE4F862D18268A73003A2703 /* GCCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCacheDelegate.h; sourceTree = "<group>"; };
+		CE4F862E18268A73003A2703 /* GCDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDataCompressor.h; sourceTree = "<group>"; };
+		CE4F862F18268A73003A2703 /* GCDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDataCompressor.m; sourceTree = "<group>"; };
+		CE4F863018268A73003A2703 /* GCDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDataDecompressor.h; sourceTree = "<group>"; };
+		CE4F863118268A73003A2703 /* GCDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDataDecompressor.m; sourceTree = "<group>"; };
+		CE4F863218268A73003A2703 /* GCDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDownloadCache.h; sourceTree = "<group>"; };
+		CE4F863318268A73003A2703 /* GCDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDownloadCache.m; sourceTree = "<group>"; };
+		CE4F863418268A73003A2703 /* GCFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFormDataRequest.h; sourceTree = "<group>"; };
+		CE4F863518268A73003A2703 /* GCFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFormDataRequest.m; sourceTree = "<group>"; };
+		CE4F863618268A73003A2703 /* GCHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHTTPRequest.h; sourceTree = "<group>"; };
+		CE4F863718268A73003A2703 /* GCHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCHTTPRequest.m; sourceTree = "<group>"; };
+		CE4F863818268A73003A2703 /* GCHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CE4F863918268A73003A2703 /* GCHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CE4F863A18268A73003A2703 /* GCInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCInputStream.h; sourceTree = "<group>"; };
+		CE4F863B18268A73003A2703 /* GCInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCInputStream.m; sourceTree = "<group>"; };
+		CE4F863C18268A73003A2703 /* GCNetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkQueue.h; sourceTree = "<group>"; };
+		CE4F863D18268A73003A2703 /* GCNetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetworkQueue.m; sourceTree = "<group>"; };
+		CE4F863E18268A73003A2703 /* GCProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCProgressDelegate.h; sourceTree = "<group>"; };
+		CE4F864818268C46003A2703 /* GCReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCReachability.h; sourceTree = "<group>"; };
+		CE4F864918268C46003A2703 /* GCReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCReachability.m; sourceTree = "<group>"; };
+		CE4F864B18268CEF003A2703 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CE4F864D18268CF4003A2703 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CE4F864F18268CFF003A2703 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE4F865118268D0D003A2703 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CE4F865318268D18003A2703 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CE4F865518268D1E003A2703 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CE4F865718268D2A003A2703 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CE4F865918268D30003A2703 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CE4F865B18268D36003A2703 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CE4F865D18268D3B003A2703 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE4F865F18268D41003A2703 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE4F866118268D44003A2703 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE4F866318268D49003A2703 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CE6AFC271814133000909668 /* GCEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffect.h; sourceTree = "<group>"; };
 		CE6AFC281814133000909668 /* GCEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffect.m; sourceTree = "<group>"; };
 		CE6AFC291814133000909668 /* GCEffectBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffectBorder.h; sourceTree = "<group>"; };
@@ -331,11 +388,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4F866418268D49003A2703 /* Social.framework in Frameworks */,
+				CE4F866218268D44003A2703 /* Security.framework in Frameworks */,
+				CE4F866018268D41003A2703 /* SystemConfiguration.framework in Frameworks */,
+				CE4F865E18268D3B003A2703 /* QuartzCore.framework in Frameworks */,
+				CE4F865C18268D36003A2703 /* OpenGLES.framework in Frameworks */,
+				CE4F865A18268D30003A2703 /* MobileCoreServices.framework in Frameworks */,
+				CE4F865818268D2A003A2703 /* MessageUI.framework in Frameworks */,
+				CE4F865618268D1E003A2703 /* MediaPlayer.framework in Frameworks */,
+				CE4F865418268D18003A2703 /* libz.dylib in Frameworks */,
+				CE4F865218268D0D003A2703 /* ImageIO.framework in Frameworks */,
+				CEC70EC4180EAE04001DB5B0 /* Foundation.framework in Frameworks */,
+				CE4F865018268CFF003A2703 /* CoreLocation.framework in Frameworks */,
+				CEC70EC6180EAE04001DB5B0 /* CoreGraphics.framework in Frameworks */,
+				CE4F864E18268CF4003A2703 /* CFNetwork.framework in Frameworks */,
+				CE4F864C18268CEF003A2703 /* Accounts.framework in Frameworks */,
 				CE81036718267EA3000410EB /* libsqlite3.dylib in Frameworks */,
 				CE6AFC6618141E2200909668 /* libxml2.dylib in Frameworks */,
-				CEC70EC6180EAE04001DB5B0 /* CoreGraphics.framework in Frameworks */,
 				CEC70EC8180EAE04001DB5B0 /* UIKit.framework in Frameworks */,
-				CEC70EC4180EAE04001DB5B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +502,42 @@
 				CE4F8628182688A7003A2703 /* GCImageView.m */,
 			);
 			path = GCImageView;
+			sourceTree = "<group>";
+		};
+		CE4F862A18268A73003A2703 /* GCHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F862B18268A73003A2703 /* GCAuthenticationDialog.h */,
+				CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */,
+				CE4F862D18268A73003A2703 /* GCCacheDelegate.h */,
+				CE4F862E18268A73003A2703 /* GCDataCompressor.h */,
+				CE4F862F18268A73003A2703 /* GCDataCompressor.m */,
+				CE4F863018268A73003A2703 /* GCDataDecompressor.h */,
+				CE4F863118268A73003A2703 /* GCDataDecompressor.m */,
+				CE4F863218268A73003A2703 /* GCDownloadCache.h */,
+				CE4F863318268A73003A2703 /* GCDownloadCache.m */,
+				CE4F863418268A73003A2703 /* GCFormDataRequest.h */,
+				CE4F863518268A73003A2703 /* GCFormDataRequest.m */,
+				CE4F863618268A73003A2703 /* GCHTTPRequest.h */,
+				CE4F863718268A73003A2703 /* GCHTTPRequest.m */,
+				CE4F863818268A73003A2703 /* GCHTTPRequestConfig.h */,
+				CE4F863918268A73003A2703 /* GCHTTPRequestDelegate.h */,
+				CE4F863A18268A73003A2703 /* GCInputStream.h */,
+				CE4F863B18268A73003A2703 /* GCInputStream.m */,
+				CE4F863C18268A73003A2703 /* GCNetworkQueue.h */,
+				CE4F863D18268A73003A2703 /* GCNetworkQueue.m */,
+				CE4F863E18268A73003A2703 /* GCProgressDelegate.h */,
+			);
+			path = GCHTTPRequest;
+			sourceTree = "<group>";
+		};
+		CE4F864718268C46003A2703 /* GCReachability */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F864818268C46003A2703 /* GCReachability.h */,
+				CE4F864918268C46003A2703 /* GCReachability.m */,
+			);
+			path = GCReachability;
 			sourceTree = "<group>";
 		};
 		CE6AFC261814133000909668 /* GCEffects */ = {
@@ -624,6 +730,19 @@
 		CEC70EC2180EAE04001DB5B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F866318268D49003A2703 /* Social.framework */,
+				CE4F866118268D44003A2703 /* Security.framework */,
+				CE4F865F18268D41003A2703 /* SystemConfiguration.framework */,
+				CE4F865D18268D3B003A2703 /* QuartzCore.framework */,
+				CE4F865B18268D36003A2703 /* OpenGLES.framework */,
+				CE4F865918268D30003A2703 /* MobileCoreServices.framework */,
+				CE4F865718268D2A003A2703 /* MessageUI.framework */,
+				CE4F865518268D1E003A2703 /* MediaPlayer.framework */,
+				CE4F865318268D18003A2703 /* libz.dylib */,
+				CE4F865118268D0D003A2703 /* ImageIO.framework */,
+				CE4F864F18268CFF003A2703 /* CoreLocation.framework */,
+				CE4F864D18268CF4003A2703 /* CFNetwork.framework */,
+				CE4F864B18268CEF003A2703 /* Accounts.framework */,
 				CE81036618267EA3000410EB /* libsqlite3.dylib */,
 				CE6AFC6518141E2200909668 /* libxml2.dylib */,
 				CEC70EC3180EAE04001DB5B0 /* Foundation.framework */,
@@ -691,11 +810,13 @@
 				CE6AFC261814133000909668 /* GCEffects */,
 				CE6AFC5218141B9500909668 /* GCEncrypt */,
 				CE93D9831814033B0000B5C8 /* GCFileManager */,
+				CE4F862A18268A73003A2703 /* GCHTTPRequest */,
 				CE4F8626182688A7003A2703 /* GCImageView */,
 				CEF85897181412BC004D9360 /* GCKeychain */,
 				CEE1567A1812EE1D00BBD889 /* GCMailComposer */,
 				CE6AFC6018141D7E00909668 /* GCParserXML */,
 				CEE156751812EB2000BBD889 /* GCPopController */,
+				CE4F864718268C46003A2703 /* GCReachability */,
 				CEE156841812F1C800BBD889 /* GCSplashVideo */,
 				CE299E2B181426EB00D51AF8 /* GCTextFieldDelegate */,
 				CE6AFC5B18141CD700909668 /* GCYoutube */,
@@ -875,10 +996,13 @@
 				CE946CE6180FF889002E2225 /* NSString+GCKit.m in Sources */,
 				CEE156581812DDD800BBD889 /* UIWebView+GCKit.m in Sources */,
 				CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */,
+				CE4F864518268A73003A2703 /* GCInputStream.m in Sources */,
 				CEC8863C1826795C00FA8FDA /* GCDatabase.m in Sources */,
+				CE4F864118268A73003A2703 /* GCDataDecompressor.m in Sources */,
 				CEC8863E1826795C00FA8FDA /* GCDatabaseResult.m in Sources */,
 				CEE156781812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156681812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
+				CE4F864318268A73003A2703 /* GCFormDataRequest.m in Sources */,
 				CE6AFC5718141B9500909668 /* GCEncrypt.m in Sources */,
 				CEE1563C1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
@@ -905,19 +1029,23 @@
 				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
 				CEC8863F1826795C00FA8FDA /* GCDatabaseRow.m in Sources */,
+				CE4F864618268A73003A2703 /* GCNetworkQueue.m in Sources */,
 				CE6AFC3C1814133000909668 /* GCEffectShadow.m in Sources */,
+				CE4F864018268A73003A2703 /* GCDataCompressor.m in Sources */,
 				CE4F8629182688A7003A2703 /* GCImageView.m in Sources */,
 				CE93D9731813F6C60000B5C8 /* GCActionManager.m in Sources */,
 				CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */,
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CE299E291814266A00D51AF8 /* UITextField+GCKit.m in Sources */,
 				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
+				CE4F864418268A73003A2703 /* GCHTTPRequest.m in Sources */,
 				CE93D96F1813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CE6AFC4C1814195400909668 /* GCAnimationTransition.m in Sources */,
 				CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */,
 				CE93D94C1813F62F0000B5C8 /* GCBadgeView.m in Sources */,
 				CE946CE8180FF889002E2225 /* GCKit.m in Sources */,
 				CE6AFC3A1814133000909668 /* GCEffectGradient.m in Sources */,
+				CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
@@ -926,6 +1054,7 @@
 				CEC70F02180EAE94001DB5B0 /* main.m in Sources */,
 				CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */,
 				CEF228D0182676C800A37887 /* GCAlertTableViewCell.m in Sources */,
+				CE4F864A18268C46003A2703 /* GCReachability.m in Sources */,
 				CE93D97D1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,
 				CEE156501812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
@@ -935,6 +1064,7 @@
 				CE299E3718142A5D00D51AF8 /* UIAlertView+GCKit.m in Sources */,
 				CEE1564C1812DCAE00BBD889 /* UITableView+GCKit.m in Sources */,
 				CEE156701812E5DA00BBD889 /* NSArray+GCKit.m in Sources */,
+				CE4F864218268A73003A2703 /* GCDownloadCache.m in Sources */,
 				CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
