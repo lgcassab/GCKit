@@ -81,7 +81,7 @@
 //#import "GCImageView.h"
 //#import "GCReachability.h"
 //#import "GCAlertView.h"
-//#import "GCAlertTableView.h"
+#import "GCAlertTableView.h"
 #import "GCTextFieldDelegate.h"
 
 // GCProgressHud

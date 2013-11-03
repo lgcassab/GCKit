@@ -136,6 +136,14 @@
 		CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */; };
 		CEE156871812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
 		CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156861812F1C800BBD889 /* GCSplashVideo.m */; };
+		CEF228CC182676C800A37887 /* GCAlertTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228C7182676C800A37887 /* GCAlertTableView.m */; };
+		CEF228CD182676C800A37887 /* GCAlertTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228C7182676C800A37887 /* GCAlertTableView.m */; };
+		CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228C9182676C800A37887 /* GCAlertTableViewBGView.m */; };
+		CEF228CF182676C800A37887 /* GCAlertTableViewBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228C9182676C800A37887 /* GCAlertTableViewBGView.m */; };
+		CEF228D0182676C800A37887 /* GCAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */; };
+		CEF228D1182676C800A37887 /* GCAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */; };
+		CEF228D41826778E00A37887 /* GCAlertTableViewOverlayImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF228D21826778E00A37887 /* GCAlertTableViewOverlayImage.png */; };
+		CEF228D51826778E00A37887 /* GCAlertTableViewOverlayImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF228D31826778E00A37887 /* GCAlertTableViewOverlayImage@2x.png */; };
 		CEF8589A181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
 		CEF8589B181412BC004D9360 /* GCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF85899181412BC004D9360 /* GCKeychain.m */; };
 /* End PBXBuildFile section */
@@ -289,6 +297,14 @@
 		CEE1567C1812EE1D00BBD889 /* GCMailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMailComposer.m; sourceTree = "<group>"; };
 		CEE156851812F1C800BBD889 /* GCSplashVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCSplashVideo.h; sourceTree = "<group>"; };
 		CEE156861812F1C800BBD889 /* GCSplashVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCSplashVideo.m; sourceTree = "<group>"; };
+		CEF228C6182676C800A37887 /* GCAlertTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertTableView.h; sourceTree = "<group>"; };
+		CEF228C7182676C800A37887 /* GCAlertTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertTableView.m; sourceTree = "<group>"; };
+		CEF228C8182676C800A37887 /* GCAlertTableViewBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertTableViewBGView.h; sourceTree = "<group>"; };
+		CEF228C9182676C800A37887 /* GCAlertTableViewBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertTableViewBGView.m; sourceTree = "<group>"; };
+		CEF228CA182676C800A37887 /* GCAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertTableViewCell.h; sourceTree = "<group>"; };
+		CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertTableViewCell.m; sourceTree = "<group>"; };
+		CEF228D21826778E00A37887 /* GCAlertTableViewOverlayImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GCAlertTableViewOverlayImage.png; sourceTree = "<group>"; };
+		CEF228D31826778E00A37887 /* GCAlertTableViewOverlayImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GCAlertTableViewOverlayImage@2x.png"; sourceTree = "<group>"; };
 		CEF85898181412BC004D9360 /* GCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKeychain.h; sourceTree = "<group>"; };
 		CEF85899181412BC004D9360 /* GCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -640,6 +656,7 @@
 				CE946CE5180FF889002E2225 /* GCKit.m */,
 				CE93D94E1813F6C60000B5C8 /* GCActions */,
 				CE946CE1180FF889002E2225 /* GCAdditions */,
+				CEF228C5182676C800A37887 /* GCAlertTableView */,
 				CE6AFC441814195400909668 /* GCAnimation */,
 				CE93D9491813F62F0000B5C8 /* GCBadgeView */,
 				CE6AFC261814133000909668 /* GCEffects */,
@@ -681,6 +698,21 @@
 				CEE156861812F1C800BBD889 /* GCSplashVideo.m */,
 			);
 			path = GCSplashVideo;
+			sourceTree = "<group>";
+		};
+		CEF228C5182676C800A37887 /* GCAlertTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CEF228C6182676C800A37887 /* GCAlertTableView.h */,
+				CEF228C7182676C800A37887 /* GCAlertTableView.m */,
+				CEF228C8182676C800A37887 /* GCAlertTableViewBGView.h */,
+				CEF228C9182676C800A37887 /* GCAlertTableViewBGView.m */,
+				CEF228CA182676C800A37887 /* GCAlertTableViewCell.h */,
+				CEF228CB182676C800A37887 /* GCAlertTableViewCell.m */,
+				CEF228D21826778E00A37887 /* GCAlertTableViewOverlayImage.png */,
+				CEF228D31826778E00A37887 /* GCAlertTableViewOverlayImage@2x.png */,
+			);
+			path = GCAlertTableView;
 			sourceTree = "<group>";
 		};
 		CEF85897181412BC004D9360 /* GCKeychain */ = {
@@ -769,6 +801,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */,
+				CEF228D41826778E00A37887 /* GCAlertTableViewOverlayImage.png in Resources */,
+				CEF228D51826778E00A37887 /* GCAlertTableViewOverlayImage@2x.png in Resources */,
 				CEC70F04180EAEC3001DB5B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,6 +852,7 @@
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
 				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
+				CEF228CC182676C800A37887 /* GCAlertTableView.m in Sources */,
 				CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE93D97F1813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
@@ -836,10 +871,12 @@
 				CE6AFC3A1814133000909668 /* GCEffectGradient.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
+				CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
 				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
 				CE93D9861814033B0000B5C8 /* GCFileManager.m in Sources */,
 				CEC70F02180EAE94001DB5B0 /* main.m in Sources */,
 				CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */,
+				CEF228D0182676C800A37887 /* GCAlertTableViewCell.m in Sources */,
 				CE93D97D1813F6C60000B5C8 /* GCActionScaleBy.m in Sources */,
 				CEE156501812DD1E00BBD889 /* UIWindow+GCKit.m in Sources */,
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
@@ -866,6 +903,7 @@
 				CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */,
 				CEE156791812EB2000BBD889 /* GCPopController.m in Sources */,
 				CEE156691812E1BD00BBD889 /* UIColor+GCKit.m in Sources */,
+				CEF228CD182676C800A37887 /* GCAlertTableView.m in Sources */,
 				CE6AFC5818141B9500909668 /* GCEncrypt.m in Sources */,
 				CE946CE9180FF889002E2225 /* GCKit.m in Sources */,
 				CEE1563D1812DB2300BBD889 /* NSTimer+GCKit.m in Sources */,
@@ -887,6 +925,7 @@
 				CE93D96A1813F6C60000B5C8 /* GCAction.m in Sources */,
 				CE299E2F181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE93D96C1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
+				CEF228D1182676C800A37887 /* GCAlertTableViewCell.m in Sources */,
 				CE93D9801813F6C60000B5C8 /* GCActionScaleTo.m in Sources */,
 				CE6AFC3D1814133000909668 /* GCEffectShadow.m in Sources */,
 				CE93D9741813F6C60000B5C8 /* GCActionManager.m in Sources */,
@@ -894,6 +933,7 @@
 				CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
 				CE299E2A1814266A00D51AF8 /* UITextField+GCKit.m in Sources */,
 				CE946CE7180FF889002E2225 /* NSString+GCKit.m in Sources */,
+				CEF228CF182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
 				CE93D9701813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CE6AFC4D1814195400909668 /* GCAnimationTransition.m in Sources */,
 				CEE156881812F1C800BBD889 /* GCSplashVideo.m in Sources */,
