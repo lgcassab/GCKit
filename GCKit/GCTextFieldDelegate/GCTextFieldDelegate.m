@@ -121,7 +121,7 @@ static GCTextFieldDelegate *sharedDelegate;
     if ([currentMask isEqualToString:GCTextFieldMaskTelefone]) {
         if ([[textField text] length] >= 3) {
             NSString *ddd = [[textField text] substringWithRange:NSMakeRange(1,2)];
-            NSArray *arrayDDD = @[@"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19"];
+            NSArray *arrayDDD = @[@"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"21", @"22", @"24", @"27", @"28"];
             if ([arrayDDD indexOfObject:ddd] != NSNotFound) {
                 currentMask = @"(00) 00000-0000";
             }
