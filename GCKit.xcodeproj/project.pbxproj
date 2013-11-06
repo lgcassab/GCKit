@@ -170,6 +170,7 @@
 		CEC8863D1826795C00FA8FDA /* GCDatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC886371826795C00FA8FDA /* GCDatabaseRequest.m */; };
 		CEC8863E1826795C00FA8FDA /* GCDatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC886391826795C00FA8FDA /* GCDatabaseResult.m */; };
 		CEC8863F1826795C00FA8FDA /* GCDatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8863B1826795C00FA8FDA /* GCDatabaseRow.m */; };
+		CEE0C971182ADCEA009D68C8 /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE0C970182ADCEA009D68C8 /* UIViewTests.m */; };
 		CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
 		CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
 		CEE156341812DAA300BBD889 /* UIFont+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE156331812DAA300BBD889 /* UIFont+GCKit.m */; };
@@ -457,6 +458,7 @@
 		CEC886391826795C00FA8FDA /* GCDatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDatabaseResult.m; sourceTree = "<group>"; };
 		CEC8863A1826795C00FA8FDA /* GCDatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDatabaseRow.h; sourceTree = "<group>"; };
 		CEC8863B1826795C00FA8FDA /* GCDatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDatabaseRow.m; sourceTree = "<group>"; };
+		CEE0C970182ADCEA009D68C8 /* UIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
 		CEE1562E1812D9D400BBD889 /* NSObject+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCKit.h"; sourceTree = "<group>"; };
 		CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCKit.m"; sourceTree = "<group>"; };
 		CEE156321812DAA300BBD889 /* UIFont+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+GCKit.h"; sourceTree = "<group>"; };
@@ -667,6 +669,7 @@
 			children = (
 				CEE156731812E67900BBD889 /* NSArrayTests.m */,
 				CE39467C18101657009D10A6 /* NSStringTests.m */,
+				CEE0C970182ADCEA009D68C8 /* UIViewTests.m */,
 			);
 			name = GCAdditions;
 			sourceTree = "<group>";
@@ -1467,6 +1470,7 @@
 				CEC70EF2180EAE04001DB5B0 /* GCKitTests.m in Sources */,
 				CE93D9721813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
 				CEE156611812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
+				CEE0C971182ADCEA009D68C8 /* UIViewTests.m in Sources */,
 				CE93D9871814033B0000B5C8 /* GCFileManager.m in Sources */,
 				CEE156411812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9821813F6C60000B5C8 /* GCActionSequence.m in Sources */,
