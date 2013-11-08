@@ -132,38 +132,78 @@
 }
 
 - (void)testTTScreenX {
-	
+	UIView *mainView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 460)];
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[mainView addSubview:subview];
+	XCTAssertEqual(subview.ttScreenX, (CGFloat)70, @"subview.ttScreenX should be 70. Received %f instead.", subview.ttScreenX);
 }
 
 - (void)testTTScreenY {
-	
+	UIView *mainView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 280, 460)];
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[mainView addSubview:subview];
+	XCTAssertEqual(subview.ttScreenY, (CGFloat)70, @"subview.ttScreenY should be 70. Received %f instead.", subview.ttScreenY);
 }
 
 - (void)testScreenViewX {
-	
+	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+	[scrollView setContentSize:CGSizeMake(2000, 2000)];
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[scrollView addSubview:subview];
+	[scrollView scrollRectToVisible:CGRectMake(200, 0, 320, 480) animated:NO];
+	XCTAssertEqual(subview.screenViewX, (CGFloat)-150, @"subview.screenViewX should be -150. Received %f instead.", subview.screenViewX);
 }
 
 - (void)testScreenViewY {
-	
+	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+	[scrollView setContentSize:CGSizeMake(2000, 2000)];
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[scrollView addSubview:subview];
+	[scrollView scrollRectToVisible:CGRectMake(0, 200, 320, 480) animated:NO];
+	XCTAssertEqual(subview.screenViewY, (CGFloat)-150, @"subview.screenViewY should be -150. Received %f instead.", subview.screenViewY);
 }
 
 - (void)testScreenFrame {
-	
+	// Return the view frame on the screen, taking into account scroll views.
+	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+	[scrollView setContentSize:CGSizeMake(2000, 2000)];
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[scrollView addSubview:subview];
+	[scrollView scrollRectToVisible:CGRectMake(200, 200, 320, 480) animated:NO];
+	XCTAssertEqual(subview.screenFrame.origin.x, (CGFloat)-150, @"subview.screenFrame.origin.x should be -150. Received %f instead.",
+				   subview.screenFrame.origin.x);
+	XCTAssertEqual(subview.screenFrame.origin.y, (CGFloat)-150, @"subview.screenFrame.origin.y should be -150. Received %f instead.",
+				   subview.screenFrame.origin.y);
+	XCTAssertEqual(subview.screenFrame.size.width,  (CGFloat)50, @"subview.screenFrame.width should not be modified. Received %f instead",
+				   subview.screenFrame.size.width);
+	XCTAssertEqual(subview.screenFrame.size.height, (CGFloat)50, @"subview.screenFrame.height should not be modified. Received %f instead",
+				   subview.screenFrame.size.height);
 }
 
 - (void)testOrigin {
-	
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	XCTAssertEqual(view.frame.origin.x, (CGFloat)50, @"view.frame.origin.x should be 50. Received %f instead.", view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y, (CGFloat)50, @"view.frame.origin.y should be 50. Received %f instead.", view.frame.origin.y);
 }
 
 - (void)testSetOrigin {
-	
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[view setOrigin:CGPointMake(80, 70)];
+	XCTAssertEqual(view.frame.origin.x, (CGFloat)80, @"view.frame.origin.x should be 80. Received %f instead.", view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y, (CGFloat)70, @"view.frame.origin.y should be 70. Received %f instead.", view.frame.origin.y);
 }
 
 - (void)testSize {
-
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	XCTAssertEqual(view.frame.size.width, (CGFloat)50, @"view.frame.size.width should be 50. Received %f instead.", view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"view.frame.size.height should be 50. Received %f instead.", view.frame.size.height);
 }
 
 - (void)testSetSize {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[view setSize:CGSizeMake(80, 70)];
+	XCTAssertEqual(view.frame.size.width, (CGFloat)80, @"view.frame.size.width should be 80. Received %f instead.", view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)70, @"view.frame.size.height should be 70. Received %f instead.", view.frame.size.height);
 	
 }
 
