@@ -196,7 +196,6 @@
 }
 
 - (void)testScreenFrame {
-	// Return the view frame on the screen, taking into account scroll views.
 	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
 	[scrollView setContentSize:CGSizeMake(2000, 2000)];
 	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
@@ -240,7 +239,6 @@
 				   view.frame.size.width);
 	XCTAssertEqual(view.frame.size.height, (CGFloat)70, @"view.frame.size.height should be 70. Received %f instead.",
 				   view.frame.size.height);
-	
 }
 
 @end
