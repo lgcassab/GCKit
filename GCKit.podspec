@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
   s.public_header_files = 'GCKit/*.h'
   s.source_files = 'GCKit/GCKit.h'
   
-  s.prefix_header_contents = #import "GCKit.h"
+  s.prefix_header_contents = <<-EOS
+  #import "GCKit.h"
+  EOS
   
   s.ios.frameworks = 'Accounts', 
 	  				 'CFNetwork', 
