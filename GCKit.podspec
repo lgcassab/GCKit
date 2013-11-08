@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   s.subspec 'GCHTTPRequest' do |ss|
     ss.ios.public_header_files = 'GCKit/GCHTTPRequest/*.h'
     ss.ios.source_files = 'GCKit/GCHTTPRequest/*.{h,m}'
-	ss.requires_arc = no
+	ss.requires_arc = false
   end
 
   s.subspec 'GCImageView' do |ss|
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
   s.subspec 'GCParserCSV' do |ss|
     ss.ios.public_header_files = 'GCKit/GCParserCSV/*.h'
     ss.ios.source_files = 'GCKit/GCParserCSV/*.{h,m}'
-	ss.requires_arc = no
+	ss.requires_arc = false
   end
   
   s.subspec 'GCParserXML' do |ss|
