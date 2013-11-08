@@ -25,10 +25,14 @@
 - (void)testSetLeft {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setLeft:10];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)10, @"Frame.origin.x should be 10. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)10, @"Frame.origin.x should be 10. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testTop {
@@ -39,10 +43,14 @@
 - (void)testSetTop {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setTop:10];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)10, @"Frame.origin.y should be 10. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)10, @"Frame.origin.y should be 10. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testRight {
@@ -53,10 +61,14 @@
 - (void)testSetRight {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setRight:200];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)150, @"Frame.origin.x should be 150. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)150, @"Frame.origin.x should be 150. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testBottom {
@@ -67,10 +79,14 @@
 - (void)testSetBottom {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setBottom:250];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)200, @"Frame.origin.y should be 200. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)200, @"Frame.origin.y should be 200. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testWidth {
@@ -81,10 +97,14 @@
 - (void)testSetWidth {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setWidth:230];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)230, @"Frame.size.width should be 230. Received %f instead.", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)230, @"Frame.size.width should be 230. Received %f instead.",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testHeight {
@@ -95,10 +115,14 @@
 - (void)testSetHeight {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setHeight:220];
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height,  (CGFloat)220, @"Frame.size.height should be 220. Received %f instead.", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height,  (CGFloat)220, @"Frame.size.height should be 220. Received %f instead.",
+				   view.frame.size.height);
 }
 
 - (void)testCenterX {
@@ -110,10 +134,14 @@
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setCenterX:80];
 	XCTAssertEqual(view.centerX, (CGFloat)80, @"view.centerX should be 55. Received %f instead.", view.centerX);
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)55, @"Frame.origin.x should be 55. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)55, @"Frame.origin.x should be 55. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)50, @"Frame.origin.y should not be modified. Received %f instead",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testCenterY {
@@ -125,10 +153,14 @@
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setCenterY:80];
 	XCTAssertEqual(view.centerY, (CGFloat)80, @"view.centerY should be 55. Received %f instead.", view.centerY);
-	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.", view.frame.origin.x);
-	XCTAssertEqual(view.frame.origin.y,    (CGFloat)55, @"Frame.origin.y should be 55. Received %f instead.", view.frame.origin.y);
-	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead", view.frame.size.height);
+	XCTAssertEqual(view.frame.origin.x,    (CGFloat)50, @"Frame.origin.x should not be modified. Received %f instead.",
+				   view.frame.origin.x);
+	XCTAssertEqual(view.frame.origin.y,    (CGFloat)55, @"Frame.origin.y should be 55. Received %f instead.",
+				   view.frame.origin.y);
+	XCTAssertEqual(view.frame.size.width,  (CGFloat)50, @"Frame.size.width should not be modified. Received %f instead",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"Frame.size.height should not be modified. Received %f instead",
+				   view.frame.size.height);
 }
 
 - (void)testTTScreenX {
@@ -195,15 +227,19 @@
 
 - (void)testSize {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-	XCTAssertEqual(view.frame.size.width, (CGFloat)50, @"view.frame.size.width should be 50. Received %f instead.", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"view.frame.size.height should be 50. Received %f instead.", view.frame.size.height);
+	XCTAssertEqual(view.frame.size.width, (CGFloat)50, @"view.frame.size.width should be 50. Received %f instead.",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)50, @"view.frame.size.height should be 50. Received %f instead.",
+				   view.frame.size.height);
 }
 
 - (void)testSetSize {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	[view setSize:CGSizeMake(80, 70)];
-	XCTAssertEqual(view.frame.size.width, (CGFloat)80, @"view.frame.size.width should be 80. Received %f instead.", view.frame.size.width);
-	XCTAssertEqual(view.frame.size.height, (CGFloat)70, @"view.frame.size.height should be 70. Received %f instead.", view.frame.size.height);
+	XCTAssertEqual(view.frame.size.width, (CGFloat)80, @"view.frame.size.width should be 80. Received %f instead.",
+				   view.frame.size.width);
+	XCTAssertEqual(view.frame.size.height, (CGFloat)70, @"view.frame.size.height should be 70. Received %f instead.",
+				   view.frame.size.height);
 	
 }
 
