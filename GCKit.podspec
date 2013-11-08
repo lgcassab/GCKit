@@ -13,9 +13,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'GCKit/*.h'
   s.source_files = 'GCKit/GCKit.h'
   
-  s.prefix_header_contents = <<-EOS
-  #import "GCKit.h"
-  EOS
+  s.prefix_header_contents = #import "GCKit.h"
   
   s.ios.frameworks = 'Accounts', 
 	  				 'CFNetwork', 
@@ -23,9 +21,6 @@ Pod::Spec.new do |s|
 					 'CoreLocation', 
 					 'Foundation', 
 					 'ImageIO', 
-					 'libsqlite3.dylib', 
-					 'libxml2.dylib', 
-					 'libz.dylib', 
 					 'MediaPlayer', 
 					 'MessageUI', 
 					 'MobileCoreServices', 
@@ -35,6 +30,12 @@ Pod::Spec.new do |s|
 					 'Security', 
 					 'Social', 
 					 'UIKit'
+					 
+s.ios.library = 'libsqlite3',
+				'libxml2',
+				'libz'
+				
+s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }				
 					 
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
