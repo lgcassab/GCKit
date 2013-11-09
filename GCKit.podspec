@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
 					 'UIKit'
 					 
 s.ios.library = 'sqlite3',
-				'libxml2',
-				'libz'
+				'xml2',
+				'z'
 				
 s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }				
 					 
