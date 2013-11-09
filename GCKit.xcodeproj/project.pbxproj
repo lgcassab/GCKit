@@ -33,6 +33,7 @@
 		CE494ACA182E910100AF53CE /* GCActionsPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */; };
 		CE494ACE182EA0AC00AF53CE /* GCAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494ACD182EA0AC00AF53CE /* GCAnimationVC.m */; };
 		CE494AD2182EA22B00AF53CE /* GCAnimationTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */; };
+		CE494AD7182EA93C00AF53CE /* GCAnimationTransitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE494AD6182EA93C00AF53CE /* GCAnimationTransitionVC.xib */; };
 		CE4F8629182688A7003A2703 /* GCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F8628182688A7003A2703 /* GCImageView.m */; };
 		CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE4F864018268A73003A2703 /* GCDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862F18268A73003A2703 /* GCDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -284,6 +285,7 @@
 		CE494ACD182EA0AC00AF53CE /* GCAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationVC.m; sourceTree = "<group>"; };
 		CE494AD0182EA22B00AF53CE /* GCAnimationTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAnimationTransitionVC.h; sourceTree = "<group>"; };
 		CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationTransitionVC.m; sourceTree = "<group>"; };
+		CE494AD6182EA93C00AF53CE /* GCAnimationTransitionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCAnimationTransitionVC.xib; sourceTree = "<group>"; };
 		CE4F8627182688A7003A2703 /* GCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageView.h; sourceTree = "<group>"; };
 		CE4F8628182688A7003A2703 /* GCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageView.m; sourceTree = "<group>"; };
 		CE4F862B18268A73003A2703 /* GCAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -761,6 +763,7 @@
 			children = (
 				CE494AD0182EA22B00AF53CE /* GCAnimationTransitionVC.h */,
 				CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */,
+				CE494AD6182EA93C00AF53CE /* GCAnimationTransitionVC.xib */,
 			);
 			name = GCAnimationTransitionVC;
 			sourceTree = "<group>";
@@ -1365,6 +1368,7 @@
 				CE4F867918268EDC003A2703 /* gcProgressHudSuccess@2x.png in Resources */,
 				CEC70F0D180EAEE2001DB5B0 /* InfoPlist.strings in Resources */,
 				CE4F867618268EDC003A2703 /* gcProgressHudError.png in Resources */,
+				CE494AD7182EA93C00AF53CE /* GCAnimationTransitionVC.xib in Resources */,
 				CE4F867818268EDC003A2703 /* gcProgressHudSuccess.png in Resources */,
 				CE4F868318268F26003A2703 /* iconExpand@iPad.png in Resources */,
 				CE4F868718268F30003A2703 /* GCPicker.xib in Resources */,

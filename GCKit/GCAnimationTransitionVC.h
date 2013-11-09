@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GCAnimationTransitionVC : UITableViewController {
+@class GCAnimationTransitionDetailVC;
+
+@interface GCAnimationTransitionVC : UIViewController {
 	
 }
 

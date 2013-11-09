@@ -47,6 +47,7 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 	if (!cell) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+		[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
 	}
 	
 	[cell.textLabel setText:[_datasource objectAtIndex:indexPath.row]];

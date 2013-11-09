@@ -35,6 +35,7 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 	if (!cell) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+		[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
 	}
 	
 	[cell.textLabel setText:_datasource[indexPath.row][0]];
@@ -47,8 +48,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	id class = NSClassFromString(_datasource[indexPath.row][1]);
-	[self.navigationController pushViewController:[class new] animated:YES];
+	GCAnimationTransitionVC *viewController = [[GCAnimationTransitionVC alloc] initWithNibName:@"GCAnimationTransitionVC" bundle:nil];
+	[self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
