@@ -7,6 +7,11 @@
 //
 
 #import "GCActionsVC.h"
+#import "GCActionFadeVC.h"
+#import "GCActionMoveVC.h"
+#import "GCActionRotateVC.h"
+#import "GCActionScaleVC.h"
+#import "GCActionSequenceVC.h"
 
 @interface GCActionsVC ()
 @property (nonatomic, strong) NSMutableArray *datasource;
@@ -20,17 +25,17 @@
 	[self setTitle:@"GCActions"];
 	
 	_datasource = [NSMutableArray new];
-	[_datasource addObject:@"GCActionCallFunc"];
-	[_datasource addObject:@"GCActionDelay"];
-	[_datasource addObject:@"GCActionFadeIn"];
-	[_datasource addObject:@"GCActionFadeOut"];
-	[_datasource addObject:@"GCActionMoveBy"];
-	[_datasource addObject:@"GCActionMoveTo"];
-	[_datasource addObject:@"GCActionRotateBy"];
-	[_datasource addObject:@"GCActionRotateTo"];
-	[_datasource addObject:@"GCActionScaleBy"];
-	[_datasource addObject:@"GCActionScaleTo"];
-	[_datasource addObject:@"GCActionSequence"];
+	[_datasource addObject:@[@"GCActionCallFunc", @"GCActionSequenceVC"]];
+	[_datasource addObject:@[@"GCActionDelay"   , @"GCActionSequenceVC"]];
+	[_datasource addObject:@[@"GCActionFadeIn"  , @"GCActionFadeVC"]];
+	[_datasource addObject:@[@"GCActionFadeOut" , @"GCActionFadeVC"]];
+	[_datasource addObject:@[@"GCActionMoveBy"  , @"GCActionMoveVC"]];
+	[_datasource addObject:@[@"GCActionMoveTo"  , @"GCActionMoveVC"]];
+	[_datasource addObject:@[@"GCActionRotateBy", @"GCActionRotateVC"]];
+	[_datasource addObject:@[@"GCActionRotateTo", @"GCActionRotateVC"]];
+	[_datasource addObject:@[@"GCActionScaleBy" , @"GCActionScaleVC"]];
+	[_datasource addObject:@[@"GCActionScaleTo" , @"GCActionScaleVC"]];
+	[_datasource addObject:@[@"GCActionSequence", @"GCActionSequenceVC"]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -47,7 +52,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 	}
 	
-	[cell.textLabel setText:[_datasource objectAtIndex:indexPath.row]];
+	[cell.textLabel setText:_datasource[indexPath.row][0]];
 	
 	return cell;
 }
@@ -57,6 +62,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
+	id class = NSClassFromString(_datasource[indexPath.row][1]);
+	[self.navigationController pushViewController:[class new] animated:YES];
 }
 
 @end

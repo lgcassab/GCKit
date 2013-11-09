@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class GCActionFadeVC;
+@class GCActionMoveVC;
+@class GCActionRotateVC;
+@class GCActionScaleVC;
+@class GCActionSequenceVC;
+
 @interface GCActionsVC : UITableViewController {
 	
 }

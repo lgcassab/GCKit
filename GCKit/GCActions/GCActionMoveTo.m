@@ -38,26 +38,16 @@
 	NSString *warningMessage = [NSString stringWithFormat:@"Target '%@' does not responds to 'setCenter:'", [self.target class] ];
 	NSAssert( [self.target respondsToSelector:@selector(setCenter:)], warningMessage);
     
-//    [UIView animateWithDuration:d 
-//                          delay:0 
-//                        options:aCurve 
-//     
-//                     animations:^ {
-//                         [target setCenter:p];
-//                     } 
-//     
-//                     completion:^(BOOL finished) {
-//                         [self performSelector:@selector(actionFinished)];
-//                     }
-//     ];
-    
-	[UIView beginAnimations:@"CGActionMoveTo" context:nil];
-	[UIView setAnimationDidStopSelector:@selector(actionFinished)];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDuration:d];
-	[UIView setAnimationCurve:aCurve];	
-	[self.target setCenter:p];
-	[UIView commitAnimations];
+    [UIView animateWithDuration:d 
+                          delay:0 
+                        options:(UIViewAnimationOptions)aCurve
+                     animations:^ {
+                         [self.target setCenter:p];
+                     } 
+                     completion:^(BOOL finished) {
+                         [self performSelector:@selector(actionFinished)];
+                     }
+     ];
 }
 
 @end

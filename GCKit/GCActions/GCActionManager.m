@@ -8,6 +8,10 @@
 
 #import "GCActionManager.h"
 
+@interface GCActionManager ( )
+@property(nonatomic, strong) NSMutableArray *arrayActions;
+@end
+
 static GCActionManager *sharedManager = nil;
 
 @implementation GCActionManager

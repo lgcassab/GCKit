@@ -22,7 +22,6 @@
 @interface GCActionManager : NSObject {
 
 }
-@property(nonatomic, strong)NSMutableArray *arrayActions;
 
 + (GCActionManager *)sharedManager;
 

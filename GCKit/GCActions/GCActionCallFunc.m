@@ -14,7 +14,7 @@
 }
 
 + (id)actionWithTarget:(id)cfTarget selector:(SEL)selector {
-	return [[self alloc]initWithTarget:cfTarget selector:selector];
+	return [[self alloc] initWithTarget:cfTarget selector:selector];
 }
 
 - (id)initWithTarget:(id)cfTarget selector:(SEL)selector {

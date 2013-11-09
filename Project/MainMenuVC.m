@@ -21,7 +21,7 @@
 
 	_datasource = [NSMutableArray new];
 	[_datasource addObject:@"GCActions"];
-//	[_datasource addObject:@"GCAdditions"];
+	[_datasource addObject:@"GCAdditions"];
 //	[_datasource addObject:@"GCAnimation"];
 //	[_datasource addObject:@"GCBadgeView"];
 //	[_datasource addObject:@"GCEffects"];
@@ -60,7 +60,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	id class = NSClassFromString([NSString stringWithFormat:@"%@VC", [_datasource objectAtIndex:indexPath.row]]);
+	id class = NSClassFromString([NSString stringWithFormat:@"%@VC", _datasource[indexPath.row]]);
 	[self.navigationController pushViewController:[class new] animated:YES];
 }
 

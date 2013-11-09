@@ -25,6 +25,12 @@
 		CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */; };
 		CE39467D18101657009D10A6 /* NSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39467C18101657009D10A6 /* NSStringTests.m */; };
+		CE494AB7182E8EE000AF53CE /* GCActionSequenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AB6182E8EE000AF53CE /* GCActionSequenceVC.m */; };
+		CE494ABA182E8EEB00AF53CE /* GCActionScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AB9182E8EEB00AF53CE /* GCActionScaleVC.m */; };
+		CE494ABD182E8EF400AF53CE /* GCActionRotateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494ABC182E8EF400AF53CE /* GCActionRotateVC.m */; };
+		CE494AC0182E8EFB00AF53CE /* GCActionMoveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494ABF182E8EFB00AF53CE /* GCActionMoveVC.m */; };
+		CE494AC3182E8F0200AF53CE /* GCActionFadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AC2182E8F0200AF53CE /* GCActionFadeVC.m */; };
+		CE494ACA182E910100AF53CE /* GCActionsPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */; };
 		CE4F8629182688A7003A2703 /* GCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F8628182688A7003A2703 /* GCImageView.m */; };
 		CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE4F864018268A73003A2703 /* GCDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862F18268A73003A2703 /* GCDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -261,6 +267,18 @@
 		CE299E3A18142B3B00D51AF8 /* UIActionSheet+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+GCKit.h"; sourceTree = "<group>"; };
 		CE299E3B18142B3B00D51AF8 /* UIActionSheet+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+GCKit.m"; sourceTree = "<group>"; };
 		CE39467C18101657009D10A6 /* NSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTests.m; sourceTree = "<group>"; };
+		CE494AB5182E8EE000AF53CE /* GCActionSequenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionSequenceVC.h; sourceTree = "<group>"; };
+		CE494AB6182E8EE000AF53CE /* GCActionSequenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionSequenceVC.m; sourceTree = "<group>"; };
+		CE494AB8182E8EEB00AF53CE /* GCActionScaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionScaleVC.h; sourceTree = "<group>"; };
+		CE494AB9182E8EEB00AF53CE /* GCActionScaleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionScaleVC.m; sourceTree = "<group>"; };
+		CE494ABB182E8EF400AF53CE /* GCActionRotateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionRotateVC.h; sourceTree = "<group>"; };
+		CE494ABC182E8EF400AF53CE /* GCActionRotateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionRotateVC.m; sourceTree = "<group>"; };
+		CE494ABE182E8EFB00AF53CE /* GCActionMoveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionMoveVC.h; sourceTree = "<group>"; };
+		CE494ABF182E8EFB00AF53CE /* GCActionMoveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionMoveVC.m; sourceTree = "<group>"; };
+		CE494AC1182E8F0200AF53CE /* GCActionFadeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionFadeVC.h; sourceTree = "<group>"; };
+		CE494AC2182E8F0200AF53CE /* GCActionFadeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionFadeVC.m; sourceTree = "<group>"; };
+		CE494AC8182E910100AF53CE /* GCActionsPatternVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionsPatternVC.h; sourceTree = "<group>"; };
+		CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionsPatternVC.m; sourceTree = "<group>"; };
 		CE4F8627182688A7003A2703 /* GCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageView.h; sourceTree = "<group>"; };
 		CE4F8628182688A7003A2703 /* GCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageView.m; sourceTree = "<group>"; };
 		CE4F862B18268A73003A2703 /* GCAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -651,6 +669,12 @@
 			children = (
 				CE81036018267E71000410EB /* GCActionsVC.h */,
 				CE81036118267E71000410EB /* GCActionsVC.m */,
+				CE494AC7182E90EE00AF53CE /* GCActionsPatternVC */,
+				CE494AB3182E8E5C00AF53CE /* GCActionFadeVC */,
+				CE494AB2182E8E5A00AF53CE /* GCActionMoveVC */,
+				CE494AB1182E8E5900AF53CE /* GCActionRotateVC */,
+				CE494AB0182E8E5600AF53CE /* GCActionScaleVC */,
+				CE494AAF182E8E5400AF53CE /* GCActionSequenceVC */,
 			);
 			name = GCActionsVC;
 			sourceTree = "<group>";
@@ -672,6 +696,60 @@
 				CEE0C970182ADCEA009D68C8 /* UIViewTests.m */,
 			);
 			name = GCAdditions;
+			sourceTree = "<group>";
+		};
+		CE494AAF182E8E5400AF53CE /* GCActionSequenceVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494AB5182E8EE000AF53CE /* GCActionSequenceVC.h */,
+				CE494AB6182E8EE000AF53CE /* GCActionSequenceVC.m */,
+			);
+			name = GCActionSequenceVC;
+			sourceTree = "<group>";
+		};
+		CE494AB0182E8E5600AF53CE /* GCActionScaleVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494AB8182E8EEB00AF53CE /* GCActionScaleVC.h */,
+				CE494AB9182E8EEB00AF53CE /* GCActionScaleVC.m */,
+			);
+			name = GCActionScaleVC;
+			sourceTree = "<group>";
+		};
+		CE494AB1182E8E5900AF53CE /* GCActionRotateVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494ABB182E8EF400AF53CE /* GCActionRotateVC.h */,
+				CE494ABC182E8EF400AF53CE /* GCActionRotateVC.m */,
+			);
+			name = GCActionRotateVC;
+			sourceTree = "<group>";
+		};
+		CE494AB2182E8E5A00AF53CE /* GCActionMoveVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494ABE182E8EFB00AF53CE /* GCActionMoveVC.h */,
+				CE494ABF182E8EFB00AF53CE /* GCActionMoveVC.m */,
+			);
+			name = GCActionMoveVC;
+			sourceTree = "<group>";
+		};
+		CE494AB3182E8E5C00AF53CE /* GCActionFadeVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494AC1182E8F0200AF53CE /* GCActionFadeVC.h */,
+				CE494AC2182E8F0200AF53CE /* GCActionFadeVC.m */,
+			);
+			name = GCActionFadeVC;
+			sourceTree = "<group>";
+		};
+		CE494AC7182E90EE00AF53CE /* GCActionsPatternVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494AC8182E910100AF53CE /* GCActionsPatternVC.h */,
+				CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */,
+			);
+			name = GCActionsPatternVC;
 			sourceTree = "<group>";
 		};
 		CE4F8626182688A7003A2703 /* GCImageView */ = {
@@ -1322,6 +1400,7 @@
 				CE4F86DE182699F9003A2703 /* GCPicker.m in Sources */,
 				CE001CA618269D3D0008AC62 /* GCEgoImageView.m in Sources */,
 				CEE156481812DC4D00BBD889 /* UIScreen+GCKit.m in Sources */,
+				CE494ACA182E910100AF53CE /* GCActionsPatternVC.m in Sources */,
 				CE4F86B818269028003A2703 /* GCTableCellLabelSubtitle.m in Sources */,
 				CEC70F00180EAE7E001DB5B0 /* MainMenuVC.m in Sources */,
 				CE6AFC4A1814195400909668 /* GCAnimation.m in Sources */,
@@ -1331,6 +1410,7 @@
 				CE001CAD18269E670008AC62 /* GCAlertView.m in Sources */,
 				CE4F86B218269028003A2703 /* GCTableCellLabel.m in Sources */,
 				CE6AFC3E1814133000909668 /* GCEffectShadowElliptical.m in Sources */,
+				CE494AC0182E8EFB00AF53CE /* GCActionMoveVC.m in Sources */,
 				CEE156601812DEA100BBD889 /* CLPlacemark+GCKit.m in Sources */,
 				CE4F86B018269028003A2703 /* GCTableCell.m in Sources */,
 				CEFDB21E1826B05E0090D341 /* NSString+GCCSVAdditions.m in Sources */,
@@ -1351,6 +1431,7 @@
 				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
 				CEF228CC182676C800A37887 /* GCAlertTableView.m in Sources */,
 				CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
+				CE494ABD182E8EF400AF53CE /* GCActionRotateVC.m in Sources */,
 				CE93D96B1813F6C60000B5C8 /* GCActionCallFunc.m in Sources */,
 				CE4F86BA18269028003A2703 /* GCTableCellLabelSubtitleHorizontal2.m in Sources */,
 				CE4F86B418269028003A2703 /* GCTableCellLabelHorizontal4Columns.m in Sources */,
@@ -1370,6 +1451,7 @@
 				CEE156641812DF0500BBD889 /* UIImage+GCKit.m in Sources */,
 				CE299E291814266A00D51AF8 /* UITextField+GCKit.m in Sources */,
 				CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */,
+				CE494ABA182E8EEB00AF53CE /* GCActionScaleVC.m in Sources */,
 				CE4F864418268A73003A2703 /* GCHTTPRequest.m in Sources */,
 				CE93D96F1813F6C60000B5C8 /* GCActionFadeIn.m in Sources */,
 				CE6AFC4C1814195400909668 /* GCAnimationTransition.m in Sources */,
@@ -1383,9 +1465,11 @@
 				CEFDB21C1826B05E0090D341 /* GCWriterCSV.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
+				CE494AB7182E8EE000AF53CE /* GCActionSequenceVC.m in Sources */,
 				CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
 				CE4F86AF18269028003A2703 /* GCCustomColoredAccessory.m in Sources */,
 				CEE1565C1812DE4600BBD889 /* UIToolbar+GCKit.m in Sources */,
+				CE494AC3182E8F0200AF53CE /* GCActionFadeVC.m in Sources */,
 				CE93D9861814033B0000B5C8 /* GCFileManager.m in Sources */,
 				CE001CAE18269E670008AC62 /* GCBarButtonImageItem.m in Sources */,
 				CE4F86E1182699F9003A2703 /* GCPickerDate.m in Sources */,
