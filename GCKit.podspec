@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 					 'Social', 
 					 'UIKit'
 					 
-s.ios.library = 'libsqlite3',
+s.ios.library = 'sqlite3',
 				'libxml2',
 				'libz'
 				
