@@ -31,6 +31,8 @@
 		CE494AC0182E8EFB00AF53CE /* GCActionMoveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494ABF182E8EFB00AF53CE /* GCActionMoveVC.m */; };
 		CE494AC3182E8F0200AF53CE /* GCActionFadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AC2182E8F0200AF53CE /* GCActionFadeVC.m */; };
 		CE494ACA182E910100AF53CE /* GCActionsPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */; };
+		CE494ACE182EA0AC00AF53CE /* GCAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494ACD182EA0AC00AF53CE /* GCAnimationVC.m */; };
+		CE494AD2182EA22B00AF53CE /* GCAnimationTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */; };
 		CE4F8629182688A7003A2703 /* GCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F8628182688A7003A2703 /* GCImageView.m */; };
 		CE4F863F18268A73003A2703 /* GCAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862C18268A73003A2703 /* GCAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE4F864018268A73003A2703 /* GCDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F862F18268A73003A2703 /* GCDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -121,7 +123,6 @@
 		CE6AFC6418141D7E00909668 /* GCParserXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6AFC6218141D7E00909668 /* GCParserXML.m */; };
 		CE6AFC6618141E2200909668 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6AFC6518141E2200909668 /* libxml2.dylib */; };
 		CE81036218267E71000410EB /* GCActionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81036118267E71000410EB /* GCActionsVC.m */; };
-		CE81036518267E77000410EB /* GCAdditionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81036418267E77000410EB /* GCAdditionsVC.m */; };
 		CE81036718267EA3000410EB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81036618267EA3000410EB /* libsqlite3.dylib */; };
 		CE93D9471813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
 		CE93D9481813F5100000B5C8 /* UIView+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE93D9461813F5100000B5C8 /* UIView+GCKit.m */; };
@@ -279,6 +280,10 @@
 		CE494AC2182E8F0200AF53CE /* GCActionFadeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionFadeVC.m; sourceTree = "<group>"; };
 		CE494AC8182E910100AF53CE /* GCActionsPatternVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCActionsPatternVC.h; sourceTree = "<group>"; };
 		CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCActionsPatternVC.m; sourceTree = "<group>"; };
+		CE494ACC182EA0AC00AF53CE /* GCAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAnimationVC.h; sourceTree = "<group>"; };
+		CE494ACD182EA0AC00AF53CE /* GCAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationVC.m; sourceTree = "<group>"; };
+		CE494AD0182EA22B00AF53CE /* GCAnimationTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAnimationTransitionVC.h; sourceTree = "<group>"; };
+		CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAnimationTransitionVC.m; sourceTree = "<group>"; };
 		CE4F8627182688A7003A2703 /* GCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageView.h; sourceTree = "<group>"; };
 		CE4F8628182688A7003A2703 /* GCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageView.m; sourceTree = "<group>"; };
 		CE4F862B18268A73003A2703 /* GCAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -411,8 +416,6 @@
 		CE6AFC6518141E2200909668 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		CE81036018267E71000410EB /* GCActionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCActionsVC.h; path = Project/GCActionsVC.h; sourceTree = SOURCE_ROOT; };
 		CE81036118267E71000410EB /* GCActionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCActionsVC.m; path = Project/GCActionsVC.m; sourceTree = SOURCE_ROOT; };
-		CE81036318267E77000410EB /* GCAdditionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCAdditionsVC.h; path = Project/GCAdditionsVC.h; sourceTree = SOURCE_ROOT; };
-		CE81036418267E77000410EB /* GCAdditionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCAdditionsVC.m; path = Project/GCAdditionsVC.m; sourceTree = SOURCE_ROOT; };
 		CE81036618267EA3000410EB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CE93D9451813F5100000B5C8 /* UIView+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GCKit.h"; sourceTree = "<group>"; };
 		CE93D9461813F5100000B5C8 /* UIView+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GCKit.m"; sourceTree = "<group>"; };
@@ -633,7 +636,7 @@
 			children = (
 				CE27CB9F18226C7800BAAEBE /* MainMenuVC */,
 				CE27CBA918226CA000BAAEBE /* GCActionsVC */,
-				CE27CBA818226C9E00BAAEBE /* GCAdditionsVC */,
+				CE494ACB182EA09B00AF53CE /* GCAnimationVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -653,15 +656,6 @@
 				CEC70EFF180EAE7E001DB5B0 /* MainMenuVC.m */,
 			);
 			name = MainMenuVC;
-			sourceTree = "<group>";
-		};
-		CE27CBA818226C9E00BAAEBE /* GCAdditionsVC */ = {
-			isa = PBXGroup;
-			children = (
-				CE81036318267E77000410EB /* GCAdditionsVC.h */,
-				CE81036418267E77000410EB /* GCAdditionsVC.m */,
-			);
-			name = GCAdditionsVC;
 			sourceTree = "<group>";
 		};
 		CE27CBA918226CA000BAAEBE /* GCActionsVC */ = {
@@ -750,6 +744,25 @@
 				CE494AC9182E910100AF53CE /* GCActionsPatternVC.m */,
 			);
 			name = GCActionsPatternVC;
+			sourceTree = "<group>";
+		};
+		CE494ACB182EA09B00AF53CE /* GCAnimationVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494ACC182EA0AC00AF53CE /* GCAnimationVC.h */,
+				CE494ACD182EA0AC00AF53CE /* GCAnimationVC.m */,
+				CE494ACF182EA21D00AF53CE /* GCAnimationTransitionVC */,
+			);
+			name = GCAnimationVC;
+			sourceTree = "<group>";
+		};
+		CE494ACF182EA21D00AF53CE /* GCAnimationTransitionVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE494AD0182EA22B00AF53CE /* GCAnimationTransitionVC.h */,
+				CE494AD1182EA22B00AF53CE /* GCAnimationTransitionVC.m */,
+			);
+			name = GCAnimationTransitionVC;
 			sourceTree = "<group>";
 		};
 		CE4F8626182688A7003A2703 /* GCImageView */ = {
@@ -1417,7 +1430,6 @@
 				CE6AFC381814133000909668 /* GCEffectBorder.m in Sources */,
 				CEE156381812DADE00BBD889 /* UIButton+GCKit.m in Sources */,
 				CE6AFC6318141D7E00909668 /* GCParserXML.m in Sources */,
-				CE81036518267E77000410EB /* GCAdditionsVC.m in Sources */,
 				CE6AFC5E18141CD700909668 /* GCYoutube.m in Sources */,
 				CE4F86B318269028003A2703 /* GCTableCellLabelHorizontal3Columns.m in Sources */,
 				CE299E3C18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
@@ -1429,6 +1441,7 @@
 				CE6AFC361814133000909668 /* GCEffect.m in Sources */,
 				CEE1567D1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
 				CE93D9691813F6C60000B5C8 /* GCAction.m in Sources */,
+				CE494AD2182EA22B00AF53CE /* GCAnimationTransitionVC.m in Sources */,
 				CEF228CC182676C800A37887 /* GCAlertTableView.m in Sources */,
 				CE299E2E181426EB00D51AF8 /* GCTextFieldDelegate.m in Sources */,
 				CE494ABD182E8EF400AF53CE /* GCActionRotateVC.m in Sources */,
@@ -1487,6 +1500,7 @@
 				CE4F86BD18269028003A2703 /* GCTableCellTextField.m in Sources */,
 				CEC70EFD180EAE75001DB5B0 /* AppDelegate.m in Sources */,
 				CE001CA318269D3D0008AC62 /* GCEgoImageButton.m in Sources */,
+				CE494ACE182EA0AC00AF53CE /* GCAnimationVC.m in Sources */,
 				CE81036218267E71000410EB /* GCActionsVC.m in Sources */,
 				CEFDB21D1826B05E0090D341 /* NSArray+GCCSVAdditions.m in Sources */,
 				CEE156441812DC1100BBD889 /* UIImageView+GCKit.m in Sources */,

@@ -1,40 +1,26 @@
 //
-//  GCActionsVC.m
+//  GCAnimationVC.m
 //  GCKit
 //
-//  Created by Gustavo Cassab on 31/10/13.
+//  Created by Gustavo Cassab on 09/11/13.
 //  Copyright (c) 2013 GCCore Digital Technologies. All rights reserved.
 //
 
-#import "GCActionsVC.h"
-#import "GCActionFadeVC.h"
-#import "GCActionMoveVC.h"
-#import "GCActionRotateVC.h"
-#import "GCActionScaleVC.h"
-#import "GCActionSequenceVC.h"
+#import "GCAnimationVC.h"
+#import "GCAnimationTransitionVC.h"
 
-@interface GCActionsVC ()
+@interface GCAnimationVC ()
 @property (nonatomic, strong) NSMutableArray *datasource;
 @end
 
-@implementation GCActionsVC
+@implementation GCAnimationVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setTitle:@"GCActions"];
+	[self setTitle:@"GCAnimation"];
 	
 	_datasource = [NSMutableArray new];
-	[_datasource addObject:@[@"GCActionCallFunc", @"GCActionSequenceVC"]];
-	[_datasource addObject:@[@"GCActionDelay"   , @"GCActionSequenceVC"]];
-	[_datasource addObject:@[@"GCActionFadeIn"  , @"GCActionFadeVC"]];
-	[_datasource addObject:@[@"GCActionFadeOut" , @"GCActionFadeVC"]];
-	[_datasource addObject:@[@"GCActionMoveBy"  , @"GCActionMoveVC"]];
-	[_datasource addObject:@[@"GCActionMoveTo"  , @"GCActionMoveVC"]];
-	[_datasource addObject:@[@"GCActionRotateBy", @"GCActionRotateVC"]];
-	[_datasource addObject:@[@"GCActionRotateTo", @"GCActionRotateVC"]];
-	[_datasource addObject:@[@"GCActionScaleBy" , @"GCActionScaleVC"]];
-	[_datasource addObject:@[@"GCActionScaleTo" , @"GCActionScaleVC"]];
-	[_datasource addObject:@[@"GCActionSequence", @"GCActionSequenceVC"]];
+    [_datasource addObject:@[@"GCAnimationTransition", @"GCAnimationTransitionVC"]];
 }
 
 #pragma mark - UITableViewDataSource

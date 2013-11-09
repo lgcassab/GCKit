@@ -15,15 +15,25 @@
     GCTransitionType _transitionSubtype;
 }
 
-+ (id)animationWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType {
++ (id)animationWithDuration:(CGFloat)duration
+			 timingFunction:(GCTransitionTiming)timingFunction
+			 transitionType:(GCTransitionType )transitionType {
+	
     return [[self alloc] initWithDuration:duration timingFunction:timingFunction transitionType:transitionType transitionSubtype:kGCTransitionTypeNone];
 }
 
-+ (id)animationWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType transitionSubtype:(GCTransitionType )transitionSubtype {
++ (id)animationWithDuration:(CGFloat)duration
+			 timingFunction:(GCTransitionTiming)timingFunction
+			 transitionType:(GCTransitionType )transitionType
+		  transitionSubtype:(GCTransitionType )transitionSubtype {
+	
     return [[self alloc] initWithDuration:duration timingFunction:timingFunction transitionType:transitionType transitionSubtype:transitionSubtype];
 }
 
-- (id) initWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType transitionSubtype:(GCTransitionType )transitionSubtype {
+- (id) initWithDuration:(CGFloat)duration
+		 timingFunction:(GCTransitionTiming)timingFunction
+		 transitionType:(GCTransitionType )transitionType
+	  transitionSubtype:(GCTransitionType )transitionSubtype {
 	
 	if( (self=[super init]) ) {	
         _duration           = duration;

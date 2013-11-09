@@ -1,26 +1,32 @@
 //
-//  GCAdditionsVC.m
+//  GCAnimationTransitionVC.m
 //  GCKit
 //
-//  Created by Gustavo Cassab on 31/10/13.
+//  Created by Gustavo Cassab on 09/11/13.
 //  Copyright (c) 2013 GCCore Digital Technologies. All rights reserved.
 //
 
-#import "GCAdditionsVC.h"
+#import "GCAnimationTransitionVC.h"
 
-@interface GCAdditionsVC ()
+@interface GCAnimationTransitionVC ()
 @property (nonatomic, strong) NSMutableArray *datasource;
 @end
 
-@implementation GCAdditionsVC
+@implementation GCAnimationTransitionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-	[self setTitle:@"GCAdditions"];
+	[self setTitle:@"GCAnimationTransition"];
 	
 	_datasource = [NSMutableArray new];
-	[_datasource addObject:@""];
+    [_datasource addObject:@[@"Transition Fade"        , @""]];
+    [_datasource addObject:@[@"Transition From Bottom" , @""]];
+    [_datasource addObject:@[@"Transition From Left"   , @""]];
+    [_datasource addObject:@[@"Transition From Right"  , @""]];
+    [_datasource addObject:@[@"Transition From Top"    , @""]];
+    [_datasource addObject:@[@"Transition Move In"     , @""]];
+    [_datasource addObject:@[@"Transition Push"        , @""]];
+    [_datasource addObject:@[@"Transition Reveal"      , @""]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -37,7 +43,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 	}
 	
-	[cell.textLabel setText:[_datasource objectAtIndex:indexPath.row]];
+	[cell.textLabel setText:_datasource[indexPath.row][0]];
 	
 	return cell;
 }
@@ -47,6 +53,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
+	id class = NSClassFromString(_datasource[indexPath.row][1]);
+	[self.navigationController pushViewController:[class new] animated:YES];
 }
 
 @end

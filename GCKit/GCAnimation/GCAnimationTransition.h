@@ -32,10 +32,18 @@ typedef enum {
     
 }
 
-+ (id)animationWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType;
++ (id)animationWithDuration:(CGFloat)duration
+			 timingFunction:(GCTransitionTiming)timingFunction
+			 transitionType:(GCTransitionType )transitionType;
 
-+ (id)animationWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType transitionSubtype:(GCTransitionType )transitionSubtype;
++ (id)animationWithDuration:(CGFloat)duration
+			 timingFunction:(GCTransitionTiming)timingFunction
+			 transitionType:(GCTransitionType )transitionType
+		  transitionSubtype:(GCTransitionType )transitionSubtype;
 
-- (id) initWithDuration:(CGFloat)duration timingFunction:(GCTransitionTiming)timingFunction transitionType:(GCTransitionType )transitionType transitionSubtype:(GCTransitionType )transitionSubtype;
+- (id) initWithDuration:(CGFloat)duration
+		 timingFunction:(GCTransitionTiming)timingFunction
+		 transitionType:(GCTransitionType )transitionType
+	  transitionSubtype:(GCTransitionType )transitionSubtype;
 
 @end
