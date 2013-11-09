@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
 
   s.public_header_files = 'GCKit/*.h'
-  s.source_files = 'GCKit/GCKit.h'
+  s.source_files = 'GCKit/GCKit.{h,m}'
   
   s.prefix_header_contents = <<-EOS
   #import "GCKit.h"
