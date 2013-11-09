@@ -36,6 +36,8 @@
 		}
 	}
 	#pragma clang diagnostic pop
+	
+	[self performSelector:@selector(actionFinished)];
 }
 
 @end

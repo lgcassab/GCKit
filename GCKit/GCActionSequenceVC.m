@@ -31,15 +31,17 @@
 	id action1   = [GCActionMoveTo actionWithDuration:0.35f position:CGPointMake(80, 110)];
 	id action2   = [GCActionScaleBy actionWithDuration:0.35f scale:1.2f];
 	id action3   = [GCActionRotateBy actionWithDuration:0.35f angle:-45];
-	id action4   = [GCActionDelay actionWithDuration:1.00f];
-//	id function1 = [GCActionCallFunc actionWithTarget:self selector:@selector(myFunction1)];
-	id action5   = [GCActionMoveTo actionWithDuration:0.35f position:CGPointMake(135, 220)];
-	id action6   = [GCActionRotateTo actionWithDuration:0.35f angle:0.00f];
-	id action7   = [GCActionScaleTo actionWithDuration:0.35f scale:1.00f];
-//	id function2 = [GCActionCallFunc actionWithTarget:self selector:@selector(myFunction2)];
+	id action4   = [GCActionDelay actionWithDuration:0.50f];
+	id function1 = [GCActionCallFunc actionWithTarget:self selector:@selector(myFunction1)];
+	id action5   = [GCActionDelay actionWithDuration:0.50f];
+	id action6   = [GCActionMoveTo actionWithDuration:0.35f position:CGPointMake(135, 220)];
+	id action7   = [GCActionRotateTo actionWithDuration:0.35f angle:0.00f];
+	id action8   = [GCActionScaleTo actionWithDuration:0.35f scale:1.00f];
+	id action9   = [GCActionDelay actionWithDuration:0.50f];
+	id function2 = [GCActionCallFunc actionWithTarget:self selector:@selector(myFunction2)];
 	
-//	[self.square runAction:[GCActionSequence actions:action1, action2, action3, action4, function1, action5, action6, action7, function2, nil]];
-	[self.square runAction:[GCActionSequence actions:action1, action2, action3, action4, action5, action6, action7, nil]];
+	[self.square runAction:[GCActionSequence actions:action1,
+							action2, action3, action4, function1, action5, action6, action7, action8, action9, function2, nil]];
 }
 
 - (void)myFunction1 {
