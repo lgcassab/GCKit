@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
       :text => 'Copyright 2013 GCCore Digital Technologies.'
   }
 
-  s.public_header_files = 'GCKit/*.h'
-  s.source_files = 'GCKit/GCKit.{h,m}'
+  s.ios.public_header_files = 'GCKit/*.h'
+  s.ios.source_files = 'GCKit/GCKit.{h,m}'
+  s.ios.prefix_header_contents = '#import "GCKit.h"'
   
   s.ios.frameworks = 'Accounts', 
 	  				 'CFNetwork', 
@@ -37,10 +38,6 @@ Pod::Spec.new do |s|
  				  'xml2',
 				  'z'
 
-  s.subspec 'GCKitPrefix' do |ss|
-	ss.ios.prefix_header_contents = '#import "GCKit.h"'
-  end
-  				
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
     ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
