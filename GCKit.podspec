@@ -37,8 +37,6 @@ s.ios.library = 'sqlite3',
 				'xml2',
 				'z'
 				
-s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }				
-					 
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
     ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
