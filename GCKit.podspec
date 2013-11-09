@@ -1,21 +1,23 @@
 Pod::Spec.new do |s|
   s.name     = 'GCKit'
   s.version  = '1.90.0'
-  s.license  = 'MIT'
   s.summary  = 'One more iOS framework.'
   s.homepage = 'https://github.com/lgcassab/GCKit'
-  s.authors  = { 'Gustavo Cassab' => 'lgcassab@mac.com' }
+  s.authors  = { 'Gustavo Cassab' }
   s.source   = { :git => 'https://github.com/lgcassab/GCKit.git', :tag => "1.90.0" }
   s.requires_arc = true
   s.platform = :ios
   s.ios.deployment_target = '6.0'
+  
+  s.license = {
+      :type => 'Copyright',
+      :text => 'Copyright 2013 GCCore Digital Technologies.'
+  }
 
   s.public_header_files = 'GCKit/*.h'
   s.source_files = 'GCKit/GCKit.{h,m}'
   
-  s.prefix_header_contents = <<-EOS
-  #import "GCKit.h"
-  EOS
+  s.prefix_header_contents = '#import "GCKit.h"'
   
   s.ios.frameworks = 'Accounts', 
 	  				 'CFNetwork', 
