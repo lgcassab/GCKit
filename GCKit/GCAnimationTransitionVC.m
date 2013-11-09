@@ -10,6 +10,7 @@
 #import "GCKit.h"
 
 @interface GCAnimationTransitionVC ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
@@ -24,6 +25,16 @@
 }
 
 #pragma mark - Private Methods
+
+- (NSUInteger)transitionType {
+	NSUInteger transition = 0;
+	switch ([_segmentedControl selectedSegmentIndex]) {
+		case 0 : transition = kGCTransitionTypeMoveIn; break;
+		case 1 : transition = kGCTransitionTypePush;  break;
+		case 2 : transition = kGCTransitionTypeReveal;  break;
+	}
+	return transition;
+}
 
 - (NSString *)now {
 	return [NSString stringWithFormat:@"%@", [NSDate today]];
@@ -41,7 +52,7 @@
 - (IBAction)buttonFromBottomClicked:(id)sender {
 	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
 													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypePush
+													   transitionType:[self transitionType]
 													transitionSubtype:kGCTransitionTypeFromTop]];
 
 	[_label setText:[self now]];
@@ -49,47 +60,25 @@
 
 - (IBAction)buttonFromLeftClicked:(id)sender {
 	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypePush
+													   timingFunction:kGCTransitionTimingEasyIn
+													   transitionType:[self transitionType]
 													transitionSubtype:kGCTransitionTypeFromLeft]];
 	[_label setText:[self now]];
 }
 
 - (IBAction)buttonFromRightClicked:(id)sender {
 	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypePush
+													   timingFunction:kGCTransitionTimingEaseOut
+													   transitionType:[self transitionType]
 													transitionSubtype:kGCTransitionTypeFromRight]];
 	[_label setText:[self now]];
 }
 
 - (IBAction)buttonFromTopClicked:(id)sender {
 	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypePush
+													   timingFunction:kGCTransitionTimingEaseInEaseOut
+													   transitionType:[self transitionType]
 													transitionSubtype:kGCTransitionTypeFromBottom]];
-	[_label setText:[self now]];
-}
-
-- (IBAction)buttonMoveInClicked:(id)sender {
-	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypeMoveIn
-													transitionSubtype:kGCTransitionTypeFromTop]];
-	[_label setText:[self now]];
-}
-
-- (IBAction)buttonPushClicked:(id)sender {
-	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypePush]];
-	[_label setText:[self now]];
-}
-
-- (IBAction)buttonRevealClicked:(id)sender {
-	[_label addAnimation:[GCAnimationTransition animationWithDuration:kTransitionDelay
-													   timingFunction:kGCTransitionTimingLinear
-													   transitionType:kGCTransitionTypeReveal]];
 	[_label setText:[self now]];
 }
 
