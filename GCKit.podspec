@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
 
   s.ios.public_header_files = 'GCKit/*.h'
   s.ios.source_files = 'GCKit/GCKit.{h,m}'
-  s.ios.prefix_header_contents = '#import "GCKit.h"'
   
   s.ios.frameworks = 'Accounts', 
 	  				 'CFNetwork', 
@@ -41,6 +40,7 @@ Pod::Spec.new do |s|
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
     ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
+	ss.ios.prefix_header_contents = '#import "GCKit.h"'
   end
   
   s.subspec 'GCAdditions' do |ss|
