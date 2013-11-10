@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "UIView+GCKit.h"
+#import "UIColor+GCKit.h"
 
 @interface UIViewTests : XCTestCase
 
@@ -315,6 +316,24 @@
 // Animate changing the alpha of a view
 //- (void)setAlpha:(float)a withDuration:(float) duration;
 
-//- (UIColor *)colorAtPoint:(CGPoint)point;
+- (void)testColorAtPoint {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[view setBackgroundColor:[UIColor colorWithRed:150.0/255.0 green:170.0/255.0 blue:190.0/255.0 alpha:1.00f]];
+	
+	UIColor *color = [view colorAtPoint:CGPointMake(10, 10)];
+	XCTAssertNotNil(color, @"color should not be nil.");
+	XCTAssertTrue([color isKindOfClass:[UIColor class]], @"color must be of UIColor class.");
+
+	NSString *red = [NSString stringWithFormat:@"%0.6f", color.red];
+	XCTAssertTrue([red isEqualToString:@"0.588235"], @"color.red should be 0.588235. Received %@ instead.", red);
+	
+	NSString *green = [NSString stringWithFormat:@"%0.6f", color.green];
+	XCTAssertTrue([green isEqualToString:@"0.666667"], @"color.green should be 0.666667. Received %@ instead.", green);
+
+	NSString *blue = [NSString stringWithFormat:@"%0.6f", color.blue];
+	XCTAssertTrue([blue isEqualToString:@"0.745098"], @"color.blue should be 0.745098. Received %@ instead.", blue);
+	
+	XCTAssertEqual(color.alpha, (CGFloat)1.00, @"color.alpha should be 1.00. Received %f instead.", color.alpha);
+}
 
 @end
