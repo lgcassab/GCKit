@@ -268,11 +268,10 @@
 
 #pragma mark - Badge
 
--(GCBadgeView *)badge {
+- (GCBadgeView *)badge {
 	UIView *existingBadge = [self viewWithTag:kGCBadgeGlobalTab];
-	
-	if(existingBadge) {
-		if(![existingBadge isKindOfClass:[GCBadgeView class]]) {
+	if (existingBadge) {
+		if (![existingBadge isKindOfClass:[GCBadgeView class]]) {
 			NSLog(@"Unexpected view of class %@ found with badge tag." , [existingBadge class] );
 			return nil;
 		} else {
@@ -280,7 +279,7 @@
 		}
 	}
 	
-	GCBadgeView *badgeView = [[GCBadgeView alloc]initWithFrame:CGRectZero];
+	GCBadgeView *badgeView = [[GCBadgeView alloc] initWithFrame:CGRectZero];
 	[badgeView setTag:kGCBadgeGlobalTab];
 	[self addSubview:badgeView];
 	
@@ -332,17 +331,21 @@
 }
 
 - (void)setFrame:(CGRect)fr withDuration:(float)duration {
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:duration];
-	self.frame = fr;
-	[UIView commitAnimations];
+	[UIView animateWithDuration:duration
+					 animations:^ {
+						 [self setFrame:fr];
+					 }
+					 completion:nil
+	 ];
 }
 
 - (void)setAlpha:(float)a withDuration:(float)duration {
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:duration];
-	self.alpha = a;
-	[UIView commitAnimations];
+	[UIView animateWithDuration:duration
+					 animations:^ {
+						 [self setAlpha:a];
+					 }
+					 completion:nil
+	 ];
 }
 
 #pragma mark - Color
@@ -351,8 +354,7 @@
     unsigned char pixel[4] = {0};
     
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    
-	CGContextRef context = CGBitmapContextCreate(pixel, 1, 1, 8, 4, colorSpace, kCGImageAlphaPremultipliedLast);
+	CGContextRef context = CGBitmapContextCreate(pixel, 1, 1, 8, 4, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
     
 	CGContextTranslateCTM(context, -point.x, -point.y);
     

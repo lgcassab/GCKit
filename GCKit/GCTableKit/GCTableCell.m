@@ -78,7 +78,8 @@
     if(self.badgeView.text) {
 
 		CGFloat margin = 10;
-		CGSize badgeTextSize = [self.badgeView.text sizeWithFont:self.badgeView.font];
+		CGSize badgeTextSize = [self.badgeView.text sizeWithAttributes:@{NSFontAttributeName:self.badgeView.font}];;
+		
 		CGFloat badgeHeight = badgeTextSize.height - 2;
 		CGRect badgeFrame = CGRectMake(self.contentView.frame.size.width - (badgeTextSize.width+16) - margin, 
 									   round((self.contentView.frame.size.height - badgeHeight)/2), 

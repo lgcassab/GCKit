@@ -139,11 +139,14 @@
         
         {
             UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:19.0];
-            CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
-            CGSize labelSize = [text sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:NSLineBreakByWordWrapping];
+            CGSize labelSize = labelSize = [text boundingRectWithSize:CGSizeMake(280.0f, MAXFLOAT)
+															  options:NSStringDrawingUsesLineFragmentOrigin
+														   attributes:@{NSFontAttributeName:cellFont}
+															  context:nil].size;
+			
             [self setHeight:( labelSize.height + 20) ];
         }
-        
+		
 	}
     
 	return self;
@@ -176,8 +179,11 @@
         [self.textLabel setNumberOfLines:0];
         
         {
-            CGSize constraintSize = CGSizeMake(textLabelMaxWidth, MAXFLOAT);
-            CGSize labelSize = [text sizeWithFont:textLabelFont constrainedToSize:constraintSize lineBreakMode:NSLineBreakByWordWrapping];
+			CGSize labelSize = [text boundingRectWithSize:CGSizeMake(textLabelMaxWidth, MAXFLOAT)
+												  options:NSStringDrawingUsesLineFragmentOrigin
+											   attributes:@{NSFontAttributeName:textLabelFont}
+												  context:nil].size;
+			
             [self setHeight:( labelSize.height + 20) ];
         }
         

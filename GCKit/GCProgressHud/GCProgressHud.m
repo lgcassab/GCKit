@@ -204,7 +204,7 @@ static GCProgressHud *sharedView = nil;
 	
     CGFloat hudWidth = 100;
     
-	CGFloat stringWidth = [string sizeWithFont:self.stringLabel.font].width+28;
+	CGFloat stringWidth = ([string sizeWithAttributes:@{NSFontAttributeName:self.stringLabel.font}].width + 28);
 	
 	if(stringWidth > hudWidth)
 		hudWidth = ceil(stringWidth/2)*2;

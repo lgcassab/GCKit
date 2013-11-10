@@ -88,7 +88,7 @@
 
 	NSString* numberString = [NSString stringWithFormat:@"%d",self.value];
 	
-	CGSize numberSize = [numberString sizeWithFont:self.font];
+	CGSize numberSize = [numberString sizeWithAttributes:@{NSFontAttributeName:self.font}];;
 		
 	CGPathRef badgePath = [self createBadgePathForTextSize:numberSize];
 	
@@ -197,8 +197,8 @@
 		
 	CGPoint textPt = CGPointMake( ctm.x + (badgeRect.size.width - numberSize.width)/2 , ctm.y + (badgeRect.size.height - numberSize.height)/2 );
 	
-	[numberString drawAtPoint:textPt withFont:self.font];
-
+	[numberString drawAtPoint:textPt withAttributes:@{NSFontAttributeName:self.font}];
+	
 	CGContextRestoreGState( curContext );
 
 }
@@ -249,7 +249,7 @@
 	NSString* numberString = [NSString stringWithFormat:@"%d",self.value];
 	
 	
-	CGSize numberSize = [numberString sizeWithFont:self.font];
+	CGSize numberSize = [numberString sizeWithAttributes:@{NSFontAttributeName:self.font}];
 	
 	CGPathRef badgePath = [self createBadgePathForTextSize:numberSize];
 	

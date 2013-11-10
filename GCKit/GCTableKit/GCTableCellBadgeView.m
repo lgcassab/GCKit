@@ -63,12 +63,12 @@
 	
 	CGContextSetBlendMode(context, kCGBlendModeClear);
 	
-	CGSize textSize = [self.text sizeWithFont:self.font];
+	CGSize textSize = [self.text sizeWithAttributes:@{NSFontAttributeName:self.font}];;
 	CGRect textBounds = CGRectMake(round((self.bounds.size.width-textSize.width)/2), 
 								   round((self.bounds.size.height-textSize.height)/2), 
 								   textSize.width, textSize.height);
     
-	[self.text drawInRect:textBounds withFont:self.font];
+	[self.text drawInRect:textBounds withAttributes:@{NSFontAttributeName:self.font}];
 }
 
 - (void)setColor:(UIColor *)_color {
