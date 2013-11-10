@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
-	ss.ios.private_header_files = 'GCKit/GCActions/GCAction.h', 'GCKit/GCActions/GCActionManager.h'
+	ss.ios.private_header_files = 'GCKit/GCActions/GCAction.h'
     ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
 	ss.ios.prefix_header_contents = '#import "GCKit.h"'
   end
