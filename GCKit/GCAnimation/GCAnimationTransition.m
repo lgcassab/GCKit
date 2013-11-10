@@ -19,7 +19,10 @@
 			 timingFunction:(GCTransitionTiming)timingFunction
 			 transitionType:(GCTransitionType )transitionType {
 	
-    return [[self alloc] initWithDuration:duration timingFunction:timingFunction transitionType:transitionType transitionSubtype:kGCTransitionTypeNone];
+    return [[self alloc] initWithDuration:duration
+						   timingFunction:timingFunction
+						   transitionType:transitionType
+						transitionSubtype:kGCTransitionTypeNone];
 }
 
 + (id)animationWithDuration:(CGFloat)duration
@@ -27,7 +30,10 @@
 			 transitionType:(GCTransitionType )transitionType
 		  transitionSubtype:(GCTransitionType )transitionSubtype {
 	
-    return [[self alloc] initWithDuration:duration timingFunction:timingFunction transitionType:transitionType transitionSubtype:transitionSubtype];
+    return [[self alloc] initWithDuration:duration
+						   timingFunction:timingFunction
+						   transitionType:transitionType
+						transitionSubtype:transitionSubtype];
 }
 
 - (id) initWithDuration:(CGFloat)duration

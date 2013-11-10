@@ -51,13 +51,16 @@
 	else
 		y = ([(UIView *)self.target center].y + p.y);
 	
-	[UIView beginAnimations:@"CGKitMoveBy" context:nil];
-	[UIView setAnimationDidStopSelector:@selector(actionFinished)];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDuration:d];	
-	[UIView setAnimationCurve:aCurve];	
-	[self.target setCenter:CGPointMake(x, y)];
-	[UIView commitAnimations];
+	[UIView animateWithDuration:d
+                          delay:0
+                        options:(UIViewAnimationOptions)aCurve
+                     animations:^ {
+                         [self.target setCenter:CGPointMake(x, y)];
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSelector:@selector(actionFinished)];
+                     }
+     ];
 }
 
 - (GCAction *)reverse {

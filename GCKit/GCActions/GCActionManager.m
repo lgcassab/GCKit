@@ -16,6 +16,8 @@ static GCActionManager *sharedManager = nil;
 
 @implementation GCActionManager
 
+#pragma mark - Class Methods
+
 + (GCActionManager *)sharedManager {
 	static dispatch_once_t onceToken = 0;
     dispatch_once(&onceToken, ^{
@@ -24,14 +26,16 @@ static GCActionManager *sharedManager = nil;
     return sharedManager;
 }
 
-- (id) init {
-	_arrayActions = [NSMutableArray new];
-	return self;
-}
-
 + (id)alloc {
 	NSAssert(sharedManager == nil, @"Attempted to allocate a second instance of a singleton.");
 	return [super alloc];
+}
+
+#pragma mark - Public Methods
+
+- (id) init {
+	_arrayActions = [NSMutableArray new];
+	return self;
 }
 
 - (void)addAction:(GCAction *)action target:(id)target {

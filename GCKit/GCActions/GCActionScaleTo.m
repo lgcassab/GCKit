@@ -40,18 +40,20 @@
 	NSString *warningMessage = [NSString stringWithFormat:@"Target '%@' does not responds to 'setTransform:'", [self.target class] ];
 	NSAssert( [self.target respondsToSelector:@selector(setTransform:)], warningMessage);
 	
-	[UIView beginAnimations:@"CGActionScaleTo" context:nil];
-	[UIView setAnimationDidStopSelector:@selector(actionFinished)];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDuration:d];	
-	[UIView setAnimationCurve:aCurve];
-	
-	CGAffineTransform t;
-	t = CGAffineTransformIdentity;
-	t = CGAffineTransformScale(t, s, s);
-	
-	[(UIView *)self.target setTransform:t];
-	[UIView commitAnimations];
+	[UIView animateWithDuration:d
+                          delay:0
+                        options:(UIViewAnimationOptions)aCurve
+                     animations:^ {
+						 CGAffineTransform t;
+						 t = CGAffineTransformIdentity;
+						 t = CGAffineTransformScale(t, s, s);
+						 
+						 [(UIView *)self.target setTransform:t];
+					 }
+                     completion:^(BOOL finished) {
+                         [self performSelector:@selector(actionFinished)];
+                     }
+     ];
 }
 
 @end

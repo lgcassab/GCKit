@@ -28,13 +28,16 @@
 	NSString *warningMessage = [NSString stringWithFormat:@"Target '%@' does not responds to 'setAlpha:'", [self.target class] ];
 	NSAssert( [self.target respondsToSelector:@selector(setAlpha:)], warningMessage);
 	
-	[UIView beginAnimations:@"CGActionFadeIn" context:nil];
-	[UIView setAnimationDidStopSelector:@selector(actionFinished)];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDuration:d];
-	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	[self.target setAlpha:1];
-	[UIView commitAnimations];
+	[UIView animateWithDuration:d
+                          delay:0
+                        options:(UIViewAnimationOptions)UIViewAnimationCurveLinear
+                     animations:^ {
+                         [self.target setAlpha:1];
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSelector:@selector(actionFinished)];
+                     }
+     ];
 }
 
 @end

@@ -22,14 +22,12 @@
 	[tmpArray addObject:action1];
 	
 	while( action1 ) {
-		
 		now = va_arg(params, GCAction *);
-		
-		if (!now )
+		if (!now ) {
 			break;
-		else
+		} else {
 			[tmpArray addObject:now];
-		
+		}
 	}
 	
 	va_end(params);
@@ -38,12 +36,10 @@
 }
 
 - (id)initWithArray:(NSMutableArray *)array {
-	
 	_arrayActions = [NSMutableArray new];
 	for (GCAction *action in array) {
 		[_arrayActions addObject:action];
 	}
-	
 	return self;
 }
 
