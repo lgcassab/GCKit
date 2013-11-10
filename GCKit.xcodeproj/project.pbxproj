@@ -178,6 +178,8 @@
 		CEC8863D1826795C00FA8FDA /* GCDatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC886371826795C00FA8FDA /* GCDatabaseRequest.m */; };
 		CEC8863E1826795C00FA8FDA /* GCDatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC886391826795C00FA8FDA /* GCDatabaseResult.m */; };
 		CEC8863F1826795C00FA8FDA /* GCDatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC8863B1826795C00FA8FDA /* GCDatabaseRow.m */; };
+		CECFC8B9182FA84800A8163D /* GCEffectsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CECFC8B8182FA84800A8163D /* GCEffectsVC.m */; };
+		CEDC7F34182FB14100C170D4 /* GCEffectsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC7F33182FB14100C170D4 /* GCEffectsVC.xib */; };
 		CEE0C971182ADCEA009D68C8 /* UIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE0C970182ADCEA009D68C8 /* UIViewTests.m */; };
 		CEE156301812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
 		CEE156311812D9D400BBD889 /* NSObject+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */; };
@@ -481,6 +483,9 @@
 		CEC886391826795C00FA8FDA /* GCDatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDatabaseResult.m; sourceTree = "<group>"; };
 		CEC8863A1826795C00FA8FDA /* GCDatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDatabaseRow.h; sourceTree = "<group>"; };
 		CEC8863B1826795C00FA8FDA /* GCDatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDatabaseRow.m; sourceTree = "<group>"; };
+		CECFC8B7182FA84800A8163D /* GCEffectsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEffectsVC.h; sourceTree = "<group>"; };
+		CECFC8B8182FA84800A8163D /* GCEffectsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEffectsVC.m; sourceTree = "<group>"; };
+		CEDC7F33182FB14100C170D4 /* GCEffectsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCEffectsVC.xib; sourceTree = "<group>"; };
 		CEE0C970182ADCEA009D68C8 /* UIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTests.m; sourceTree = "<group>"; };
 		CEE1562E1812D9D400BBD889 /* NSObject+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCKit.h"; sourceTree = "<group>"; };
 		CEE1562F1812D9D400BBD889 /* NSObject+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCKit.m"; sourceTree = "<group>"; };
@@ -639,6 +644,7 @@
 				CE27CB9F18226C7800BAAEBE /* MainMenuVC */,
 				CE27CBA918226CA000BAAEBE /* GCActionsVC */,
 				CE494ACB182EA09B00AF53CE /* GCAnimationVC */,
+				CECFC8B6182FA7E400A8163D /* GCEffectsVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1219,6 +1225,16 @@
 			path = GCDatabase;
 			sourceTree = "<group>";
 		};
+		CECFC8B6182FA7E400A8163D /* GCEffectsVC */ = {
+			isa = PBXGroup;
+			children = (
+				CECFC8B7182FA84800A8163D /* GCEffectsVC.h */,
+				CECFC8B8182FA84800A8163D /* GCEffectsVC.m */,
+				CEDC7F33182FB14100C170D4 /* GCEffectsVC.xib */,
+			);
+			name = GCEffectsVC;
+			sourceTree = "<group>";
+		};
 		CEE156751812EB2000BBD889 /* GCPopController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1363,6 +1379,7 @@
 				CE4F867718268EDC003A2703 /* gcProgressHudError@2x.png in Resources */,
 				CE4F868218268F26003A2703 /* iconExpand@2x.png in Resources */,
 				CE4F867C18268F19003A2703 /* GCAlertTableViewOverlayImage.png in Resources */,
+				CEDC7F34182FB14100C170D4 /* GCEffectsVC.xib in Resources */,
 				CE4F868818268F30003A2703 /* GCPickerDate.xib in Resources */,
 				CE4F867D18268F19003A2703 /* GCAlertTableViewOverlayImage@2x.png in Resources */,
 				CE4F867918268EDC003A2703 /* gcProgressHudSuccess@2x.png in Resources */,
@@ -1482,6 +1499,7 @@
 				CEFDB21C1826B05E0090D341 /* GCWriterCSV.m in Sources */,
 				CEE156401812DBB300BBD889 /* NSNumberFormatter+GCKit.m in Sources */,
 				CE93D9711813F6C60000B5C8 /* GCActionFadeOut.m in Sources */,
+				CECFC8B9182FA84800A8163D /* GCEffectsVC.m in Sources */,
 				CE494AB7182E8EE000AF53CE /* GCActionSequenceVC.m in Sources */,
 				CEF228CE182676C800A37887 /* GCAlertTableViewBGView.m in Sources */,
 				CE4F86AF18269028003A2703 /* GCCustomColoredAccessory.m in Sources */,

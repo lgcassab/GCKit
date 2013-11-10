@@ -23,7 +23,7 @@
 	[_datasource addObject:@"GCActions"];
 	[_datasource addObject:@"GCAnimation"];
 //	[_datasource addObject:@"GCBadgeView"];
-//	[_datasource addObject:@"GCEffects"];
+	[_datasource addObject:@"GCEffects"];
 //	[_datasource addObject:@"GCEncrypt"];
 //	[_datasource addObject:@"GCFileManager"];
 //	[_datasource addObject:@"GCKeychain"];
