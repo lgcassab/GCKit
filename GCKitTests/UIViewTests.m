@@ -241,4 +241,80 @@
 				   view.frame.size.height);
 }
 
+//- (UIView *)descendantOrSelfWithClass:(Class)cls; // Finds the first descendant view (including this view) that is a member of a particular class.
+
+//- (UIView *)ancestorOrSelfWithClass:(Class)cls; // Finds the first ancestor view (including this view) that is a member of a particular class.
+
+- (void)testViewWithKindOfClass {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %d instead.", [[view subviews] count]);
+	
+	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 300, 40)];
+	[view addSubview:subview];
+	[view addSubview:label];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)2, @"The number of subviews should be 2. Received %d instead.", [[view subviews] count]);
+	
+	id test1 = [view viewWithKindOfClass:[UILabel class]];
+	XCTAssertNotNil(test1, @"test1 should not be nil.");
+	XCTAssertTrue([test1 isKindOfClass:[UILabel class]], @"test1 must be of UILabel class.");
+}
+
+- (void)testRemoveAllSubviews {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %d instead.", [[view subviews] count]);
+	
+	UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[view addSubview:subview1];
+	[view addSubview:subview2];
+	[view addSubview:subview3];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)3, @"The number of subviews should be 3. Received %d instead.", [[view subviews] count]);
+	
+	[view removeAllSubviews];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %d instead.", [[view subviews] count]);
+}
+
+//- (CGPoint)offsetFromView:(UIView*)otherView; // Calculates the offset of this view from another view in screen coordinates. otherView should be a parent view of this view.
+
+//- (UIViewController*)viewController; // The view controller whose view contains this view.
+
+- (void)testRenderImage {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	UIImage *image = [view renderImage];
+	XCTAssertNotNil(image, @"image should not be nil.");
+	XCTAssertTrue([image isKindOfClass:[UIImage class]], @"image must be of UIImage class.");
+	XCTAssertEqual(image.size.width, (CGFloat)50, @"image.size.width should be 50. Received %f instead.", image.size.width);
+	XCTAssertEqual(image.size.height, (CGFloat)50, @"image.size.height should be 50. Received %f instead.", image.size.height);
+}
+
+- (void)testSubviewWithTag {
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %d instead.", [[view subviews] count]);
+
+	UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+	[subview1 setTag:123];
+	[view addSubview:subview1];
+	XCTAssertEqual([[view subviews] count], (NSUInteger)1, @"The number of subviews should be 1. Received %d instead.", [[view subviews] count]);
+	
+	UIView *subviewTagged = [view subviewWithTag:123];
+	XCTAssertNotNil(subviewTagged, @"subviewTagged should not be nil.");
+	XCTAssertTrue([subviewTagged isKindOfClass:[UIView class]], @"subviewTagged must be of UIView class.");
+}
+
+// Animate removing a view from its parent
+//- (void)removeWithTransition:(UIViewAnimationTransition) transition andDuration:(float) duration;
+
+// Animate adding a subview
+//- (void)addSubview:(UIView *)view withTransition:(UIViewAnimationTransition) transition withDuration:(float) duration;
+
+// Animate the changing of a views frame
+//- (void)setFrame:(CGRect)fr withDuration:(float) duration;
+
+// Animate changing the alpha of a view
+//- (void)setAlpha:(float)a withDuration:(float) duration;
+
+//- (UIColor *)colorAtPoint:(CGPoint)point;
+
 @end
