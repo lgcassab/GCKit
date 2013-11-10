@@ -39,7 +39,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'GCActions' do |ss|
     ss.ios.public_header_files = 'GCKit/GCActions/*.h'
-	ss.ios.private_header_files = 'GCKit/GCActions/GCAction.h'
     ss.ios.source_files = 'GCKit/GCActions/*.{h,m}'
 	ss.ios.prefix_header_contents = '#import "GCKit.h"'
   end
@@ -56,13 +55,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'GCAlertView' do |ss|
     ss.ios.public_header_files = 'GCKit/GCAlertView/*.h'
-	ss.ios.private_header_files = 'GCKit/GCAlertView/GCAlertTableViewCell.h', 'GCKit/GCAlertView/GCAlertTableViewBGView.h'
     ss.ios.source_files = 'GCKit/GCAlertView/*.{h,m}'
   end
 
   s.subspec 'GCAnimation' do |ss|
     ss.ios.public_header_files = 'GCKit/GCAnimation/*.h'
-	ss.ios.private_header_files = 'GCKit/GCAnimation/GCAnimation.h', 'GCKit/GCAnimation/GCAnimationGlobal.h'
     ss.ios.source_files = 'GCKit/GCAnimation/*.{h,m}'
   end
   
@@ -83,7 +80,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'GCEffects' do |ss|
     ss.ios.public_header_files = 'GCKit/GCEffects/*.h'
-	ss.ios.private_header_files = 'GCKit/GCEffects/GCEffect.h'
     ss.ios.source_files = 'GCKit/GCEffects/*.{h,m}'
   end
   
@@ -167,12 +163,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'GCTableKit' do |ss|
     ss.ios.public_header_files = 'GCKit/GCTableKit/*.h'
-	ss.ios.private_header_files = 'GCKit/GCTableKit/GCTableCellBadgeView.h'
     ss.ios.source_files = 'GCKit/GCTableKit/*.{h,m}'
   end
   
   s.subspec 'GCTextFieldDelegate' do |ss|
-    ss.ios.private_header_files = 'GCKit/GCTextFieldDelegate/*.h'
+    ss.ios.public_header_files = 'GCKit/GCTextFieldDelegate/*.h'
     ss.ios.source_files = 'GCKit/GCTextFieldDelegate/*.{h,m}'
   end
   
