@@ -30,7 +30,8 @@
 
 -(id)init {
 	
-	if([self initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+	if(self) {
         
         NSMutableArray *tmpArray = [[NSMutableArray alloc]init];
         self.arrayLabels = tmpArray;

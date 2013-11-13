@@ -53,7 +53,8 @@
 
 -(id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey switchIsOn:(BOOL)switchIsOn {
     
-    if([self initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    if(self) {
         
         [self.textLabel setText:cellText];
         

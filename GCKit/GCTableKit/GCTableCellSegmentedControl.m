@@ -29,7 +29,8 @@
 }
 
 -(id)initWithItems:(NSArray *)items dictionaryKey:(NSString *)dictKey defaultItem:(NSUInteger )defaultItem {
-    if([self initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    if(self) {
         
         self.dictionaryKey = dictKey;        
         

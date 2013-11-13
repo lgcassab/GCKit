@@ -41,7 +41,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
-	if( (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) ) 	{
+	if ((self=[super initWithStyle:style reuseIdentifier:reuseIdentifier])) 	{
 		
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 		lockCellSelection = YES;
@@ -64,9 +64,9 @@
 	return self;
 }
 
--(id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey textFieldValue:(NSString *)textFieldValue placeholder:(NSString *)placeholder {
+- (id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey textFieldValue:(NSString *)textFieldValue placeholder:(NSString *)placeholder {
     
-    if([self initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil]) {
+    if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil])) {
         
         [self.textLabel setText:cellText];
         

@@ -24,11 +24,15 @@ static GCPopController *sharedController = nil;
     return sharedController;
 }
 
-- (id) init {
-	if (!self.popoverController) {
-		self.popoverController = [[UIPopoverController alloc] initWithContentViewController:self];
-		[self.popoverController setDelegate:self];
+- (id)init {
+	
+	if ((self = [super init])) {
+		if (!self.popoverController) {
+			self.popoverController = [[UIPopoverController alloc] initWithContentViewController:self];
+			[self.popoverController setDelegate:self];
+		}
 	}
+	
 	return self;
 }
 

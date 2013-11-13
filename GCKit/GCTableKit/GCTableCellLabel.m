@@ -69,7 +69,8 @@
 
 
 -(id)initWithText:(NSString *)text image:(UIImage *)image badgeText:(NSString *)badgeText {
-    if([self initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    if(self) {
 		[self.textLabel setText:text];
         
         if (image != nil)
@@ -126,7 +127,8 @@
 
 -(id)initWithLargeText:(NSString *)text image:(UIImage *)image badgeText:(NSString *)badgeText {
     
-    if([self initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    if(self) {
         
         if (image != nil)
             [self.imageView setImage:image];
@@ -165,7 +167,8 @@
 
 -(id)initWithLargeText:(NSString *)text image:(UIImage *)image badgeText:(NSString *)badgeText textLabelFont:(UIFont *)textLabelFont textLabelMaxWidth:(CGFloat)textLabelMaxWidth {
     
-    if([self initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    if(self) {
         
         if (image != nil)
             [self.imageView setImage:image];

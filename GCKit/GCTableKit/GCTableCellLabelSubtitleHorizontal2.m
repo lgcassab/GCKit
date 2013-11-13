@@ -90,7 +90,8 @@
 
 -(id)initWithTitle:(NSString *)text subtitle:(NSString *)subtitle invertedLabels:(BOOL)inverted image:(UIImage *)image badgeText:(NSString *)badgeText {
     
-    if([self initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:nil];
+    if(self) {
         
         if (image != nil)
             [self.imageView setImage:image];

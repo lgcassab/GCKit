@@ -75,9 +75,10 @@
     return self;
 }
 
--(id)initWithColumn1Text:(NSString *)text1 column2Text:(NSString *)text2 column3Text:(NSString *)text3 column4Text:(NSString *)text4 column5Text:(NSString *)text5 {
+- (id)initWithColumn1Text:(NSString *)text1 column2Text:(NSString *)text2 column3Text:(NSString *)text3 column4Text:(NSString *)text4 column5Text:(NSString *)text5 {
 	
-	if([self initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil]) {
+	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+	if(self) {
 		[self.column1Label setText:text1];
 		[self.column2Label setText:text2];
 		[self.column3Label setText:text3];
