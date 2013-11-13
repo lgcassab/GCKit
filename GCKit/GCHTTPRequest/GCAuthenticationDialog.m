@@ -303,13 +303,13 @@ static const NSUInteger kDomainSection = 1;
 	[[self tableView] reloadData];
 	[[[[[self tableView] cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]].contentView subviews] objectAtIndex:0] becomeFirstResponder];
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
+	#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 		[self setModalPresentationStyle:UIModalPresentationFormSheet];
 	}
-#endif
+	#endif
 
-	[[self presentingController] presentModalViewController:self animated:YES];
+	[[self presentingController] presentViewController:self animated:YES completion:nil];
 }
 
 #pragma mark button callbacks

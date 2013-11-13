@@ -144,7 +144,6 @@
 	NSInteger readLength;
 	NSError *theError = nil;
 	
-
 	GCDataDecompressor *decompressor = [GCDataDecompressor decompressor];
 
 	NSInputStream *inputStream = [NSInputStream inputStreamWithFileAtPath:sourcePath];
@@ -158,7 +157,7 @@
 		readLength = [inputStream read:inputData maxLength:DATA_CHUNK_SIZE]; 
 		
 		// Make sure nothing went wrong
-		if ([inputStream streamStatus] == NSStreamEventErrorOccurred) {
+		if ((NSStreamEvent)[inputStream streamStatus] == NSStreamEventErrorOccurred) {
 			if (err) {
 				*err = [NSError errorWithDomain:GCNetworkRequestErrorDomain code:GCCompressionError userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"Decompression of %@ failed because we were unable to read from the source data file",sourcePath],NSLocalizedDescriptionKey,[inputStream streamError],NSUnderlyingErrorKey,nil]];
 			}
@@ -184,7 +183,7 @@
 		[outputStream write:[outputData bytes] maxLength:[outputData length]];
 		
 		// Make sure nothing went wrong
-		if ([inputStream streamStatus] == NSStreamEventErrorOccurred) {
+		if ((NSStreamEvent)[inputStream streamStatus] == NSStreamEventErrorOccurred) {
 			if (err) {
 				*err = [NSError errorWithDomain:GCNetworkRequestErrorDomain code:GCCompressionError userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"Decompression of %@ failed because we were unable to write to the destination data file",sourcePath],NSLocalizedDescriptionKey,[outputStream streamError],NSUnderlyingErrorKey,nil]];
             }
