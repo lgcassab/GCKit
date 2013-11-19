@@ -1,3 +1,3 @@
 language: objective-c
 xcode_workspace: GCKit.xcworkspace
-xcode_scheme: GCKitTests
+xcode_scheme: GCKit
