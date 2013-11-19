@@ -1,4 +1,4 @@
 language: objective-c
 xcode_workspace: GCKit.xcworkspace
 xcode_scheme: GCKit
--sdk simulator
+xcode_sdk: iphonesimulator
