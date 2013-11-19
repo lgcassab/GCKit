@@ -1,3 +1,4 @@
 language: objective-c
-
-script: xctool -workspace GCKit.xcworkspace -scheme 'GCKitTests' -sdk iphonesimulator -configuration Debug test -test-sdk
+xcode_workspace: GCKit.xcworkspace
+xcode_scheme: GCKitTests
+xcode_sdk: 7.0
