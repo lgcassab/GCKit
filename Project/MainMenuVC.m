@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
 	[self setTitle:@"GCKit"];
+	[self setClearsSelectionOnViewWillAppear:YES];
 
 	_datasource = [NSMutableArray new];
 	[_datasource addObject:@"GCActions"];
@@ -27,7 +27,7 @@
 //	[_datasource addObject:@"GCEncrypt"];
 //	[_datasource addObject:@"GCFileManager"];
 //	[_datasource addObject:@"GCKeychain"];
-//	[_datasource addObject:@"GCMailComposer"];
+	[_datasource addObject:@"GCMailComposer"];
 //	[_datasource addObject:@"GCParseXML"];
 //	[_datasource addObject:@"GCPopController"];
 //	[_datasource addObject:@"GCSplashVideo"];
@@ -58,8 +58,6 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	
 	id class = NSClassFromString([NSString stringWithFormat:@"%@VC", _datasource[indexPath.row]]);
 	[self.navigationController pushViewController:[class new] animated:YES];
 }

@@ -16,40 +16,40 @@ typedef void (^GCMailComposerCompletionBlock)(MFMailComposeResult result, NSErro
     
 }
 
-+(void)mailTo:(NSArray *)nTo completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
-+(void)mailTo:(NSArray *)nTo subject:(NSString *)nSubject completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
++ (void)mailTo:(NSArray *)nTo completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
++ (void)mailTo:(NSArray *)nTo subject:(NSString *)nSubject completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
-+(void)mailTo:(NSArray *)nTo
-      subject:(NSString *)nSubject
-   attachment:(NSArray *)nAttachment
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+	attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
-+(void)mailTo:(NSArray *)nTo
-      subject:(NSString *)nSubject
-   bodyAsText:(NSString *)nBodyText
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+	bodyAsText:(NSString *)nBodyText
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
-+(void)mailTo:(NSArray *)nTo
-      subject:(NSString *)nSubject
-   bodyAsText:(NSString *)nBodyText
-   attachment:(NSArray *)nAttachment
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+	bodyAsText:(NSString *)nBodyText
+	attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
-+(void)mailTo:(NSArray *)nTo
-      subject:(NSString *)nSubject
-   bodyAsHtml:(NSString *)nBodyHtml
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+	bodyAsHtml:(NSString *)nBodyHtml
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
-+(void)mailTo:(NSArray *)nTo
-      subject:(NSString *)nSubject
-   bodyAsHtml:(NSString *)nBodyHtml
-   attachment:(NSArray *)nAttachment
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+	bodyAsHtml:(NSString *)nBodyHtml
+	attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock;
 
 #pragma mark - Public Methods
 
-+(NSDictionary *)imageName:(NSString *)nImageName png:(UIImage *)nImage;
-+(NSDictionary *)imageName:(NSString *)nImageName jpg:(UIImage *)nImage;
-+(NSDictionary *)imageName:(NSString *)nImageName jpeg:(UIImage *)nImage;
++ (NSDictionary *)imageName:(NSString *)nImageName png:(UIImage *)nImage;
++ (NSDictionary *)imageName:(NSString *)nImageName jpg:(UIImage *)nImage;
++ (NSDictionary *)imageName:(NSString *)nImageName jpeg:(UIImage *)nImage;
 
 @end

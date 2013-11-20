@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setTitle:@"GCActions"];
+	[self setClearsSelectionOnViewWillAppear:YES];
 	
 	_datasource = [NSMutableArray new];
 	[_datasource addObject:@[@"GCActionCallFunc", @"GCActionSequenceVC"]];
@@ -60,8 +61,6 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	
 	id class = NSClassFromString(_datasource[indexPath.row][1]);
 	[self.navigationController pushViewController:[class new] animated:YES];
 }

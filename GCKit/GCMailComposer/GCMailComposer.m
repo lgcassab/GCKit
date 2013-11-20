@@ -23,29 +23,29 @@
 
 @implementation GCMailComposer
 
-+(void)mailTo:(NSArray *)nTo completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
++ (void)mailTo:(NSArray *)nTo completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nil body:nil bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo subject:(NSString *)nSubject completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
++ (void)mailTo:(NSArray *)nTo subject:(NSString *)nSubject completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nSubject body:nil bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nSubject body:nil bodyIsHtml:YES attachment:nCompletitionBlock completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsText:(NSString *)nBodyText
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nSubject body:nBodyText bodyIsHtml:NO attachment:nil completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsText:(NSString *)nBodyText
    attachment:(NSArray *)nAttachment
@@ -53,14 +53,14 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nSubject body:nBodyText bodyIsHtml:NO attachment:nAttachment completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsHtml:(NSString *)nBodyHtml
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     [GCMailComposer mailTo:nTo subject:nSubject body:nBodyHtml bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
 }
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsHtml:(NSString *)nBodyHtml
    attachment:(NSArray *)nAttachment
@@ -70,7 +70,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
 
 #pragma mark - Private
 
-+(void)mailTo:(NSArray *)nTo
++ (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
          body:(NSString *)nBody
    bodyIsHtml:(BOOL)nBodyIsHtml
@@ -89,7 +89,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
 
 #pragma mark - Class Methods
 
--(id)initWithTo:(NSArray *)nTo
+- (id)initWithTo:(NSArray *)nTo
         subject:(NSString *)nSubject
            body:(NSString *)nBody
      bodyIsHtml:(BOOL)nBodyIsHtml
@@ -136,7 +136,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     return self;
 }
 
--(void)presentModalController {
+- (void)presentModalController {
     
     if (![MFMailComposeViewController canSendMail]) {
         if (_completitionBlock) {
@@ -171,7 +171,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
 
 #pragma mark - Public Methods
 
-+(NSDictionary *)imageName:(NSString *)nImageName png:(UIImage *)nImage {
++ (NSDictionary *)imageName:(NSString *)nImageName png:(UIImage *)nImage {
     
     NSData *imageData = UIImagePNGRepresentation(nImage);
     
@@ -183,7 +183,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     return dictionary;
 }
 
-+(NSDictionary *)imageName:(NSString *)nImageName jpg:(UIImage *)nImage {
++ (NSDictionary *)imageName:(NSString *)nImageName jpg:(UIImage *)nImage {
     
     NSData *imageData = UIImageJPEGRepresentation(nImage, 1.0);
     
@@ -195,7 +195,7 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
     return dictionary;
 }
 
-+(NSDictionary *)imageName:(NSString *)nImageName jpeg:(UIImage *)nImage {
++ (NSDictionary *)imageName:(NSString *)nImageName jpeg:(UIImage *)nImage {
 
     NSData *imageData = UIImageJPEGRepresentation(nImage, 1.0);
     

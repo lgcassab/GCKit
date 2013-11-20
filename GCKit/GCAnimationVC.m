@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setTitle:@"GCAnimation"];
+	[self setClearsSelectionOnViewWillAppear:YES];
 	
 	_datasource = [NSMutableArray new];
     [_datasource addObject:@[@"GCAnimationTransition", @"GCAnimationTransitionVC"]];
@@ -46,8 +47,6 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	
 	GCAnimationTransitionVC *viewController = [[GCAnimationTransitionVC alloc] initWithNibName:@"GCAnimationTransitionVC" bundle:nil];
 	[self.navigationController pushViewController:viewController animated:YES];
 }
