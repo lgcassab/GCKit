@@ -21,6 +21,7 @@
 
 	_datasource = [NSMutableArray new];
 	[_datasource addObject:@"GCActions"];
+//	[_datasource addObject:@"GCAlertView"];
 	[_datasource addObject:@"GCAnimation"];
 //	[_datasource addObject:@"GCBadgeView"];
 	[_datasource addObject:@"GCEffects"];
@@ -31,6 +32,7 @@
 //	[_datasource addObject:@"GCParseXML"];
 //	[_datasource addObject:@"GCPopController"];
 //	[_datasource addObject:@"GCSplashVideo"];
+//	[_datasource addObject:@"GCTableKit"];
 //	[_datasource addObject:@"GCTextFieldDelegate"];
 //	[_datasource addObject:@"GCYoutube"];
 }
