@@ -40,4 +40,19 @@
 			 @"TO"];
 }
 
+- (NSArray *)splitWithRange:(NSUInteger)splitRange {
+	NSUInteger totalCount = [self count];
+    NSUInteger currentIndex = 0;
+	
+    NSMutableArray *splitArray = [NSMutableArray new];
+    while (currentIndex < totalCount) {
+        NSRange range = NSMakeRange(currentIndex, MIN(splitRange, totalCount-currentIndex));
+        NSArray *subArray = [self subarrayWithRange:range];
+        [splitArray addObject:subArray];
+        currentIndex += splitRange;
+    }
+	
+    return splitArray;
+}
+
 @end

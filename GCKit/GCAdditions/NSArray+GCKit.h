@@ -13,5 +13,6 @@
 }
 
 + (NSArray *)arrayWithBrazilianStates;
+- (NSArray *)splitWithRange:(NSUInteger)splitRange;
 
 @end
