@@ -232,6 +232,7 @@
 		CEFDB21C1826B05E0090D341 /* GCWriterCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB2161826B05E0090D341 /* GCWriterCSV.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEFDB21D1826B05E0090D341 /* NSArray+GCCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB2181826B05E0090D341 /* NSArray+GCCSVAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEFDB21E1826B05E0090D341 /* NSString+GCCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB21A1826B05E0090D341 /* NSString+GCCSVAdditions.m */; };
+		EC4BD359183D489300CF21AE /* NSDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4BD358183D489300CF21AE /* NSDateTests.m */; };
 		EC53CF12183D27B2003C4B35 /* GCMailComposerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC53CF11183D27B2003C4B35 /* GCMailComposerVC.m */; };
 /* End PBXBuildFile section */
 
@@ -544,6 +545,7 @@
 		CEFDB2181826B05E0090D341 /* NSArray+GCCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GCCSVAdditions.m"; sourceTree = "<group>"; };
 		CEFDB2191826B05E0090D341 /* NSString+GCCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GCCSVAdditions.h"; sourceTree = "<group>"; };
 		CEFDB21A1826B05E0090D341 /* NSString+GCCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GCCSVAdditions.m"; sourceTree = "<group>"; };
+		EC4BD358183D489300CF21AE /* NSDateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTests.m; sourceTree = "<group>"; };
 		EC53CF10183D27B2003C4B35 /* GCMailComposerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMailComposerVC.h; sourceTree = "<group>"; };
 		EC53CF11183D27B2003C4B35 /* GCMailComposerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMailComposerVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -700,6 +702,7 @@
 				CEE156731812E67900BBD889 /* NSArrayTests.m */,
 				CE39467C18101657009D10A6 /* NSStringTests.m */,
 				CEE0C970182ADCEA009D68C8 /* UIViewTests.m */,
+				EC4BD358183D489300CF21AE /* NSDateTests.m */,
 			);
 			name = GCAdditions;
 			sourceTree = "<group>";
@@ -1580,6 +1583,7 @@
 				CE6AFC5F18141CD700909668 /* GCYoutube.m in Sources */,
 				CE299E3D18142B3B00D51AF8 /* UIActionSheet+GCKit.m in Sources */,
 				CE93D9781813F6C60000B5C8 /* GCActionMoveTo.m in Sources */,
+				EC4BD359183D489300CF21AE /* NSDateTests.m in Sources */,
 				CE6AFC431814133000909668 /* GCEffectShadowTrapezoidal.m in Sources */,
 				CE6AFC371814133000909668 /* GCEffect.m in Sources */,
 				CEE1567E1812EE1D00BBD889 /* GCMailComposer.m in Sources */,
