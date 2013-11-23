@@ -26,7 +26,10 @@
 #define RGBA(R,G,B,A) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A]
 #endif
 
+#define gcKit [GCKit sharedKit]
+
 #define iPadDevice (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define __(str) NSLocalizedString(str, nil)
 
 #import "GCActionManager.h"
 #import "GCAction.h"
