@@ -3,7 +3,7 @@
 //  GCKit
 //
 //  Created by Marcelo Queiroz on 25/08/2011
-//  Copyright 2011 FingerTips. All rights reserved.
+//  Copyright 2011 GCCore Digital Technologies. All rights reserved.
 //
 //  Func.: Classe responsavel por apresentar e customizar a UITabBar de um UITabBarController
 //  ----- Alter History -----
