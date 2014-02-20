@@ -45,6 +45,7 @@
 		}
 		
 		[pickerView addTarget:self action:@selector(pickerViewValueChanged:) forControlEvents:UIControlEventValueChanged];
+		[pickerView setBackgroundColor:[UIColor whiteColor]];
 		
 	}
 	

@@ -30,6 +30,7 @@
 //	[_datasource addObject:@"GCKeychain"];
 	[_datasource addObject:@"GCMailComposer"];
 //	[_datasource addObject:@"GCParseXML"];
+	[_datasource addObject:@"GCPicker"];
 //	[_datasource addObject:@"GCPopController"];
 //	[_datasource addObject:@"GCSplashVideo"];
 //	[_datasource addObject:@"GCTableKit"];
