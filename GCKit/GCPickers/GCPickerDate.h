@@ -18,6 +18,7 @@
 	
 	UIView *backgroundView;
 }
+@property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
 @property(nonatomic, retain)IBOutlet UIBarButtonItem *buttonCancel;
 @property(nonatomic, retain)IBOutlet UIBarButtonItem *buttonOk;
 @property(nonatomic, retain)IBOutlet UIDatePicker *pickerView;

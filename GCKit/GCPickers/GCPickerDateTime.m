@@ -46,6 +46,11 @@
 		
 		[pickerView addTarget:self action:@selector(pickerViewValueChanged:) forControlEvents:UIControlEventValueChanged];
 		[pickerView setBackgroundColor:[UIColor whiteColor]];
+		
+		{
+			[buttonCancel setTintColor:[UIColor whiteColor]];
+			[buttonOk setTintColor:[UIColor whiteColor]];
+		}
 	}
 	
 	return self;

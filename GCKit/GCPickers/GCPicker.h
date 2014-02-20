@@ -22,6 +22,7 @@
     
     NSUInteger selectedRow;
 }
+@property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
 @property(nonatomic, strong)IBOutlet UIBarButtonItem *buttonCancel;
 @property(nonatomic, strong)IBOutlet UIBarButtonItem *buttonOk;
 @property(nonatomic, strong)IBOutlet UIPickerView *pickerView;
