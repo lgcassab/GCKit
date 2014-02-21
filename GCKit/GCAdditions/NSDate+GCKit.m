@@ -378,6 +378,39 @@
 	return [self dateByAddingDays: (dDays * -1)];
 }
 
+- (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSWeekdayCalendarUnit fromDate:self];
+	dateComponents.week += weeks;
+	return [calendar dateFromComponents:dateComponents];
+}
+
+- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
+	return [self dateByAddingWeeks: (weeks * -1)];
+}
+
+- (NSDate *)dateByAddingMonths:(NSInteger)months {
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
+	dateComponents.month += months;
+	return [calendar dateFromComponents:dateComponents];
+}
+
+- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
+	return [self dateByAddingMonths:(months * -1)];
+}
+
+- (NSDate *)dateByAddingYears:(NSInteger)years {
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSYearCalendarUnit fromDate:self];
+	dateComponents.year += years;
+	return [calendar dateFromComponents:dateComponents];
+}
+
+- (NSDate *)dateBySubtractingYears:(NSInteger)years {
+	return [self dateByAddingYears:(years * -1)];
+}
+
 - (NSDate *)dateByAddingHours:(NSInteger)dHours {
 	NSTimeInterval aTimeInterval = [self timeIntervalSinceReferenceDate] + D_HOUR * dHours;
 	NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
@@ -412,6 +445,13 @@
 	[comp setDay:daysRange.length];
 	NSDate *endOfMonth = [[NSCalendar currentCalendar] dateFromComponents:comp];
 	return endOfMonth;
+}
+
+- (NSDate *)firstDayOfMonth {
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSDayCalendarUnit fromDate:self];
+	dateComponents.day = 1;
+	return [calendar dateFromComponents:dateComponents];
 }
 
 - (NSDateComponents *)componentsWithOffsetFromDate:(NSDate *)aDate {

@@ -92,12 +92,19 @@
 // Adjusting dates
 - (NSDate *)dateByAddingDays:(NSInteger)dDays;
 - (NSDate *)dateBySubtractingDays:(NSInteger)dDays;
+- (NSDate *)dateByAddingWeeks:(NSInteger)weeks;
+- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks;
+- (NSDate *)dateByAddingMonths:(NSInteger)months;
+- (NSDate *)dateBySubtractingMonths:(NSInteger)months;
+- (NSDate *)dateByAddingYears:(NSInteger)years;
+- (NSDate *)dateByAddingHours:(NSInteger)dHours;
 - (NSDate *)dateByAddingHours:(NSInteger)dHours;
 - (NSDate *)dateBySubtractingHours:(NSInteger)dHours;
 - (NSDate *)dateByAddingMinutes:(NSInteger)dMinutes;
 - (NSDate *)dateBySubtractingMinutes:(NSInteger)dMinutes;
 - (NSDate *)dateAtStartOfDay;
 - (NSDate *)dateByLastDayOfMonth;
+- (NSDate *)firstDayOfMonth;
 
 // Retrieving intervals
 - (NSInteger)minutesAfterDate:(NSDate *)aDate;
