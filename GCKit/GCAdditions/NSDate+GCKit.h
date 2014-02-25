@@ -14,6 +14,16 @@
 #define D_WEEK		604800
 #define D_YEAR		31556926
 
+typedef NS_ENUM(short, WeekDayDescription) {
+    WeekDayDescriptionSunday    = 1,
+    WeekDayDescriptionMonday    = 2,
+    WeekDayDescriptionTuesday   = 3,
+    WeekDayDescriptionWednesday = 4,
+    WeekDayDescriptionThursday  = 5,
+    WeekDayDescriptionFriday    = 6,
+    WeekDayDescriptionSaturday  = 7,
+};
+
 @interface NSDate (GCKit) {
 	
 }
@@ -97,7 +107,6 @@
 - (NSDate *)dateByAddingMonths:(NSInteger)months;
 - (NSDate *)dateBySubtractingMonths:(NSInteger)months;
 - (NSDate *)dateByAddingYears:(NSInteger)years;
-- (NSDate *)dateByAddingHours:(NSInteger)dHours;
 - (NSDate *)dateByAddingHours:(NSInteger)dHours;
 - (NSDate *)dateBySubtractingHours:(NSInteger)dHours;
 - (NSDate *)dateByAddingMinutes:(NSInteger)dMinutes;

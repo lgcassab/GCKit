@@ -169,13 +169,13 @@
 	NSString *r;
 	NSUInteger w = [self weekDay];
 	switch (w) {
-		case 1: { r = NSLocalizedString(@"Domingo", @""); break; }
-		case 2: { r = NSLocalizedString(@"Segunda-feira", @""); break; }
-		case 3: { r = NSLocalizedString(@"Terça-feira", @""); break; }
-		case 4: { r = NSLocalizedString(@"Quarta-feira", @""); break; }
-		case 5: { r = NSLocalizedString(@"Quinta-feira", @""); break; }
-		case 6: { r = NSLocalizedString(@"Sexta-feira", @""); break; }
-		case 7: { r = NSLocalizedString(@"Sábado", @""); break; }			
+		case WeekDayDescriptionSunday:    { r = NSLocalizedString(@"Domingo", @""); break; }
+		case WeekDayDescriptionMonday:    { r = NSLocalizedString(@"Segunda-feira", @""); break; }
+		case WeekDayDescriptionTuesday:   { r = NSLocalizedString(@"Terça-feira", @""); break; }
+		case WeekDayDescriptionWednesday: { r = NSLocalizedString(@"Quarta-feira", @""); break; }
+		case WeekDayDescriptionThursday:  { r = NSLocalizedString(@"Quinta-feira", @""); break; }
+		case WeekDayDescriptionFriday:    { r = NSLocalizedString(@"Sexta-feira", @""); break; }
+		case WeekDayDescriptionSaturday:  { r = NSLocalizedString(@"Sábado", @""); break; }
 	}
 	return r;
 }
