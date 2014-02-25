@@ -379,10 +379,7 @@
 }
 
 - (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
-	NSCalendar *calendar = [NSCalendar currentCalendar];
-	NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSWeekdayCalendarUnit fromDate:self];
-	dateComponents.week += weeks;
-	return [calendar dateFromComponents:dateComponents];
+	return [self dateByAddingDays:(weeks * 7)];
 }
 
 - (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
