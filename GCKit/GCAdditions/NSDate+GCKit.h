@@ -45,6 +45,7 @@ typedef NS_ENUM(short, WeekDayDescription) {
 + (NSDate *)yesterday;
 + (NSDate *)beforeYesterday;
 + (NSDate *)lastDateOfThisMonth;
+- (NSDate *)lastDateOfThisMonth;
 + (NSDate *)todayMinusDays:(NSUInteger)days;
 + (NSDate *)todayPlusDays:(NSUInteger)days;
 

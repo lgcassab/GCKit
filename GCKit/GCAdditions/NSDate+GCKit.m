@@ -54,6 +54,14 @@
 	return endOfMonth;
 }
 
+- (NSDate *)lastDateOfThisMonth {
+	NSRange daysRange = [[NSCalendar currentCalendar] rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:self];
+	NSDateComponents *comp = [[NSCalendar currentCalendar] components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:self];
+	[comp setDay:daysRange.length];
+	NSDate *endOfMonth = [[NSCalendar currentCalendar] dateFromComponents:comp];
+	return endOfMonth;
+}
+
 + (BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
     return (([date compare:beginDate] != NSOrderedAscending) && ([date compare:endDate] != NSOrderedDescending));
 }
