@@ -55,12 +55,15 @@ static GCCancelBlock _cancelBlock;
 }
 
 
-+ (void)alertView:(UIAlertView*) alertView didDismissWithButtonIndex:(NSInteger) buttonIndex {
-    
-	if(buttonIndex == [alertView cancelButtonIndex]) {
-		_cancelBlock();
++ (void)alertView:(UIAlertView*) alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == [alertView cancelButtonIndex]) {
+		if (_cancelBlock) {
+			_cancelBlock();
+		}
 	} else {
-        _dismissBlock(buttonIndex - 1); // cancel button is button 0
+		if (_dismissBlock) {
+			_dismissBlock(buttonIndex - 1); // cancel button is button 0
+		}
     }
 }
 

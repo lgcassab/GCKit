@@ -78,10 +78,14 @@ static ATVSelectionBlock    _selectionBlock;
 #pragma mark - Overrides
 
 + (void)alertView:(UIAlertView*) alertView didDismissWithButtonIndex:(NSInteger) buttonIndex {
-	if(buttonIndex == [alertView cancelButtonIndex]) {
-		_cancelBlock();
+	if (buttonIndex == [alertView cancelButtonIndex]) {
+		if (_cancelBlock) {
+			_cancelBlock();
+		}
 	} else {
-        _selectionBlock(buttonIndex -1);
+		if (_selectionBlock) {
+			_selectionBlock(buttonIndex -1);
+		}
     }
 }
 
