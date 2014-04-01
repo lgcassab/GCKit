@@ -20,8 +20,10 @@ NSString * const kMaskDelegateKey = @"kMaskDelegateKey";
 
 - (void)setMask:(id)aObject {
     objc_setAssociatedObject(self, (__bridge const void *)(kMaskKey), aObject, OBJC_ASSOCIATION_ASSIGN);
-    [self setMaskDelegate:self.delegate];
-    [self setDelegate:[GCTextFieldDelegate sharedDelegate]];
+	if (self.delegate) {
+		[self setMaskDelegate:self.delegate];
+		[self setDelegate:[GCTextFieldDelegate sharedDelegate]];
+	}
 //    [self addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:nil];
 }
 

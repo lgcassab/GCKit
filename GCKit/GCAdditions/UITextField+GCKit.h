@@ -9,7 +9,7 @@
 @interface UITextField (GCKit) {
     
 }
-@property (nonatomic, assign) NSString *mask;
-@property (nonatomic, assign) id maskDelegate;
+@property (nonatomic, weak) NSString *mask;
+@property (nonatomic, weak) id maskDelegate;
 
 @end
