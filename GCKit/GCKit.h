@@ -60,6 +60,7 @@
 #import "CLPlacemark+GCKit.h"
 #import "NSArray+GCKit.h"
 #import "NSTimer+GCKit.h"
+#import "UILabel+GCKit.h"
 
 // Pickers
 #import "GCPicker.h"

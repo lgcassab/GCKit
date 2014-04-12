@@ -235,6 +235,7 @@
 		EC84D2801840D0720073A0A5 /* GCActionMoveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC84D27F1840D0720073A0A5 /* GCActionMoveVC.m */; };
 		EC84D2831840D07A0073A0A5 /* GCActionFadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC84D2821840D07A0073A0A5 /* GCActionFadeVC.m */; };
 		EC84D2861840D08E0073A0A5 /* GCActionsPatternVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC84D2851840D08E0073A0A5 /* GCActionsPatternVC.m */; };
+		ECAFF73318F95E1200F77BEE /* UILabel+GCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAFF73218F95E1200F77BEE /* UILabel+GCKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -551,6 +552,8 @@
 		EC84D2821840D07A0073A0A5 /* GCActionFadeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCActionFadeVC.m; path = Project/GCActionFadeVC.m; sourceTree = SOURCE_ROOT; };
 		EC84D2841840D08E0073A0A5 /* GCActionsPatternVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCActionsPatternVC.h; path = Project/GCActionsPatternVC.h; sourceTree = SOURCE_ROOT; };
 		EC84D2851840D08E0073A0A5 /* GCActionsPatternVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCActionsPatternVC.m; path = Project/GCActionsPatternVC.m; sourceTree = SOURCE_ROOT; };
+		ECAFF73118F95E1200F77BEE /* UILabel+GCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+GCKit.h"; sourceTree = "<group>"; };
+		ECAFF73218F95E1200F77BEE /* UILabel+GCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+GCKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1090,6 +1093,8 @@
 				CEE156571812DDD800BBD889 /* UIWebView+GCKit.m */,
 				CEE1564E1812DD1E00BBD889 /* UIWindow+GCKit.h */,
 				CEE1564F1812DD1E00BBD889 /* UIWindow+GCKit.m */,
+				ECAFF73118F95E1200F77BEE /* UILabel+GCKit.h */,
+				ECAFF73218F95E1200F77BEE /* UILabel+GCKit.m */,
 			);
 			path = GCAdditions;
 			sourceTree = "<group>";
@@ -1542,6 +1547,7 @@
 				CE93D9811813F6C60000B5C8 /* GCActionSequence.m in Sources */,
 				CE4F86BC18269028003A2703 /* GCTableCellSwitch.m in Sources */,
 				CEF228D0182676C800A37887 /* GCAlertTableViewCell.m in Sources */,
+				ECAFF73318F95E1200F77BEE /* UILabel+GCKit.m in Sources */,
 				CE4F86B918269028003A2703 /* GCTableCellLabelSubtitleHorizontal1.m in Sources */,
 				CE001CA218269D3D0008AC62 /* GCEgoCache.m in Sources */,
 				EC84D27D1840D0680073A0A5 /* GCActionRotateVC.m in Sources */,
