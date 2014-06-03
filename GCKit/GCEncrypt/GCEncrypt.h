@@ -31,7 +31,12 @@
     
 }
 
-// AES256
+#pragma mark - MD5
+
++ (NSString*)encryptStringWithMD5:(NSString *)string;
+
+#pragma mark - AES256
+
 + (NSData*)generateAES256Iv;
 + (NSData*)encryptAES256Data:(NSData*)data key:(NSData*)key iv:(NSData*)iv;
 + (NSData*)decryptAES256Data:(NSData*)data key:(NSData*)key iv:(NSData*)iv;
