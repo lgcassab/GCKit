@@ -10,29 +10,29 @@
 	<string>GCKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5C4D10E5-DF06-43AF-A13C-8A508D9A2F23</key>
+		<key>0CFBC11113174B9D606CF1C57D07B0B0D7E5AE25</key>
 		<string>ssh://github.com/lgcassab/GCKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GCKit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5C4D10E5-DF06-43AF-A13C-8A508D9A2F23</key>
+		<key>0CFBC11113174B9D606CF1C57D07B0B0D7E5AE25</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/lgcassab/GCKit.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5C4D10E5-DF06-43AF-A13C-8A508D9A2F23</string>
+	<string>0CFBC11113174B9D606CF1C57D07B0B0D7E5AE25</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5C4D10E5-DF06-43AF-A13C-8A508D9A2F23</string>
+			<string>0CFBC11113174B9D606CF1C57D07B0B0D7E5AE25</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GCKit</string>
 		</dict>

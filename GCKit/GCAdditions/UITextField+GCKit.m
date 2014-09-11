@@ -19,6 +19,9 @@ NSString * const kMaskDelegateKey = @"kMaskDelegateKey";
 #pragma mark - Mask
 
 - (void)setMask:(id)aObject {
+	if (!aObject) {
+		return;
+	}
     objc_setAssociatedObject(self, (__bridge const void *)(kMaskKey), aObject, OBJC_ASSOCIATION_ASSIGN);
 	if (self.delegate) {
 		[self setMaskDelegate:self.delegate];
@@ -34,6 +37,9 @@ NSString * const kMaskDelegateKey = @"kMaskDelegateKey";
 #pragma mark - MaskDelegate
 
 - (void)setMaskDelegate:(id)aObject {
+	if (!aObject) {
+		return;
+	}
     objc_setAssociatedObject(self, (__bridge const void *)(kMaskDelegateKey), aObject, OBJC_ASSOCIATION_ASSIGN);
 }
 
