@@ -149,8 +149,8 @@ static GCTextFieldDelegate *sharedDelegate;
             { // Informa o usuário que o textField foi alterado.
                 id maskDelegate = textField.maskDelegate;
                 if (maskDelegate) {
-                    if ([maskDelegate respondsToSelector:@selector(textFieldDidChange:)]) {
-                        [maskDelegate performSelector:@selector(textFieldDidChange:) withObject:textField];
+                    if ([maskDelegate respondsToSelector:@selector(gcTextFieldDidChange:)]) {
+                        [maskDelegate performSelector:@selector(gcTextFieldDidChange:) withObject:textField];
                     }
                 }
             }
@@ -226,8 +226,8 @@ static GCTextFieldDelegate *sharedDelegate;
     { // Informa o usuário que o textField foi alterado.
         id maskDelegate = aTextField.maskDelegate;
         if (maskDelegate) {
-            if ([maskDelegate respondsToSelector:@selector(textFieldDidChange:)]) {
-                [maskDelegate performSelector:@selector(textFieldDidChange:) withObject:aTextField];
+            if ([maskDelegate respondsToSelector:@selector(gcTextFieldDidChange:)]) {
+                [maskDelegate performSelector:@selector(gcTextFieldDidChange:) withObject:aTextField];
             }
         }
     }

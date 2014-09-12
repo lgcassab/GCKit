@@ -86,7 +86,7 @@
 	
 	CGContextRef curContext = UIGraphicsGetCurrentContext();
 
-	NSString* numberString = [NSString stringWithFormat:@"%d",self.value];
+	NSString* numberString = [NSString stringWithFormat:@"%lu",(unsigned long)self.value];
 	
 	CGSize numberSize = [numberString sizeWithAttributes:@{NSFontAttributeName:self.font}];;
 		
@@ -246,7 +246,7 @@
 
 - (CGSize)badgeSize
 {
-	NSString* numberString = [NSString stringWithFormat:@"%d",self.value];
+	NSString* numberString = [NSString stringWithFormat:@"%lu",(unsigned long)self.value];
 	
 	
 	CGSize numberSize = [numberString sizeWithAttributes:@{NSFontAttributeName:self.font}];

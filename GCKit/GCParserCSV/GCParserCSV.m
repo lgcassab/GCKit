@@ -445,7 +445,7 @@ enum {
 		}
 	} else {
 		if (previousUnichar == UNICHAR_QUOTE && previousPreviousUnichar != UNICHAR_BACKSLASH && balancedQuotes == YES && balancedEscapes == YES) {
-			NSString *reason = [NSString stringWithFormat:@"Invalid CSV format on line #%u immediately after \"%@\"", currentLine, currentField];
+			NSString *reason = [NSString stringWithFormat:@"Invalid CSV format on line #%lu immediately after \"%@\"", (unsigned long)currentLine, currentField];
 			error = [[NSError alloc] initWithDomain:GCCSVErrorDomain code:GCCSVErrorCodeInvalidFormat userInfo:[NSDictionary dictionaryWithObject:reason forKey:NSLocalizedDescriptionKey]];
 			return;
 		}

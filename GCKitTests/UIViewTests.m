@@ -248,7 +248,7 @@
 
 - (void)testViewWithKindOfClass {
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
-	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %d instead.", [[view subviews] count]);
+	XCTAssertEqual([[view subviews] count], (NSUInteger)0, @"The number of subviews should be 0. Received %lu instead.", (unsigned long)[[view subviews] count]);
 	
 	UIView *subview = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
 	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 10, 300, 40)];

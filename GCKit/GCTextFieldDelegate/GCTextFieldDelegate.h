@@ -23,5 +23,5 @@
 
 @protocol GCTextFieldDelegate <NSObject>
 @optional
-- (void)textFieldDidChange:(UITextField *)textField;
+- (void)gcTextFieldDidChange:(UITextField *)textField;
 @end

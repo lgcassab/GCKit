@@ -204,20 +204,20 @@
 
 - (NSString *)extended {
 	NSMutableString *s = [[NSMutableString alloc]init];
-	[s appendFormat:@"%02d de %@ de %04d" , 
-	 [self day],
+	[s appendFormat:@"%02ld de %@ de%04ldd" , 
+	 (long)[self day],
 	 [self monthName],
-	 [self year] ];
+	 (long)[self year] ];
 	return s;
 }
 
 - (NSString *)extendedWithWeekDayName {
 	NSMutableString *s = [[NSMutableString alloc] init];
-	[s appendFormat:@"%@, %02d de %@ de %04d" , 
+	[s appendFormat:@"%@, %02ld de %@ de%04ldd" , 
 	 [self weekDayName], 
-	 [self day],
+	 (long)[self day],
 	 [self monthName],
-	 [self year] ];
+	 (long)[self year] ];
 	return s;
 }
 

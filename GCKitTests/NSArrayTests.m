@@ -20,7 +20,7 @@
 	XCTAssertNotNil(array, @"array can't be nil.");
 	XCTAssertTrue([array isKindOfClass:[NSArray class]], @"array must be of NSArray class.");
 	if ([array count] != 27) {
-		XCTFail(@"Brazilian States array must contain 27 objects. Found %d instead.", [array count]);
+		XCTFail(@"Brazilian States array must contain 27 objects. Found %lu instead.", (unsigned long)[array count]);
 	}
 }
 
