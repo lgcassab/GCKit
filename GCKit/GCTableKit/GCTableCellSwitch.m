@@ -36,16 +36,16 @@
     
 	if( (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) ) 	{
         
-		self.selectionStyle = UITableViewCellSelectionStyleNone;
-		lockCellSelection = YES;
-		
-        {
-            UISwitch *tmpSwitch = [[UISwitch alloc] init];
-            [tmpSwitch addTarget:self action:@selector(switchControlChanged) forControlEvents:UIControlEventValueChanged];
-            self.switchControl = tmpSwitch;
-        }
-        
-		[self.contentView addSubview:switchControl];
+//		self.selectionStyle = UITableViewCellSelectionStyleNone;
+//		lockCellSelection = YES;
+//		
+//        {
+//            UISwitch *tmpSwitch = [[UISwitch alloc] init];
+//            [tmpSwitch addTarget:self action:@selector(switchControlChanged) forControlEvents:UIControlEventValueChanged];
+//            self.switchControl = tmpSwitch;
+//        }
+//        
+//		[self.contentView addSubview:switchControl];
 	}
     
 	return self;
@@ -55,6 +55,19 @@
     
 	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     if(self) {
+		
+		{
+			self.selectionStyle = UITableViewCellSelectionStyleNone;
+			lockCellSelection = YES;
+			
+			{
+				UISwitch *tmpSwitch = [[UISwitch alloc] init];
+				[tmpSwitch addTarget:self action:@selector(switchControlChanged) forControlEvents:UIControlEventValueChanged];
+				self.switchControl = tmpSwitch;
+			}
+			
+			[self.contentView addSubview:switchControl];
+		}
         
         [self.textLabel setText:cellText];
         
