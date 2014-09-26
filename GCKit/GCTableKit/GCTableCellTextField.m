@@ -40,36 +40,34 @@
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    
 	if ((self=[super initWithStyle:style reuseIdentifier:reuseIdentifier])) 	{
-		
-		self.selectionStyle = UITableViewCellSelectionStyleNone;
-		lockCellSelection = YES;
-		
-        {
-            UITextField *tmpTextField = [[UITextField alloc]init];
-            [tmpTextField setDelegate:self];
-            [tmpTextField addTarget:self action:@selector(textFieldEditingChanged) forControlEvents:UIControlEventEditingChanged];
-            [tmpTextField setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
-            [tmpTextField setTextColor:[UIColor colorWithRed:50.0f/255 green:79.0f/255 blue:133.0f/255 alpha:1]];
-            [tmpTextField setAutocorrectionType:UITextAutocorrectionTypeNo];
-            [tmpTextField setClearButtonMode:UITextFieldViewModeWhileEditing];
-            [tmpTextField setReturnKeyType:UIReturnKeyDone];
-            self.textField = tmpTextField;
-        }
-        
-		[self.contentView addSubview:textField];
 	}
-    
 	return self;
 }
 
 - (id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey textFieldValue:(NSString *)textFieldValue placeholder:(NSString *)placeholder {
     
     if ((self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil])) {
-        
+		
+		self.selectionStyle = UITableViewCellSelectionStyleNone;
+		lockCellSelection = YES;
+		
+		{
+			UITextField *tmpTextField = [[UITextField alloc]init];
+			[tmpTextField setDelegate:self];
+			[tmpTextField addTarget:self action:@selector(textFieldEditingChanged) forControlEvents:UIControlEventEditingChanged];
+			[tmpTextField setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
+			[tmpTextField setTextColor:[UIColor colorWithRed:50.0f/255 green:79.0f/255 blue:133.0f/255 alpha:1]];
+			[tmpTextField setAutocorrectionType:UITextAutocorrectionTypeNo];
+			[tmpTextField setClearButtonMode:UITextFieldViewModeWhileEditing];
+			[tmpTextField setReturnKeyType:UIReturnKeyDone];
+			self.textField = tmpTextField;
+		}
+		
+		[self.contentView addSubview:textField];
+		
         [self.textLabel setText:cellText];
-        
+		
         [textField setText:textFieldValue];
         [textField setPlaceholder:placeholder];
         

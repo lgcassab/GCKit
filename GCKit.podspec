@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name     = 'GCKit'
-  s.version  = '1.91.1'
+  s.version  = '1.91.2'
   s.summary  = 'One more iOS framework.'
   s.homepage = 'https://github.com/lgcassab/GCKit'
   s.authors  = { 'Gustavo Cassab' => 'lgcassab@mac.com' }
-  s.source   = { :git => 'https://github.com/lgcassab/GCKit.git', :tag => "1.91.1" }
+  s.source   = { :git => 'https://github.com/lgcassab/GCKit.git', :tag => "1.91.2" }
   s.requires_arc = true
   s.platform = :ios
   s.ios.deployment_target = '6.0'
