@@ -27,10 +27,13 @@
     if (text) {
         if ([text length] > 0) {
 			
-			#ifndef __IPHONE_7_0
-				textSize = [text sizeWithFont:font constrainedToSize:CGSizeMake(maxWidth, MAXFLOAT) lineBreakMode:NSLineBreakByCharWrapping];
+			#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+			textSize = [text boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT)
+										  options:NSStringDrawingUsesLineFragmentOrigin
+									   attributes:@{NSFontAttributeName:font}
+										  context:nil].size;
 			#else
-				textSize = [text boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+			textSize = [text sizeWithFont:font constrainedToSize:CGSizeMake(maxWidth, MAXFLOAT) lineBreakMode:NSLineBreakByCharWrapping];
 			#endif
 			
             newHeight = textSize.height;
@@ -64,12 +67,15 @@
     
     if ([self length] > 0) {
 		
-        #ifndef __IPHONE_7_0
-        textSize = [self sizeWithFont:font constrainedToSize:CGSizeMake(maxWidth, MAXFLOAT) lineBreakMode:NSLineBreakByCharWrapping];
-        #else
-        textSize = [self boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
-        #endif
-        
+		#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+		textSize = [self boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT)
+									  options:NSStringDrawingUsesLineFragmentOrigin
+								   attributes:@{NSFontAttributeName:font}
+									  context:nil].size;
+		#else
+		textSize = [self sizeWithFont:font constrainedToSize:CGSizeMake(maxWidth, MAXFLOAT) lineBreakMode:NSLineBreakByCharWrapping];
+		#endif
+		
         newHeight = textSize.height;
     }
     

@@ -138,17 +138,20 @@
         [self.textLabel setText:text];
         [self.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
         [self.textLabel setNumberOfLines:0];
-        
-        {
-            UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:19.0];
-            CGSize labelSize = labelSize = [text boundingRectWithSize:CGSizeMake(280.0f, MAXFLOAT)
-															  options:NSStringDrawingUsesLineFragmentOrigin
-														   attributes:@{NSFontAttributeName:cellFont}
-															  context:nil].size;
-			
-            [self setHeight:( labelSize.height + 20) ];
-        }
 		
+		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:19.0];
+		CGSize labelSize = CGSizeMake(0, 0);
+		
+		#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+		labelSize = [text boundingRectWithSize:CGSizeMake(280.0f, MAXFLOAT)
+									   options:NSStringDrawingUsesLineFragmentOrigin
+									attributes:@{NSFontAttributeName:cellFont}
+									   context:nil].size;
+		#else
+		labelSize = [text sizeWithFont:cellFont constrainedToSize:CGSizeMake(280.0f, MAXFLOAT)];
+		#endif
+		
+		[self setHeight:( labelSize.height + 20) ];
 	}
     
 	return self;
@@ -180,15 +183,19 @@
         [self.textLabel setFont:textLabelFont];
         [self.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
         [self.textLabel setNumberOfLines:0];
-        
-        {
-			CGSize labelSize = [text boundingRectWithSize:CGSizeMake(textLabelMaxWidth, MAXFLOAT)
-												  options:NSStringDrawingUsesLineFragmentOrigin
-											   attributes:@{NSFontAttributeName:textLabelFont}
-												  context:nil].size;
-			
-            [self setHeight:( labelSize.height + 20) ];
-        }
+		
+		CGSize labelSize = CGSizeMake(0, 0);
+		
+		#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+		labelSize = [text boundingRectWithSize:CGSizeMake(textLabelMaxWidth, MAXFLOAT)
+									   options:NSStringDrawingUsesLineFragmentOrigin
+									attributes:@{NSFontAttributeName:textLabelFont}
+									   context:nil].size;
+		#else
+		labelSize = [text sizeWithFont:textLabelFont constrainedToSize:CGSizeMake(textLabelMaxWidth, MAXFLOAT)];
+		#endif
+		
+		[self setHeight:( labelSize.height + 20) ];
         
 	}
     return self;

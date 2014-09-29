@@ -104,20 +104,20 @@
         
         // Modify the textLabel frame to take only it's text width instead of the full cell width
         CGSize constraintSize = CGSizeMake(200, MAXFLOAT);
-        
-		#ifndef __IPHONE_7_0
-		textLabelFrame.size.width = [self.textLabel.text sizeWithFont:self.textLabel.font
-                                                    constrainedToSize:constraintSize
-                                                        lineBreakMode:self.textLabel.lineBreakMode].width;
-		#else
+		
+		#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
 		textLabelFrame.size.width = [self.textLabel.text boundingRectWithSize:constraintSize
 																	  options:NSStringDrawingUsesLineFragmentOrigin
 																   attributes:@{NSFontAttributeName:self.textLabel.font}
 																	  context:nil].size.width;
+		#else
+		textLabelFrame.size.width = [self.textLabel.text sizeWithFont:self.textLabel.font
+													constrainedToSize:constraintSize
+														lineBreakMode:self.textLabel.lineBreakMode].width;
 		#endif
 		
         self.textLabel.frame = textLabelFrame;
-        
+		
         // Layout the control next to self.textLabel, with it's same yCoord & height
         CGFloat indentation = 10;
         if(textLabelFrame.size.width == 0)
