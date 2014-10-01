@@ -59,6 +59,16 @@
     return result;
 }
 
++ (NSString *)bitStringWithInteger:(NSUInteger)number {
+	NSString *str = @"";
+	for (NSUInteger i = 0; i < 8 ; i++) {
+		// Prepend "0" or "1", depending on the bit
+		str = [NSString stringWithFormat:@"%@%@", number & 1 ? @"1" : @"0", str];
+		number >>= 1;
+	}
+	return str;
+}
+
 #pragma mark - Public Methods
 
 - (CGFloat)heightWithFont:(UIFont *)font constrainedToMaxWidth:(CGFloat)maxWidth {
