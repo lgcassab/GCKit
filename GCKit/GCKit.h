@@ -6,7 +6,7 @@
 //  Copyright 2010 GCCore Digital Technologies. All rights reserved.
 //
 
-#define GCKitVersion @"1.92.0"
+#define GCKitVersion @"1.92.1"
 
 #ifndef __OPTIMIZE__
 #	define GCLog( s, ... ) NSLog( @"<%@:%d (%@)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,  NSStringFromSelector(_cmd), [NSString stringWithFormat:(s), ##__VA_ARGS__] )

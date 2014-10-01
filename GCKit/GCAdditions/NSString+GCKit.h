@@ -17,7 +17,7 @@
 + (CGFloat)heightForText:(NSString *)text withFont:(UIFont *)font constrainedToMaxWidth:(CGFloat)maxWidth;
 + (NSString *)substringWithString:(NSString *)string between:(NSString *)start and:(NSString *)end;
 + (NSString *)stringWithString:(NSString *)text repeat:(NSUInteger)times;
-+ (NSString *)bitStringWithInteger:(NSUInteger)number;
++ (NSString *)bitStringWithInteger:(NSInteger)number;
 
 #pragma mark - Public Methods
 
