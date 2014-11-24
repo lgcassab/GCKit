@@ -10,51 +10,38 @@
 #import "GCTableController.h"
 
 @interface GCTableCellSwitch (Private)
--(void)switchControlChanged;
+- (void)switchControlChanged;
 @end
 
 @implementation GCTableCellSwitch
 @synthesize switchControl;
 
-+(id)cellWithText:(NSString *)text {
++ (id)cellWithText:(NSString *)text {
     return [[self alloc]initWithText:text dictionaryKey:nil switchIsOn:NO];
 }
 
-+(id)cellWithText:(NSString *)text switchIsOn:(BOOL)switchIsOn {
++ (id)cellWithText:(NSString *)text switchIsOn:(BOOL)switchIsOn {
     return [[self alloc]initWithText:text dictionaryKey:nil switchIsOn:switchIsOn];
 }
 
-+(id)cellWithText:(NSString *)text dictionaryKey:(NSString *)dictKey {
++ (id)cellWithText:(NSString *)text dictionaryKey:(NSString *)dictKey {
     return [[self alloc]initWithText:text dictionaryKey:dictKey switchIsOn:NO];
 }
 
-+(id)cellWithText:(NSString *)text dictionaryKey:(NSString *)dictKey switchIsOn:(BOOL)switchIsOn {
++ (id)cellWithText:(NSString *)text dictionaryKey:(NSString *)dictKey switchIsOn:(BOOL)switchIsOn {
     return [[self alloc]initWithText:text dictionaryKey:dictKey switchIsOn:switchIsOn];
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    
 	if( (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) ) 	{
-        
-//		self.selectionStyle = UITableViewCellSelectionStyleNone;
-//		lockCellSelection = YES;
-//		
-//        {
-//            UISwitch *tmpSwitch = [[UISwitch alloc] init];
-//            [tmpSwitch addTarget:self action:@selector(switchControlChanged) forControlEvents:UIControlEventValueChanged];
-//            self.switchControl = tmpSwitch;
-//        }
-//        
-//		[self.contentView addSubview:switchControl];
 	}
-    
 	return self;
 }
 
--(id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey switchIsOn:(BOOL)switchIsOn {
+- (id)initWithText:(NSString *)cellText dictionaryKey:(NSString *)dictKey switchIsOn:(BOOL)switchIsOn {
     
 	self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
-    if(self) {
+    if (self) {
 		
 		{
 			self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -66,7 +53,8 @@
 				self.switchControl = tmpSwitch;
 			}
 			
-			[self.contentView addSubview:switchControl];
+//			[self.contentView addSubview:switchControl];
+			[self setAccessoryView:switchControl];
 		}
         
         [self.textLabel setText:cellText];
@@ -81,19 +69,19 @@
     return self;
 }
 
-- (void)layoutSubviews {
-    
-	[super layoutSubviews];
-	
-	CGSize contentViewSize = self.contentView.bounds.size;
-	CGRect switchFrame = self.switchControl.frame;
-	switchFrame.origin.x = contentViewSize.width - switchFrame.size.width - 10;
-	switchFrame.origin.y = (contentViewSize.height-switchFrame.size.height)/2;
-	self.switchControl.frame = switchFrame;
-    
-    [self.detailTextLabel setHidden:YES];
-    [self.contentView bringSubviewToFront:self.switchControl];
-}
+//- (void)layoutSubviews {
+//    
+//	[super layoutSubviews];
+//	
+//	CGSize contentViewSize = self.contentView.bounds.size;
+//	CGRect switchFrame = self.switchControl.frame;
+//	switchFrame.origin.x = contentViewSize.width - switchFrame.size.width - 10;
+//	switchFrame.origin.y = (contentViewSize.height-switchFrame.size.height)/2;
+//	self.switchControl.frame = switchFrame;
+//    
+//    [self.detailTextLabel setHidden:YES];
+//    [self.contentView bringSubviewToFront:self.switchControl];
+//}
 
 - (void)switchControlChanged {
     
