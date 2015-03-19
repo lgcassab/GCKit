@@ -27,22 +27,40 @@
     [GCMailComposer mailTo:nTo subject:nil body:nil bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
 }
 
-+ (void)mailTo:(NSArray *)nTo subject:(NSString *)nSubject completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nil bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
++ (void)mailTo:(NSArray *)nTo
+	   subject:(NSString *)nSubject
+completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
+	
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nil
+				bodyIsHtml:YES
+				attachment:nil
+		 completitionBlock:nCompletitionBlock];
 }
 
 + (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nil bodyIsHtml:YES attachment:nCompletitionBlock completitionBlock:nCompletitionBlock];
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nil
+				bodyIsHtml:YES
+				attachment:nAttachment
+		 completitionBlock:nCompletitionBlock];
 }
 
 + (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsText:(NSString *)nBodyText
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nBodyText bodyIsHtml:NO attachment:nil completitionBlock:nCompletitionBlock];
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nBodyText
+				bodyIsHtml:NO
+				attachment:nil
+		 completitionBlock:nCompletitionBlock];
 }
 
 + (void)mailTo:(NSArray *)nTo
@@ -50,14 +68,24 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
    bodyAsText:(NSString *)nBodyText
    attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nBodyText bodyIsHtml:NO attachment:nAttachment completitionBlock:nCompletitionBlock];
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nBodyText
+				bodyIsHtml:NO
+				attachment:nAttachment
+		 completitionBlock:nCompletitionBlock];
 }
 
 + (void)mailTo:(NSArray *)nTo
       subject:(NSString *)nSubject
    bodyAsHtml:(NSString *)nBodyHtml
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nBodyHtml bodyIsHtml:YES attachment:nil completitionBlock:nCompletitionBlock];
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nBodyHtml
+				bodyIsHtml:YES
+				attachment:nil
+		 completitionBlock:nCompletitionBlock];
 }
 
 + (void)mailTo:(NSArray *)nTo
@@ -65,7 +93,12 @@ completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
    bodyAsHtml:(NSString *)nBodyHtml
    attachment:(NSArray *)nAttachment
 completitionBlock:(GCMailComposerCompletionBlock)nCompletitionBlock {
-    [GCMailComposer mailTo:nTo subject:nSubject body:nBodyHtml bodyIsHtml:YES attachment:nAttachment completitionBlock:nCompletitionBlock];
+    [GCMailComposer mailTo:nTo
+				   subject:nSubject
+					  body:nBodyHtml
+				bodyIsHtml:YES
+				attachment:nAttachment
+		 completitionBlock:nCompletitionBlock];
 }
 
 #pragma mark - Private
