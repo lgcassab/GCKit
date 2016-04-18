@@ -9,7 +9,7 @@
 @interface GCParserCSV : NSObject {
 
 	@private
-	__weak id<GCCSVParserDelegate> parserDelegate;
+	id<GCCSVParserDelegate> parserDelegate;
     NSInputStream *csvReadStream;
 	BOOL endOfStreamReached;
 	NSStringEncoding fileEncoding;

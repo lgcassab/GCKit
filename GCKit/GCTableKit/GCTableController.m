@@ -236,7 +236,14 @@
 }
 
 -(void)deleteSection:(GCTableSection *)_section withRowAnimation:(UITableViewRowAnimation)_rowAnimation {
-    [_section removeAllCellsWithAnimation:_rowAnimation];
+    [self deleteSection:_section withRowAnimation:_rowAnimation removingCells:NO];
+}
+
+-(void)deleteSection:(GCTableSection *)_section withRowAnimation:(UITableViewRowAnimation)_rowAnimation removingCells:(BOOL)removingCells {
+    
+    if (removingCells) {
+        [_section removeAllCellsWithAnimation:_rowAnimation];
+    }
     
     NSUInteger index = [arraySections indexOfObject:_section];
     

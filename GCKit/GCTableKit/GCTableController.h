@@ -68,6 +68,7 @@ typedef enum {
 -(void)deleteSectionAtIndex:(NSUInteger)_index animated:(BOOL)_animated;
 -(void)deleteSectionAtIndex:(NSUInteger)_index withRowAnimation:(UITableViewRowAnimation)_rowAnimation;
 -(void)deleteSection:(GCTableSection *)_section withRowAnimation:(UITableViewRowAnimation)_rowAnimation;
+-(void)deleteSection:(GCTableSection *)_section withRowAnimation:(UITableViewRowAnimation)_rowAnimation removingCells:(BOOL)removingCells;
 
 -(void)expandableSection:(GCTableSectionExpandable *)section hasBeenExpanded:(BOOL)expanded;
 -(void)scrollToCell:(GCTableCell *)cell atScrollPosition:(UITableViewScrollPosition )scrollPosition;
